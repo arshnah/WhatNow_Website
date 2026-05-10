@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Navbar from "@/components/Navbar";
 import { Nunito, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -27,6 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${nunito.variable} ${nunitoSans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans bg-white text-slate-900">
+        <Navbar />
+
         {children}
       </body>
     </html>
