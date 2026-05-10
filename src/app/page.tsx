@@ -1,8 +1,12 @@
 
 import Hero from "@/components/home/Hero";
+import FeaturedGuides from "@/components/home/FeaturedGuides";
 
 export default function Home() {
-  return (<>
-    <Hero />
-  </>);
+  return (
+    <div className="min-h-screen flex flex-col bg-white">
+      <Hero />
+      <FeaturedGuides />
+    </div>
+  );
 }
