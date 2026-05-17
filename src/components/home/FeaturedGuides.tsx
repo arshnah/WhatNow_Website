@@ -24,7 +24,7 @@ function GuideCard({ category, title, description, badgeClass }: GuideCardProps)
         {title}
       </h3>
 
-      <p className="text-neutral-500 leading-relaxed mb-10 flex-grow">
+      <p className="text-neutral-500 leading-relaxed mb-10 flex-grow font-medium">
         {description}
       </p>
 

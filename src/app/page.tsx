@@ -1,6 +1,6 @@
 import Hero from "@/components/home/Hero";
 import FeaturedGuides from "@/components/home/FeaturedGuides";
-import Testimonials from "@/components/ui/Testimonials";
+import Testimonials from "@/components/home/Testimonials";
 
 export default function Home() {
   return (
