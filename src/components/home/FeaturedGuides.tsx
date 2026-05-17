@@ -13,7 +13,7 @@ interface GuideCardProps {
 
 function GuideCard({ category, title, description, badgeClass }: GuideCardProps) {
   return (
-    <div className="bg-white rounded-2xl p-8 sm:p-10 flex flex-col h-full border border-neutral-200/60 hover:border-neutral-300 hover:bg-neutral-50/50 transition-colors group cursor-pointer shadow-sm">
+    <div className="bg-white rounded-2xl p-8 sm:p-10 flex flex-col h-full border border-neutral-200/60 hover:border-neutral-300 transition-colors group cursor-pointer shadow-sm">
       <div className="mb-6 flex items-start">
         <span className={`font-semibold text-sm px-3 py-1 rounded-xl border ${badgeClass}`}>
           {category}
@@ -28,11 +28,11 @@ function GuideCard({ category, title, description, badgeClass }: GuideCardProps)
         {description}
       </p>
 
-      <div className="mt-auto flex items-center gap-2">
+      <div className="mt-auto flex items-center gap-2 justify-end">
         <span className="text-neutral-500 font-medium group-hover:text-neutral-800 transition-colors">
-          Read article
+          Read
         </span>
-        <Icon icon="ph:arrow-right" className="w-5 h-5 text-neutral-400 group-hover:text-neutral-800 transition-colors transform group-hover:translate-x-1" />
+        <Icon icon="ph:arrow-right" className="w-5 h-5 text-neutral-400 group-hover:text-neutral-800 transition-all transform group-hover:translate-x-1" />
       </div>
     </div>
   );
@@ -75,21 +75,19 @@ export default function FeaturedGuides() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const firstCardRef = useRef<HTMLDivElement>(null);
   const lastCardRef = useRef<HTMLDivElement>(null);
-  
+
   const [showLeft, setShowLeft] = useState(false);
   const [showRight, setShowRight] = useState(true);
 
   const handleScroll = () => {
     if (!scrollRef.current || !firstCardRef.current || !lastCardRef.current) return;
-    
+
     const containerRect = scrollRef.current.getBoundingClientRect();
     const firstCardRect = firstCardRef.current.getBoundingClientRect();
     const lastCardRect = lastCardRef.current.getBoundingClientRect();
 
-    // Show left arrow if the first card has scrolled out past the left bounds
     setShowLeft(firstCardRect.left < containerRect.left - 10);
-    
-    // Show right arrow if the last card is still pushed out past the right bounds
+
     setShowRight(lastCardRect.right > containerRect.right + 10);
   };
 
@@ -102,7 +100,6 @@ export default function FeaturedGuides() {
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const { current } = scrollRef;
-      // Scroll by roughly the width of one card + gap
       const scrollAmount = direction === "left" ? -420 : 420;
       current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
@@ -131,11 +128,11 @@ export default function FeaturedGuides() {
 
         {/* Guides Slider */}
         <div className="relative w-full mt-10">
-          
+
           {/* Left Gradient & Button */}
           <div className={`hidden md:flex absolute left-0 top-0 bottom-0 w-24 lg:w-48 bg-gradient-to-r from-[#F8F8F6] via-[#F8F8F6]/90 to-transparent z-10 items-center justify-start pointer-events-none transition-opacity duration-300 ${showLeft ? "opacity-100" : "opacity-0"}`}>
-            <button 
-              onClick={() => scroll("left")} 
+            <button
+              onClick={() => scroll("left")}
               disabled={!showLeft}
               className="pointer-events-auto p-2 ml-2 lg:ml-6 text-neutral-300 hover:text-neutral-800 transition-colors cursor-pointer disabled:cursor-default"
               aria-label="Scroll left"
@@ -146,8 +143,8 @@ export default function FeaturedGuides() {
 
           {/* Right Gradient & Button */}
           <div className={`hidden md:flex absolute right-0 top-0 bottom-0 w-24 lg:w-48 bg-gradient-to-l from-[#F8F8F6] via-[#F8F8F6]/90 to-transparent z-10 items-center justify-end pointer-events-none transition-opacity duration-300 ${showRight ? "opacity-100" : "opacity-0"}`}>
-            <button 
-              onClick={() => scroll("right")} 
+            <button
+              onClick={() => scroll("right")}
               disabled={!showRight}
               className="pointer-events-auto p-2 mr-2 lg:mr-6 text-neutral-300 hover:text-neutral-800 transition-colors cursor-pointer disabled:cursor-default"
               aria-label="Scroll right"
@@ -156,14 +153,14 @@ export default function FeaturedGuides() {
             </button>
           </div>
 
-          <div 
+          <div
             ref={scrollRef}
             onScroll={handleScroll}
             className="flex overflow-x-auto snap-x snap-mandatory gap-6 lg:gap-8 pb-8 -mb-8 px-4 sm:px-6 lg:px-8 xl:px-[calc((100vw-1280px)/2)] 2xl:px-[calc((100vw-1536px)/2)] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
           >
             {GUIDES.map((guide, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 ref={idx === 0 ? firstCardRef : idx === GUIDES.length - 1 ? lastCardRef : null}
                 className="w-[85vw] sm:w-[380px] lg:w-[400px] flex-none snap-center lg:snap-start"
               >
