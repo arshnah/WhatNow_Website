@@ -101,18 +101,6 @@ const TestimonialsColumn = (props: {
                   key={`${index}-${i}`}
                   aria-hidden={index === 1 ? "true" : "false"}
                   tabIndex={index === 1 ? -1 : 0}
-                  whileHover={{ 
-                    scale: 1.03,
-                    y: -8,
-                    boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.12), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.05)",
-                    transition: { type: "spring", stiffness: 400, damping: 17 }
-                  }}
-                  whileFocus={{ 
-                    scale: 1.03,
-                    y: -8,
-                    boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.12), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.05)",
-                    transition: { type: "spring", stiffness: 400, damping: 17 }
-                  }}
                   className="p-10 rounded-3xl border border-neutral-200 shadow-lg shadow-black/5 max-w-xs w-full bg-white transition-all duration-300 cursor-default select-none group focus:outline-none focus:ring-2 focus:ring-primary/30" 
                 >
                   <blockquote className="m-0 p-0">
@@ -125,7 +113,7 @@ const TestimonialsColumn = (props: {
                         height={40}
                         src={image}
                         alt={`Avatar of ${name}`}
-                        className="h-10 w-10 rounded-full object-cover ring-2 ring-neutral-100 group-hover:ring-primary/30 transition-all duration-300 ease-in-out"
+                        className="h-10 w-10 rounded-full object-cover ring-2 ring-neutral-100 transition-all duration-300 ease-in-out"
                       />
                       <div className="flex flex-col">
                         <cite className="font-semibold not-italic tracking-tight leading-5 text-neutral-900 transition-colors duration-300">
