@@ -3,8 +3,8 @@
 @theme {
   --color-background: #ffffff;
   --color-foreground: #111827;
-  --font-sans: var(--font-nunito-sans);
-  --font-heading: var(--font-nunito);
+  --font-sans: var(--font-geist-sans), sans-serif;
+  --font-heading: var(--font-geist-sans), sans-serif;
   --color-primary: #4F46E5;
   --color-secondary: #0A8B74;
   --color-secondary-hover: #087A66;
