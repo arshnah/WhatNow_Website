@@ -1,68 +1,104 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Icon } from '@iconify/react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white border-t border-neutral-100 pt-16 pb-8 mt-auto">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          {/* Brand Column */}
-          <div className="col-span-1 md:col-span-1">
-            <Link href="/" className="text-xl font-extrabold tracking-tight text-neutral-900 mb-4 block transition-opacity hover:opacity-80">
-              WhatNow
-            </Link>
-            <p className="text-neutral-500 text-sm leading-relaxed max-w-xs">
-              You have options. We help you find the right one through unbiased, structured guidance.
-            </p>
+    <footer className="bg-gradient-to-b from-[#1B1A62] to-[#5563ED] text-white pt-32 lg:pt-40 overflow-hidden mt-auto">
+      <div className="w-full mx-auto max-w-7xl">
+
+        {/* Main Content Section */}
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-20 lg:gap-32 mb-24 lg:mb-32">
+
+          {/* Left Side: Logo, Language & Socials */}
+          <div className="flex flex-col gap-12 w-full lg:w-1/4">
+
+            {/* Logo */}
+            <div>
+              <Link href="/" className="hover:opacity-80 transition-opacity inline-block">
+                <Image src="/logo.png" alt="WhatNow Logo" width={140} height={40} className="h-24 w-auto brightness-0 invert" />
+              </Link>
+            </div>
+
+            {/* Language Dropdown */}
+            <div>
+              <p className="text-white/80 text-sm mb-4">Language</p>
+              <div className="flex items-center justify-between bg-white/10 hover:bg-white/5 border border-transparent rounded-xl px-6 py-3 w-48 cursor-pointer transition-colors">
+                <span className="text-sm font-medium">English</span>
+                <Icon icon="solar:alt-arrow-down-linear" className="w-5 h-5" />
+              </div>
+            </div>
+
+            {/* Socials */}
+            <div>
+              <p className="text-white/80 text-sm mb-4">Social</p>
+              <div className="flex items-center gap-5">
+                <Link href="https://twitter.com" className="text-white hover:text-white/80 transition-colors" aria-label="X (Twitter)">
+                  <Icon icon="ri:twitter-x-line" className="w-7 h-7" />
+                </Link>
+                <Link href="https://instagram.com" className="text-white hover:text-white/80 transition-colors" aria-label="Instagram">
+                  <Icon icon="ri:instagram-line" className="w-7 h-7" />
+                </Link>
+                <Link href="https://youtube.com" className="text-white hover:text-white/80 transition-colors" aria-label="YouTube">
+                  <Icon icon="ri:youtube-fill" className="w-7 h-7" />
+                </Link>
+              </div>
+            </div>
           </div>
 
-          {/* Links Columns */}
-          <div>
-            <h3 className="font-semibold text-neutral-900 mb-4 text-sm tracking-wide uppercase">Explore</h3>
-            <ul className="space-y-3">
-              <li><Link href="/careers" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">Careers</Link></li>
-              <li><Link href="/exams" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">Exams</Link></li>
-              <li><Link href="/reads" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">Editorial Reads</Link></li>
-            </ul>
-          </div>
+          {/* Right Side: Links Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-16 w-full lg:w-3/4">
+            {/* Column 1 */}
+            <div>
+              <h3 className="text-base font-semibold text-white/70 mb-6">Explore</h3>
+              <ul className="space-y-4">
+                <li><Link href="/careers" className="text-white/90 hover:text-white hover:underline transition-all">Careers</Link></li>
+                <li><Link href="/exams" className="text-white/90 hover:text-white hover:underline transition-all">Exams</Link></li>
+                <li><Link href="/reads" className="text-white/90 hover:text-white hover:underline transition-all">Editorial Reads</Link></li>
+                <li><Link href="/guides" className="text-white/90 hover:text-white hover:underline transition-all">Featured Guides</Link></li>
+              </ul>
+            </div>
 
-          <div>
-            <h3 className="font-semibold text-neutral-900 mb-4 text-sm tracking-wide uppercase">Company</h3>
-            <ul className="space-y-3">
-              <li><Link href="/about" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">About Us</Link></li>
-              <li><Link href="/contact" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">Contact</Link></li>
-            </ul>
-          </div>
+            {/* Column 2 */}
+            <div>
+              <h3 className="text-base font-semibold text-white/70 mb-6">Company</h3>
+              <ul className="space-y-4">
+                <li><Link href="/about" className="text-white/90 hover:text-white hover:underline transition-all">About Us</Link></li>
+                <li><Link href="/contact" className="text-white/90 hover:text-white hover:underline transition-all">Contact</Link></li>
+              </ul>
+            </div>
 
-          <div>
-            <h3 className="font-semibold text-neutral-900 mb-4 text-sm tracking-wide uppercase">Legal</h3>
-            <ul className="space-y-3">
-              <li><Link href="/privacy" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">Terms of Service</Link></li>
-              <li><Link href="/cookies" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">Cookie Policy</Link></li>
-            </ul>
+            {/* Column 3 */}
+            <div>
+              <h3 className="text-base font-semibold text-white/70 mb-6">Resources</h3>
+              <ul className="space-y-4">
+                <li><Link href="/community" className="text-white/90 hover:text-white hover:underline transition-all">Community Discord</Link></li>
+                <li><Link href="/content-policy" className="text-white/90 hover:text-white hover:underline transition-all">Content Policy</Link></li>
+                <li><Link href="/faq" className="text-white/90 hover:text-white hover:underline transition-all">FAQ</Link></li>
+              </ul>
+            </div>
+
+            {/* Column 4 */}
+            <div>
+              <h3 className="text-base font-semibold text-white/70 mb-6">Legal</h3>
+              <ul className="space-y-4">
+                <li><Link href="/privacy" className="text-white/90 hover:text-white hover:underline transition-all">Privacy Policy</Link></li>
+                <li><Link href="/terms" className="text-white/90 hover:text-white hover:underline transition-all">Terms of Service</Link></li>
+                <li><Link href="/cookies" className="text-white/90 hover:text-white hover:underline transition-all">Cookie Policy</Link></li>
+                <li><Link href="/guidelines" className="text-white/90 hover:text-white hover:underline transition-all">Editorial Guidelines</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-neutral-100 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-neutral-400">
-            &copy; {currentYear} WhatNow. All rights reserved.
-          </p>
-          <div className="flex items-center gap-6">
-            <Link href="https://youtube.com" className="text-neutral-400 hover:text-neutral-900 transition-colors" aria-label="YouTube">
-              <Icon icon="ri:youtube-line" className="w-5 h-5" />
-            </Link>
-            <Link href="https://instagram.com" className="text-neutral-400 hover:text-neutral-900 transition-colors" aria-label="Instagram">
-              <Icon icon="ri:instagram-line" className="w-5 h-5" />
-            </Link>
-            <Link href="https://twitter.com" className="text-neutral-400 hover:text-neutral-900 transition-colors" aria-label="X (Twitter)">
-              <Icon icon="ri:twitter-x-line" className="w-5 h-5" />
-            </Link>
-          </div>
-        </div>
+      {/* Giant WhatNow Text */}
+      <div className="w-full flex justify-center items-end overflow-hidden select-none">
+        <h1 className="text-[23vw] font-black text-white/95 leading-[0.7] tracking-tighter whitespace-nowrap translate-y-2 lg:translate-y-4">
+          WhatNow
+        </h1>
       </div>
     </footer>
   );
