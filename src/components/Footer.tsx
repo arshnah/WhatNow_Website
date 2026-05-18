@@ -6,14 +6,14 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-b from-[#1B1A62] to-[#5563ED] text-white pt-32 lg:pt-40 overflow-hidden mt-auto">
-      <div className="w-full mx-auto max-w-7xl">
+    <footer className="bg-gradient-to-b from-[#1B1A62] to-[#5563ED] text-white pt-20 lg:pt-40 overflow-hidden mt-auto">
+      <div className="w-full mx-auto px-6 md:px-8 lg:px-12 max-w-7xl">
 
         {/* Main Content Section */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-20 lg:gap-32 mb-24 lg:mb-32">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-16 lg:gap-32 mb-20 lg:mb-32">
 
           {/* Left Side: Logo, Language & Socials */}
-          <div className="flex flex-col gap-12 w-full lg:w-1/4">
+          <div className="flex flex-col gap-10 lg:gap-12 w-full lg:w-1/4">
 
             {/* Logo */}
             <div>
@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
 
           {/* Right Side: Links Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-16 w-full lg:w-3/4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 lg:gap-x-12 gap-y-12 lg:gap-y-16 w-full lg:w-3/4">
             {/* Column 1 */}
             <div>
               <h3 className="text-base font-semibold text-white/70 mb-6">Explore</h3>
