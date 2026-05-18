@@ -12,14 +12,12 @@ export default function AboutPage() {
         </p>
         <h1 className="text-4xl md:text-6xl lg:text-[4.5rem] font-black leading-[1.1] tracking-tight mb-8 text-neutral-dark max-w-5xl">
           India has no shortage of career options.<br className="hidden md:block" />
-          It has a shortage of <span className="underline decoration-accent underline-offset-8 decoration-4 md:decoration-8">honest guidance</span>.
+          It has a shortage of <span className="text-neutral-dark underline block decoration-accent underline-offset-8 decoration-4 md:decoration-8">honest guidance.</span>
         </h1>
         <p className="text-xl md:text-2xl text-slate-500 max-w-2xl leading-relaxed font-medium">
           WhatNow exists to fix that.
         </p>
       </section>
-
-      <div className="w-16 h-1.5 bg-primary mx-6 lg:mx-12 rounded-full mb-16 md:mb-24"></div>
 
       {/* ─── SECTION 1: THE PROBLEM ─── */}
       <section className="bg-slate-50 border-y border-slate-100 py-20 md:py-32 px-6 lg:px-12">
@@ -28,7 +26,7 @@ export default function AboutPage() {
           <h2 className="text-3xl md:text-5xl font-black mb-10 leading-tight text-neutral-dark max-w-3xl tracking-tight">
             A broken system making a consequential decision
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-20">
             <div className="md:col-span-7 space-y-6 text-lg text-slate-600 leading-relaxed">
               <p>
@@ -38,20 +36,19 @@ export default function AboutPage() {
               <p>
                 Their teachers default to two options. Their parents repeat what worked a
                 generation ago. Paid consultants push whichever college pays them
-                commission. And the internet gives them either exam prep material — or
-                nothing at all.
+                commission. And the internet gives them either exam prep material, or just some basic empathy or trolling.
               </p>
             </div>
-            
+
             <div className="md:col-span-12">
               <div className="border-l-4 border-accent pl-6 md:pl-10 my-6 md:my-12 py-2">
                 <p className="font-black text-2xl md:text-4xl text-neutral-dark leading-[1.3] max-w-4xl tracking-tight">
-                  "Nobody is asking the harder question: is this path actually right for you?"
+                  Nobody is asking the harder question: is this path actually right for you?
                 </p>
               </div>
             </div>
 
-            <div className="md:col-span-8 md:col-start-5 space-y-6 text-lg text-slate-600 leading-relaxed">
+            <div className="md:col-span-7 space-y-6 text-lg text-slate-600 leading-relaxed">
               <p>
                 Not "how do you crack NEET" — but <em className="font-bold text-slate-800">should</em> you be writing NEET at
                 all? What does a doctor's life actually look like at 35? What happens if
@@ -78,7 +75,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 relative">
             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-slate-200"></div>
-            
+
             <div className="space-y-6 text-lg text-slate-500 leading-relaxed pr-0 md:pr-8">
               <p>
                 WhatNow is a free, structured career guidance platform built specifically
@@ -122,41 +119,38 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Careers */}
-            <div className="bg-white border border-slate-200 rounded-3xl p-8 lg:p-10 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-secondary/10 group">
-              <div className="h-1.5 w-12 bg-secondary rounded-full mb-8"></div>
+            <div className="bg-white border border-slate-200 rounded-3xl p-8 lg:p-10">
               <Icon icon="solar:compass-bold-duotone" className="w-10 h-10 text-secondary mb-6 opacity-80" />
               <h3 className="text-2xl font-black text-neutral-dark mb-4 tracking-tight">Careers</h3>
               <p className="text-slate-600 leading-relaxed mb-8">
                 Every career gets its own deep-dive hub. Not a Wikipedia summary.
-                A real, honest look — what it actually is, who it's for,
+                A real, honest look about what it actually is, who it's for,
                 what the day-to-day looks like, what the money trajectory is,
                 what people get wrong about it, and what you should know before
                 you decide.
               </p>
-              <p className="font-bold text-secondary text-sm flex items-center gap-2 group-hover:gap-3 transition-all mt-auto">
-                Every hub answers: is this right for me? <Icon icon="solar:arrow-right-line-duotone" className="w-4 h-4" />
+              <p className="font-bold text-secondary text-sm flex items-center gap-2 mt-auto">
+                Every hub answers: is this right for me?
               </p>
             </div>
 
             {/* Exams */}
-            <div className="bg-white border border-slate-200 rounded-3xl p-8 lg:p-10 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10 group">
-              <div className="h-1.5 w-12 bg-primary rounded-full mb-8"></div>
+            <div className="bg-white border border-slate-200 rounded-3xl p-8 lg:p-10">
               <Icon icon="solar:document-text-bold-duotone" className="w-10 h-10 text-primary mb-6 opacity-80" />
               <h3 className="text-2xl font-black text-neutral-dark mb-4 tracking-tight">Exams</h3>
               <p className="text-slate-600 leading-relaxed mb-8">
-                Every entrance exam gets its own hub — but we approach exams
+                Every entrance exam gets its own hub, but we approach exams
                 differently. We don't lead with "how to crack it." We lead with
                 "should you be writing it?" Because the exam is not the goal.
                 The career is.
               </p>
-              <p className="font-bold text-primary text-sm flex items-center gap-2 mt-auto group-hover:gap-3 transition-all">
-                Exam and career hubs are interlinked <Icon icon="solar:arrow-right-line-duotone" className="w-4 h-4" />
+              <p className="font-bold text-primary text-sm flex items-center gap-2 mt-auto">
+                Exam and career hubs are interlinked
               </p>
             </div>
 
             {/* Reads */}
-            <div className="bg-white border border-slate-200 rounded-3xl p-8 lg:p-10 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-accent/10 group">
-              <div className="h-1.5 w-12 bg-accent rounded-full mb-8"></div>
+            <div className="bg-white border border-slate-200 rounded-3xl p-8 lg:p-10">
               <Icon icon="solar:book-bookmark-bold-duotone" className="w-10 h-10 text-accent mb-6 opacity-80" />
               <h3 className="text-2xl font-black text-neutral-dark mb-4 tracking-tight">Reads</h3>
               <p className="text-slate-600 leading-relaxed mb-8">
@@ -165,8 +159,8 @@ export default function AboutPage() {
                 Should you move to a metro? Is the IIT brand worth it?
                 What does it mean to follow your passion?
               </p>
-              <p className="font-bold text-accent text-sm flex items-center gap-2 mt-auto group-hover:gap-3 transition-all">
-                The pieces we wished existed <Icon icon="solar:arrow-right-line-duotone" className="w-4 h-4" />
+              <p className="font-bold text-accent text-sm flex items-center gap-2 mt-auto">
+                The pieces we wished existed
               </p>
             </div>
           </div>
@@ -259,15 +253,15 @@ export default function AboutPage() {
       <section className="py-24 md:py-40 px-6 lg:px-12 bg-neutral-dark text-center relative overflow-hidden flex flex-col items-center">
         {/* Subtle radial glow */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(79,70,229,0.15)_0%,transparent_60%)] pointer-events-none"></div>
-        
+
         <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-16 relative z-10">
-          A student in a small town in Telangana with no access to a paid consultant
+          A student in a small town with no access to a paid consultant
           should be able to come to WhatNow and get the same quality of honest,
           structured guidance as someone whose parents can afford to pay for it.
           <br /><br />
           <span className="font-bold text-white">That gap exists. We're closing it.</span>
         </p>
-        
+
         <h2 className="text-4xl md:text-6xl font-black text-white mb-16 tracking-tight relative z-10">
           One career at a time.
         </h2>
