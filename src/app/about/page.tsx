@@ -50,10 +50,10 @@ export default function AboutPage() {
 
             <div className="md:col-span-7 space-y-6 text-lg text-slate-600 leading-relaxed">
               <p>
-                Not "how do you crack NEET" — but <em className="font-bold text-slate-800">should</em> you be writing NEET at
-                all? What does a doctor's life actually look like at 35? What happens if
+                Not &ldquo;how do you crack NEET&rdquo; &mdash; but <em className="font-bold text-slate-800">should</em> you be writing NEET at
+                all? What does a doctor&apos;s life actually look like at 35? What happens if
                 you crack UCEED but hate sitting at a screen for eight hours? Is merchant
-                navy the right call if you can't stand being away from home for months?
+                navy the right call if you can&apos;t stand being away from home for months?
               </p>
               <p>
                 These are the questions that determine whether someone spends the next
@@ -79,15 +79,15 @@ export default function AboutPage() {
             <div className="space-y-6 text-lg text-slate-500 leading-relaxed pr-0 md:pr-8">
               <p>
                 WhatNow is a free, structured career guidance platform built specifically
-                for Indian students. We are not a coaching centre. We don't sell courses.
-                We don't rank colleges or push you toward anything. We have no financial
+                for Indian students. We are not a coaching centre. We don&apos;t sell courses.
+                We don&apos;t rank colleges or push you toward anything. We have no financial
                 relationship with any institution.
               </p>
               <p>
                 We cover careers nobody else covers properly — design, law, merchant navy,
                 urban planning, game design, agriculture, forensic science, occupational
                 therapy, international relations. The careers your school counsellor has
-                never heard of and your parents don't know how to evaluate.
+                never heard of and your parents don&apos;t know how to evaluate.
               </p>
             </div>
 
@@ -109,12 +109,12 @@ export default function AboutPage() {
       {/* ─── SECTION 3: PILLARS ─── */}
       <section className="py-20 md:py-32 px-6 lg:px-12 bg-slate-50 border-t border-slate-100">
         <div className="max-w-6xl mx-auto">
-          <p className="text-secondary text-xs font-extrabold tracking-[0.2em] uppercase mb-5">How We're Organised</p>
+          <p className="text-secondary text-xs font-extrabold tracking-[0.2em] uppercase mb-5">How We&apos;re Organised</p>
           <h2 className="text-3xl md:text-5xl font-black mb-6 leading-tight text-neutral-dark tracking-tight">
             Three sections. One purpose.
           </h2>
           <p className="text-lg text-slate-600 mb-16 max-w-2xl">
-            WhatNow is structured around three sections. Here's what each one is for.
+            WhatNow is structured around three sections. Here&apos;s what each one is for.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -124,7 +124,7 @@ export default function AboutPage() {
               <h3 className="text-2xl font-black text-neutral-dark mb-4 tracking-tight">Careers</h3>
               <p className="text-slate-600 leading-relaxed mb-8">
                 Every career gets its own deep-dive hub. Not a Wikipedia summary.
-                A real, honest look about what it actually is, who it's for,
+                A real, honest look about what it actually is, who it&apos;s for,
                 what the day-to-day looks like, what the money trajectory is,
                 what people get wrong about it, and what you should know before
                 you decide.
@@ -140,8 +140,8 @@ export default function AboutPage() {
               <h3 className="text-2xl font-black text-neutral-dark mb-4 tracking-tight">Exams</h3>
               <p className="text-slate-600 leading-relaxed mb-8">
                 Every entrance exam gets its own hub, but we approach exams
-                differently. We don't lead with "how to crack it." We lead with
-                "should you be writing it?" Because the exam is not the goal.
+                differently. We don&apos;t lead with &ldquo;how to crack it.&rdquo; We lead with
+                &ldquo;should you be writing it?&rdquo; Because the exam is not the goal.
                 The career is.
               </p>
               <p className="font-bold text-primary text-sm flex items-center gap-2 mt-auto">
@@ -155,7 +155,7 @@ export default function AboutPage() {
               <h3 className="text-2xl font-black text-neutral-dark mb-4 tracking-tight">Reads</h3>
               <p className="text-slate-600 leading-relaxed mb-8">
                 Standalone editorial pieces — longer, honest, opinionated writing
-                on questions that don't fit neatly into one career or one exam.
+                on questions that don&apos;t fit neatly into one career or one exam.
                 Should you move to a metro? Is the IIT brand worth it?
                 What does it mean to follow your passion?
               </p>
@@ -172,7 +172,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <p className="text-slate-400 text-xs font-extrabold tracking-[0.2em] uppercase mb-5">Boundaries</p>
           <h2 className="text-3xl md:text-5xl font-black mb-16 leading-tight tracking-tight">
-            What we don't do — and why
+            What we don&apos;t do — and why
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
@@ -181,7 +181,7 @@ export default function AboutPage() {
               <h4 className="text-xl font-bold mb-4">No exam prep material</h4>
               <p className="text-slate-300 leading-relaxed">
                 Coaching content, question banks, mock tests — that world is
-                well-served. We're not adding to it.
+                well-served. We&apos;re not adding to it.
               </p>
             </div>
             <div>
@@ -189,12 +189,12 @@ export default function AboutPage() {
               <h4 className="text-xl font-bold mb-4">No college rankings</h4>
               <p className="text-slate-300 leading-relaxed">
                 Anyone who gives you a universal ranking is selling you something.
-                The "best" college depends on the student, city, budget, and goal.
+                The &ldquo;best&rdquo; college depends on the student, city, budget, and goal.
               </p>
             </div>
             <div>
               <div className="text-slate-500 font-black text-sm tracking-widest mb-3">03</div>
-              <h4 className="text-xl font-bold mb-4">We don't tell you what to do</h4>
+              <h4 className="text-xl font-bold mb-4">We don&apos;t tell you what to do</h4>
               <p className="text-slate-300 leading-relaxed">
                 We give you what you need to decide for yourself. The decision
                 is yours. It should be.
@@ -202,7 +202,7 @@ export default function AboutPage() {
             </div>
             <div>
               <div className="text-slate-500 font-black text-sm tracking-widest mb-3">04</div>
-              <h4 className="text-xl font-bold mb-4">We don't charge anything</h4>
+              <h4 className="text-xl font-bold mb-4">We don&apos;t charge anything</h4>
               <p className="text-slate-300 leading-relaxed">
                 Not now, not ever for the core guidance. The students who need
                 honest guidance most are often the ones with the least access to it.
@@ -234,7 +234,7 @@ export default function AboutPage() {
           </div>
           <div className="flex-1 space-y-6 text-lg text-slate-600 leading-relaxed pt-2">
             <p>
-              WhatNow is new. We're building it carefully — going deep on one vertical
+              WhatNow is new. We&apos;re building it carefully — going deep on one vertical
               at a time rather than publishing shallow content across everything at once.
             </p>
             <p>
@@ -259,7 +259,7 @@ export default function AboutPage() {
           should be able to come to WhatNow and get the same quality of honest,
           structured guidance as someone whose parents can afford to pay for it.
           <br /><br />
-          <span className="font-bold text-white">That gap exists. We're closing it.</span>
+          <span className="font-bold text-white">That gap exists. We&apos;re closing it.</span>
         </p>
 
         <h2 className="text-4xl md:text-6xl font-black text-white mb-16 tracking-tight relative z-10">

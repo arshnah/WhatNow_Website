@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
@@ -57,11 +59,18 @@ export default function Navbar() {
 
           {/* Desktop Right Actions */}
           <div className="hidden lg:flex items-center space-x-4">
-            <button className="text-gray-600 hover:text-gray-900 transition-colors p-2 cursor-pointer">
+            <button 
+              onClick={() => window.dispatchEvent(new CustomEvent("open-search"))}
+              className="text-gray-600 hover:text-gray-900 transition-colors p-2 cursor-pointer flex items-center gap-1.5"
+              title="Search (Ctrl+K)"
+            >
               <span className="sr-only">Search</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
+              <kbd className="hidden xl:inline-block text-[10px] font-bold text-slate-400 border border-slate-200 rounded px-1.5 py-0.5 bg-slate-50 font-sans">
+                ⌘K
+              </kbd>
             </button>
             <Link href="#" className="font-medium text-neutral-dark bg-white border border-gray-300 hover:bg-gray-50 px-4 py-2 rounded-xl transition-colors">
               Login
@@ -71,8 +80,18 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="flex lg:hidden items-center">
+          {/* Mobile menu button and search */}
+          <div className="flex lg:hidden items-center gap-2">
+            <button 
+              onClick={() => window.dispatchEvent(new CustomEvent("open-search"))}
+              className="text-gray-600 hover:text-gray-900 p-2 cursor-pointer"
+              title="Search"
+            >
+              <span className="sr-only">Search</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
             <button className="text-gray-600 hover:text-gray-900 p-2">
               <span className="sr-only">Open main menu</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

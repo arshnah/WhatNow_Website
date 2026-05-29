@@ -3,8 +3,6 @@ import Image from 'next/image';
 import { Icon } from '@iconify/react';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="bg-gradient-to-b from-[#1B1A62] to-[#5563ED] text-white pt-20 lg:pt-40 overflow-hidden mt-auto">
       <div className="w-full mx-auto px-6 md:px-8 lg:px-12 max-w-7xl">

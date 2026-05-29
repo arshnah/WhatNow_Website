@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SearchModal from "@/components/SearchModal";
 import { Geist } from "next/font/google";
 import "./globals.css";
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         {children}
         
         <Footer />
+        <SearchModal />
       </body>
     </html>
   );

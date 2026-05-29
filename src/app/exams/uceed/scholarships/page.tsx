@@ -112,7 +112,7 @@ export default function UceedScholarshipsPage() {
       <div className="max-w-5xl mx-auto w-full px-6 lg:px-12 pb-24">
         <Section number="01" title="What does B.Des at an IIT actually cost?">
           <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium">
-            The fee structure varies by institute. Here's a rough overview. The
+            The fee structure varies by institute. Here&apos;s a rough overview. The
             most important thing to understand: the tuition fee is the waiveable
             part — hostel, mess, and activity fees are separate and not
             typically waived.
@@ -196,11 +196,11 @@ export default function UceedScholarshipsPage() {
               The thing parents need to hear
             </h3>
             <p className="text-lg text-slate-700 font-medium leading-relaxed">
-              "Design at an IIT" is not a financially risky choice. The same MCM
+              &ldquo;Design at an IIT&rdquo; is not a financially risky choice. The same MCM
               scholarship framework that covers B.Tech students covers B.Des
               students. The fee structure is identical across programs at most
               IITs. If you qualify for fee relief on the basis of income, you
-              get it regardless of which degree you're studying.
+              get it regardless of which degree you&apos;re studying.
             </p>
           </div>
         </Section>

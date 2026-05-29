@@ -10,9 +10,6 @@ export default function Hero() {
 
                 {/* Left Content */}
                 <div className="flex flex-col items-start order-1 lg:order-1">
-                    <span className="inline-block bg-secondary/15 text-secondary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-                        For Indian Students. By Students.
-                    </span>
 
                     <h1 className="text-[2.5rem] leading-[1.1] sm:text-5xl lg:text-[4rem] font-extrabold text-[#111827] mb-6 tracking-tight">
                         You have options.<br />

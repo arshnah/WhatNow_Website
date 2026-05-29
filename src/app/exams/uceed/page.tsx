@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { Icon } from '@iconify/react';
 
 export const metadata = {
   title: 'UCEED — Design at an IIT | WhatNow',
@@ -69,10 +68,10 @@ export default function UceedHubPage() {
 
           <div className="space-y-6 text-lg text-slate-700 leading-relaxed font-medium mb-12">
             <p>
-              UCEED — Undergraduate Common Entrance Exam for Design — is conducted by IIT Bombay every January. Clear it, and you're in the running for a Bachelor of Design seat at one of seven IITs and IIITDM Jabalpur. It's the only route into IIT design programs at the undergraduate level.
+              UCEED — Undergraduate Common Entrance Exam for Design — is conducted by IIT Bombay every January. Clear it, and you&apos;re in the running for a Bachelor of Design seat at one of seven IITs and IIITDM Jabalpur. It&apos;s the only route into IIT design programs at the undergraduate level.
             </p>
             <p>
-              Unlike JEE, UCEED is open to students from any stream — Science, Commerce, Arts and Humanities. The exam tests visual thinking, spatial reasoning, design sensitivity, and drawing — not Physics or Chemistry. If you've spent years wondering whether design is where you belong, this is the exam you're looking for.
+              Unlike JEE, UCEED is open to students from any stream — Science, Commerce, Arts and Humanities. The exam tests visual thinking, spatial reasoning, design sensitivity, and drawing — not Physics or Chemistry. If you&apos;ve spent years wondering whether design is where you belong, this is the exam you&apos;re looking for.
             </p>
             <p>
               The catch: 245 seats. Around 15,000 aspirants. Only about 36% even clear the first-round cutoff to have their Part B (drawing) evaluated. This guide exists to make sure you understand the system before you walk in.
@@ -89,7 +88,7 @@ export default function UceedHubPage() {
 
           <div className="bg-orange-50 border-l-4 border-primary p-6 rounded-r-xl">
             <p className="text-slate-800 leading-relaxed font-medium">
-              <strong className="font-black">Stream restriction — read this before anything else.</strong> All streams can write the exam. But Arts/Commerce students can only apply to IIT Bombay, IIT Delhi, IIT Hyderabad, and IIT Indore — not Guwahati or Roorkee. If you're from a non-PCM background, your college choices are narrower. This is buried in eligibility tables everywhere. We're putting it here.
+              <strong className="font-black">Stream restriction — read this before anything else.</strong> All streams can write the exam. But Arts/Commerce students can only apply to IIT Bombay, IIT Delhi, IIT Hyderabad, and IIT Indore — not Guwahati or Roorkee. If you&apos;re from a non-PCM background, your college choices are narrower. This is buried in eligibility tables everywhere. We&apos;re putting it here.
             </p>
           </div>
         </section>
@@ -135,7 +134,7 @@ export default function UceedHubPage() {
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">Resources — What actually helps</h3>
                 <div className="text-slate-400 text-xs font-mono mb-4">/exams/uceed/resources</div>
                 <p className="text-slate-600 leading-relaxed mb-4">
-                  Books worth buying, books worth skipping, coaching vs. self-study (honest assessment), where to find past papers for free, mock test platforms, and a week-by-week preparation roadmap. Written by someone who's seen what works and what wastes time.
+                  Books worth buying, books worth skipping, coaching vs. self-study (honest assessment), where to find past papers for free, mock test platforms, and a week-by-week preparation roadmap. Written by someone who&apos;s seen what works and what wastes time.
                 </p>
                 <span className="inline-block bg-orange-50 text-orange-700 text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full">Coming soon</span>
               </div>
@@ -145,7 +144,7 @@ export default function UceedHubPage() {
             <Link href="/exams/uceed/scholarships" className="group flex flex-col md:flex-row gap-6 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 hover:border-primary transition-colors shadow-sm hover:shadow-md">
               <div className="text-4xl md:text-5xl font-black text-primary leading-none opacity-80">04</div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-primary transition-colors">Scholarships — Don't pay more than you have to</h3>
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-primary transition-colors">Scholarships — Don&apos;t pay more than you have to</h3>
                 <div className="text-primary text-xs font-mono mb-4">/exams/uceed/scholarships</div>
                 <p className="text-slate-600 leading-relaxed mb-4">
                   Institute-wise fee waivers, government scholarship schemes, and everything available to BDes students at IITs. SC/ST students get full tuition waiver. General category students under ₹5 lakh annual income qualify for significant relief. The fee is not as scary as it looks.
@@ -161,7 +160,7 @@ export default function UceedHubPage() {
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">Convince Your Parents — With actual data</h3>
                 <div className="text-slate-400 text-xs font-mono mb-4">/exams/uceed/convince-parents</div>
                 <p className="text-slate-600 leading-relaxed mb-4">
-                  Design at an IIT isn't a risk — but you'll need to explain that. This guide arms you with placement data, salary figures, career paths, and how to answer the hard questions: job security, prestige, "is this a real IIT degree?" Have the conversation with facts, not feeling.
+                  Design at an IIT isn&apos;t a risk — but you&apos;ll need to explain that. This guide arms you with placement data, salary figures, career paths, and how to answer the hard questions: job security, prestige, &ldquo;is this a real IIT degree?&rdquo; Have the conversation with facts, not feeling.
                 </p>
                 <span className="inline-block bg-orange-50 text-orange-700 text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full">Coming soon</span>
               </div>

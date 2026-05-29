@@ -18,7 +18,7 @@ export default function WhyWhatnow() {
           </div>
           <div className="flex-1 lg:pt-10">
             <p className="text-base md:text-xl text-slate-600 leading-relaxed font-medium">
-              We made the thing we needed when we were 17 and confused. Three things make us different — and we're stubborn about all of them.
+              We made the thing we needed when we were 17 and confused. Three things make us different — and we&apos;re stubborn about all of them.
             </p>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function WhyWhatnow() {
               <h4 className="text-2xl font-black text-neutral-dark tracking-tight leading-none pb-0.5">No coaching agenda</h4>
             </div>
             <p className="text-slate-600 leading-relaxed relative z-10 text-lg">
-              We don't sell courses or get kickbacks. We're not pushing IIT or IIM. Just honest reads on what each path actually demands.
+              We don&apos;t sell courses or get kickbacks. We&apos;re not pushing IIT or IIM. Just honest reads on what each path actually demands.
             </p>
           </div>
 

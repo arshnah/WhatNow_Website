@@ -141,7 +141,7 @@ export default function Testimonials() {
       >
         <div className="flex flex-col items-center justify-center max-w-[540px] mx-auto mb-16">
           <h2 id="testimonials-heading" className="text-4xl md:text-5xl font-extrabold tracking-tight mt-6 text-center text-neutral-900 transition-colors">
-            Our students' reaction
+            Our students&apos; reaction
           </h2>
           <p className="text-center mt-5 text-neutral-500 text-lg leading-relaxed max-w-sm transition-colors">
             Discover how students like you found their way with our guidance.

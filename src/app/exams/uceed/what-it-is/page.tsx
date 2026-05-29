@@ -121,7 +121,7 @@ export default function UceedWhatItIsPage() {
         <Section number="01" title="The basics">
           <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium">
             UCEED — Undergraduate Common Entrance Exam for Design — is conducted
-            by IIT Bombay every January. It's the only standardised entrance
+            by IIT Bombay every January. It&apos;s the only standardised entrance
             exam that opens the door to Bachelor of Design (B.Des) programs at
             IITs at the undergraduate level. If you want to study design at an
             IIT, this is the one exam you write.
@@ -183,7 +183,7 @@ export default function UceedWhatItIsPage() {
                 <p className="text-slate-600 font-medium">
                   Maximum of two attempts. They must be in consecutive years.
                   You can write it in your Class XII year, and the year
-                  immediately after. That's it.
+                  immediately after. That&apos;s it.
                 </p>
               </div>
             </div>
