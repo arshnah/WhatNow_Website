@@ -9,7 +9,7 @@ import { useLanguage } from "@/context/LanguageContext";
 interface CareerItem {
   id: string;
   title: string;
-  category: "Design" | "Law" | "Defence" | "Management" | "Maritime";
+  category: "Design" | "Fashion Design" | "Law" | "Defence" | "Management" | "Maritime";
   subtitle: string;
   description: string;
   duration: string;
@@ -45,6 +45,25 @@ const CAREERS_DATA = {
         text: "text-indigo-600",
         border: "hover:border-indigo-300",
         glow: "group-hover:shadow-indigo-500/5",
+      }
+    },
+    {
+      id: "fashion-design",
+      title: "Fashion Design & Textile Technology",
+      category: "Fashion Design" as const,
+      subtitle: "Merchandising, Textiles & Apparel",
+      description: "Far from the glamour of fashion weeks, 95% of designers work in garment construction, fabric sourcing, apparel technology, and retail merchandising across India's massive export industry.",
+      duration: "4 Years (B.Des / NIFT)",
+      salary: "₹4L - ₹10L/yr Starting",
+      colleges: "NIFTs, Pearl Academy, Symbiosis",
+      exitRisk: "High Pace / Moderate Exit",
+      status: "ready" as const,
+      href: "/careers/fashion-design",
+      colorClass: {
+        badge: "bg-pink-50 text-pink-600 border-pink-100",
+        text: "text-pink-600",
+        border: "hover:border-pink-300",
+        glow: "group-hover:shadow-pink-500/5",
       }
     },
     {
@@ -141,6 +160,25 @@ const CAREERS_DATA = {
       }
     },
     {
+      id: "fashion-design",
+      title: "फैशन डिज़ाइन और टेक्सटाइल तकनीक",
+      category: "Fashion Design" as const,
+      subtitle: "मर्चेंडाइजिंग, टेक्सटाइल और परिधान",
+      description: "फैशन वीक के ग्लैमर से इतर, 95% डिजाइनर भारत के विशाल निर्यात उद्योग में औद्योगिक परिधान निर्माण, कपड़ा सोर्सिंग, परिधान प्रौद्योगिकी और खुदरा मर्चेंडाइजिंग में काम करते हैं।",
+      duration: "4 वर्ष (B.Des / NIFT)",
+      salary: "₹4L - ₹10L/वर्ष शुरुआती",
+      colleges: "NIFTs, पर्ल अकादमी, सिम्बायोसिस",
+      exitRisk: "तेज गति / मध्यम निकास",
+      status: "ready" as const,
+      href: "/careers/fashion-design",
+      colorClass: {
+        badge: "bg-pink-50 text-pink-600 border-pink-100",
+        text: "text-pink-600",
+        border: "hover:border-pink-300",
+        glow: "group-hover:shadow-pink-500/5",
+      }
+    },
+    {
       id: "law",
       title: "कॉर्पोरेट और मुकदमेबाजी कानून",
       category: "Law" as const,
@@ -219,6 +257,7 @@ const CATEGORIES_TRANSLATIONS = {
   en: {
     "All": "All",
     "Design": "Design",
+    "Fashion Design": "Fashion Design",
     "Law": "Law",
     "Defence": "Defence",
     "Management": "Management",
@@ -227,6 +266,7 @@ const CATEGORIES_TRANSLATIONS = {
   hi: {
     "All": "सभी",
     "Design": "डिज़ाइन",
+    "Fashion Design": "फैशन डिज़ाइन",
     "Law": "कानून",
     "Defence": "रक्षा",
     "Management": "प्रबंधन",
@@ -265,7 +305,7 @@ const localTranslations = {
 
 export default function CareersPage() {
   const { language } = useLanguage();
-  const [selectedCategory, setSelectedCategory] = useState<"All" | "Design" | "Law" | "Defence" | "Management" | "Maritime">("All");
+  const [selectedCategory, setSelectedCategory] = useState<"All" | "Design" | "Fashion Design" | "Law" | "Defence" | "Management" | "Maritime">("All");
 
   const t = localTranslations[language];
   const CAREERS = CAREERS_DATA[language] as CareerItem[];
@@ -318,7 +358,7 @@ export default function CareersPage() {
       <section className="py-16 md:py-24 container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl">
         {/* Category Filters */}
         <div className="flex items-center gap-8 overflow-x-auto pb-0 mb-12 scrollbar-none border-b border-slate-200/50">
-          {(["All", "Design", "Law", "Defence", "Management", "Maritime"] as const).map((category) => {
+          {(["All", "Design", "Fashion Design", "Law", "Defence", "Management", "Maritime"] as const).map((category) => {
             const isActive = selectedCategory === category;
             return (
               <button
@@ -357,6 +397,8 @@ export default function CareersPage() {
                 switch (cat.toLowerCase()) {
                   case "design":
                     return "bg-indigo-500/5";
+                  case "fashion design":
+                    return "bg-pink-500/5";
                   case "law":
                     return "bg-emerald-500/5";
                   case "defence":
