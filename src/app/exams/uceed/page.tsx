@@ -152,30 +152,30 @@ export default function UceedHubPage() {
             </Link>
 
             {/* Card 2 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 backdrop-blur-sm border border-slate-200/80 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm hover:-translate-y-0.5">
-              <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">02</div>
+            <Link href="/exams/uceed/is-it-for-you" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-primary/45 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+              <div className="text-4xl md:text-5xl font-black text-primary leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">02</div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">Is It For You — Honest self-check</h3>
-                <div className="text-slate-400 text-xs font-semibold font-mono mb-4">/exams/uceed/is-it-for-you</div>
-                <p className="text-slate-500 leading-relaxed mb-4 text-sm md:text-base">
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-primary transition-colors duration-300">Is It For You — Honest self-check</h3>
+                <div className="text-primary text-xs font-semibold font-mono mb-4">/exams/uceed/is-it-for-you</div>
+                <p className="text-slate-650 leading-relaxed mb-4 text-sm md:text-base">
                   This is the question most guides skip. Should you actually go for UCEED? What kind of person thrives in a BDes program versus regrets it? Questions you should ask yourself before committing a year — or two — to this. No cheerleading, no coaching centre pitch.
                 </p>
-                <span className="inline-block bg-orange-50/50 text-orange-600 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-orange-100">Coming soon</span>
+                <span className="inline-block bg-indigo-50 text-indigo-750 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-indigo-100 shadow-sm">✓ Shell Ready</span>
               </div>
-            </div>
+            </Link>
 
             {/* Card 3 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 backdrop-blur-sm border border-slate-200/80 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm hover:-translate-y-0.5">
-              <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">03</div>
+            <Link href="/exams/uceed/resources" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-primary/45 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+              <div className="text-4xl md:text-5xl font-black text-primary leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">03</div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">Resources — What actually helps</h3>
-                <div className="text-slate-400 text-xs font-semibold font-mono mb-4">/exams/uceed/resources</div>
-                <p className="text-slate-500 leading-relaxed mb-4 text-sm md:text-base">
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-primary transition-colors duration-300">Resources — What actually helps</h3>
+                <div className="text-primary text-xs font-semibold font-mono mb-4">/exams/uceed/resources</div>
+                <p className="text-slate-650 leading-relaxed mb-4 text-sm md:text-base">
                   Books worth buying, books worth skipping, coaching vs. self-study (honest assessment), where to find past papers for free, mock test platforms, and a week-by-week preparation roadmap. Written by someone who&apos;s seen what works and what wastes time.
                 </p>
-                <span className="inline-block bg-orange-50/50 text-orange-600 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-orange-100">Coming soon</span>
+                <span className="inline-block bg-indigo-50 text-indigo-750 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-indigo-100 shadow-sm">✓ Shell Ready</span>
               </div>
-            </div>
+            </Link>
 
             {/* Card 4 */}
             <Link href="/exams/uceed/scholarships" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-primary/45 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
@@ -191,17 +191,17 @@ export default function UceedHubPage() {
             </Link>
 
             {/* Card 5 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 backdrop-blur-sm border border-slate-200/80 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm hover:-translate-y-0.5">
-              <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">05</div>
+            <Link href="/exams/uceed/convince-parents" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-primary/45 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
+              <div className="text-4xl md:text-5xl font-black text-primary leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">05</div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">Convince Your Parents — With actual data</h3>
-                <div className="text-slate-400 text-xs font-semibold font-mono mb-4">/exams/uceed/convince-parents</div>
-                <p className="text-slate-500 leading-relaxed mb-4 text-sm md:text-base">
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-primary transition-colors duration-300">Convince Your Parents — With actual data</h3>
+                <div className="text-primary text-xs font-semibold font-mono mb-4">/exams/uceed/convince-parents</div>
+                <p className="text-slate-650 leading-relaxed mb-4 text-sm md:text-base">
                   Design at an IIT isn&apos;t a risk — but you&apos;ll need to explain that. This guide arms you with placement data, salary figures, career paths, and how to answer the hard questions: job security, prestige, &ldquo;is this a real IIT degree?&rdquo; Have the conversation with facts, not feeling.
                 </p>
-                <span className="inline-block bg-orange-50/50 text-orange-600 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-orange-100">Coming soon</span>
+                <span className="inline-block bg-indigo-50 text-indigo-750 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-indigo-100 shadow-sm">✓ Shell Ready</span>
               </div>
-            </div>
+            </Link>
 
           </div>
         </section>
