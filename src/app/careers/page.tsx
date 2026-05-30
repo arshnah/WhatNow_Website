@@ -38,7 +38,8 @@ const CAREERS_DATA = {
       salary: "₹6L - ₹18L/yr Starting",
       colleges: "IITs, NIDs, NIFTs, Private Academies",
       exitRisk: "Medium Risk / Dynamic",
-      status: "coming-soon" as const,
+      status: "ready" as const,
+      href: "/careers/design",
       colorClass: {
         badge: "bg-indigo-50 text-indigo-600 border-indigo-100",
         text: "text-indigo-600",
@@ -112,7 +113,7 @@ const CAREERS_DATA = {
       exitRisk: "High Sea-Time Risk / Niche Exit",
       status: "coming-soon" as const,
       colorClass: {
-        badge: "bg-orange-50 text-orange-600 border-orange-100",
+        badge: "bg-orange-550 text-orange-600 border-orange-100",
         text: "text-orange-600",
         border: "hover:border-orange-300",
         glow: "group-hover:shadow-orange-500/5",
@@ -130,7 +131,8 @@ const CAREERS_DATA = {
       salary: "₹6L - ₹18L/वर्ष शुरुआती",
       colleges: "IITs, NIDs, NIFTs, निजी अकादमियां",
       exitRisk: "मध्यम जोखिम / गतिशील",
-      status: "coming-soon" as const,
+      status: "ready" as const,
+      href: "/careers/design",
       colorClass: {
         badge: "bg-indigo-50 text-indigo-600 border-indigo-100",
         text: "text-indigo-600",
@@ -370,7 +372,81 @@ export default function CareersPage() {
               };
 
               const displayCategory = categoriesTranslations[career.category] || career.category;
-              
+              const isReady = career.status === "ready";
+
+              if (isReady) {
+                return (
+                  <motion.div
+                    key={career.id}
+                    layout
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{ duration: 0.25 }}
+                    className="group flex"
+                  >
+                    <Link
+                      href={career.href || "#"}
+                      className="relative overflow-hidden bg-white border border-slate-200 rounded-[2rem] p-8 flex flex-col justify-between w-full shadow-sm hover:shadow-xl hover:shadow-black/5 hover:-translate-y-1.5 transition-all duration-500 text-left select-none group"
+                    >
+                      {/* Ambient glow blob */}
+                      <div className={`absolute -right-10 -bottom-10 w-44 h-44 rounded-full blur-3xl transition-all duration-500 pointer-events-none ${getGlowBg(career.category)}`} />
+
+                      <div className="relative z-10">
+                        {/* Top Badges */}
+                        <div className="flex items-center justify-between mb-8 gap-3">
+                          <span className={`text-[10px] font-black uppercase tracking-widest px-3.5 py-1.5 rounded-full border shadow-sm ${career.colorClass.badge}`}>
+                            {displayCategory}
+                          </span>
+                        </div>
+
+                        {/* Header */}
+                        <div className="mb-6">
+                          <h3 className="text-2xl font-black text-neutral-dark mb-1 group-hover:text-primary transition-colors duration-300">
+                            {career.title}
+                          </h3>
+                          <p className="text-sm font-semibold text-slate-450 uppercase tracking-wider">
+                            {career.subtitle}
+                          </p>
+                        </div>
+
+                        {/* Description */}
+                        <p className="text-slate-550 text-sm md:text-base leading-relaxed mb-8">
+                          {career.description}
+                        </p>
+                      </div>
+
+                      {/* Stats & Footer */}
+                      <div className="relative z-10 border-t border-slate-200/60 pt-6 mt-auto w-full">
+                        <div className="grid grid-cols-2 gap-y-4 gap-x-2 text-xs font-semibold text-slate-550 mb-6 bg-slate-50 border border-slate-200/30 rounded-2xl p-4">
+                          <div>
+                            <span className="block text-[10px] font-black text-slate-400 uppercase tracking-wider mb-0.5">{t.duration}</span>
+                            <span className="font-bold text-neutral-dark truncate block">{career.duration}</span>
+                          </div>
+                          <div>
+                            <span className="block text-[10px] font-black text-slate-400 uppercase tracking-wider mb-0.5">{t.salary}</span>
+                            <span className="font-bold text-neutral-dark truncate block">{career.salary}</span>
+                          </div>
+                          <div>
+                            <span className="block text-[10px] font-black text-slate-400 uppercase tracking-wider mb-0.5">{t.colleges}</span>
+                            <span className="font-bold text-neutral-dark truncate block">{career.colleges}</span>
+                          </div>
+                          <div>
+                            <span className="block text-[10px] font-black text-slate-400 uppercase tracking-wider mb-0.5">{t.exitRisk}</span>
+                            <span className="font-bold text-neutral-dark truncate block">{career.exitRisk}</span>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center gap-1.5 justify-end text-xs font-black uppercase tracking-wider text-neutral-dark group-hover:text-primary transition-colors duration-300">
+                          <span>View Blueprint</span>
+                          <Icon icon="ph:arrow-right" className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
+                        </div>
+                      </div>
+                    </Link>
+                  </motion.div>
+                );
+              }
+
               return (
                 <motion.div
                   key={career.id}
