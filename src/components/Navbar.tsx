@@ -70,12 +70,12 @@ export default function Navbar() {
   }, [isOpen]);
 
   const activeItems = [
+    { href: "/careers", label: t.careers, icon: "solar:compass-bold-duotone" },
     { href: "/exams", label: t.exams, icon: "solar:document-bold-duotone" },
     { href: "/about", label: t.about, icon: "solar:info-circle-bold-duotone" },
   ];
 
   const draftItems = [
-    { href: "/careers", label: t.careers, icon: "solar:compass-bold-duotone", status: t.statusDrafting },
     { href: "/reads", label: t.reads, icon: "solar:notes-bold-duotone", status: t.statusWriting },
     { href: "/scholarships", label: t.scholarships, icon: "solar:case-minimalistic-bold-duotone", status: t.statusScouting },
     { href: "/convince-parents", label: t.convinceParents, icon: "solar:users-group-two-rounded-bold-duotone", status: t.statusPreparing },
