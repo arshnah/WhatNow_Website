@@ -15,10 +15,10 @@ const planningAnalyticsData = {
     { year: 2026, openings: 8500 }
   ],
   salaries: [
-    { level: "Entry", levelHi: "शुरुआती", amount: "₹45K - ₹80K/माह", numericAmount: 55000 },
-    { level: "Mid", levelHi: "मध्यम", amount: "₹80K - ₹1.5L/माह", numericAmount: 110000 },
-    { level: "Senior", levelHi: "वरिष्ठ", amount: "₹1.5L - ₹2.5L/माह", numericAmount: 200000 },
-    { level: "Director", levelHi: "निदेशक", amount: "₹2.5L - ₹5L/माह", numericAmount: 350000 }
+    { level: "Entry", levelHi: "शुरुआती", amount: "₹45K - ₹80K/Month", numericAmount: 55000 },
+    { level: "Mid", levelHi: "मध्यम", amount: "₹80K - ₹1.5L/Month", numericAmount: 110000 },
+    { level: "Senior", levelHi: "वरिष्ठ", amount: "₹1.5L - ₹2.5L/Month", numericAmount: 200000 },
+    { level: "Director", levelHi: "निदेशक", amount: "₹2.5L - ₹5L/Month", numericAmount: 350000 }
   ]
 };
 
@@ -118,6 +118,10 @@ export default function UrbanPlanningCareerHubPage() {
           </svg>
           <div className="absolute -top-[10%] -right-[5%] w-[400px] h-[400px] bg-teal-500/5 rounded-full blur-[80px]" />
           <div className="absolute -bottom-[20%] -left-[5%] w-[300px] h-[300px] bg-emerald-500/5 rounded-full blur-[60px]" />
+          <Icon 
+            icon="solar:city-bold-duotone" 
+            className="absolute -right-16 -bottom-16 w-80 h-80 text-[#0d9488] opacity-[0.12] -rotate-12 pointer-events-none select-none"
+          />
         </div>
 
         <div className="max-w-4xl mx-auto w-full px-6 lg:px-12 relative z-10">

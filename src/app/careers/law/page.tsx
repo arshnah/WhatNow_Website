@@ -13,10 +13,10 @@ const lawAnalyticsData = {
     { year: 2026, openings: 32000 }
   ],
   salaries: [
-    { level: "Entry", levelHi: "शुरुआती", amount: "₹40K - ₹1.5L/माह", numericAmount: 70000 },
-    { level: "Mid", levelHi: "मध्यम", amount: "₹1.5L - ₹3L/माह", numericAmount: 180000 },
-    { level: "Senior Partner", levelHi: "वरिष्ठ भागीदार", amount: "₹3L - ₹6L/माह", numericAmount: 350000 },
-    { level: "Managing Partner", levelHi: "प्रबंध भागीदार", amount: "₹6L - ₹15L/माह", numericAmount: 850000 }
+    { level: "Entry", levelHi: "शुरुआती", amount: "₹40K - ₹1.5L/Month", numericAmount: 70000 },
+    { level: "Mid", levelHi: "मध्यम", amount: "₹1.5L - ₹3L/Month", numericAmount: 180000 },
+    { level: "Senior Partner", levelHi: "वरिष्ठ भागीदार", amount: "₹3L - ₹6L/Month", numericAmount: 350000 },
+    { level: "Managing Partner", levelHi: "प्रबंध भागीदार", amount: "₹6L - ₹15L/Month", numericAmount: 850000 }
   ]
 };
 import { Icon } from '@iconify/react';
@@ -118,6 +118,10 @@ export default function LawCareerHubPage() {
           </svg>
           <div className="absolute -top-[10%] -right-[5%] w-[400px] h-[400px] bg-emerald-500/5 rounded-full blur-[80px]" />
           <div className="absolute -bottom-[20%] -left-[5%] w-[300px] h-[300px] bg-teal-500/5 rounded-full blur-[60px]" />
+          <Icon 
+            icon="solar:scale-bold-duotone" 
+            className="absolute -right-16 -bottom-16 w-80 h-80 text-[#10b981] opacity-[0.12] -rotate-12 pointer-events-none select-none"
+          />
         </div>
 
         <div className="max-w-4xl mx-auto w-full px-6 lg:px-12 relative z-10">

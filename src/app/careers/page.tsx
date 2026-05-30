@@ -261,7 +261,7 @@ const CAREERS_DATA = {
       subtitle: "वैश्विक समुद्री यात्रा",
       description: "वाणिज्यिक मालवाहक जहाजों को नेविगेट करना या जहाज प्रणोदन प्रणालियों का प्रबंधन करना। समुद्र में महीनों के अलगाव के साथ अत्यधिक उच्च कर-मुक्त वेतन।",
       duration: "1 से 4 वर्ष (DNS/B.Sc/B.Tech)",
-      salary: "₹80,000 - ₹3,00,000/माह (कर-मुक्त)",
+      salary: "₹80,000 - ₹3,00,000/Month (कर-मुक्त)",
       colleges: "IMU परिसर, शीर्ष समुद्री संस्थान",
       exitRisk: "उच्च समुद्री समय जोखिम / विशिष्ट निकास",
       status: "ready" as const,
@@ -373,7 +373,7 @@ export default function CareersPage() {
             </defs>
             <rect width="100%" height="100%" fill="url(#hero-grid)" />
           </svg>
-          
+
           {/* Layered glowing blobs */}
           <div className="absolute -top-[10%] -right-[5%] w-[450px] h-[450px] bg-[#5563ED]/5 rounded-full blur-[80px]" />
           <div className="absolute -bottom-[20%] -left-[5%] w-[350px] h-[350px] bg-[#ff5a1f]/5 rounded-full blur-[60px]" />
@@ -408,15 +408,14 @@ export default function CareersPage() {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`relative pb-4 text-xs md:text-sm font-extrabold uppercase tracking-widest transition-colors duration-300 cursor-pointer whitespace-nowrap select-none focus:outline-none ${
-                  isActive
+                className={`relative pb-4 text-xs md:text-sm font-extrabold uppercase tracking-widest transition-colors duration-300 cursor-pointer whitespace-nowrap select-none focus:outline-none ${isActive
                     ? "text-neutral-dark font-black"
                     : "text-slate-400 hover:text-neutral-dark"
-                }`}
+                  }`}
                 style={{ WebkitTapHighlightColor: "transparent" }}
               >
                 <span className="relative z-10">{categoriesTranslations[category]}</span>
-                
+
                 {/* Underline indicator */}
                 {isActive && (
                   <motion.div
@@ -431,7 +430,7 @@ export default function CareersPage() {
         </div>
 
         {/* Careers Grid */}
-        <motion.div 
+        <motion.div
           layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >

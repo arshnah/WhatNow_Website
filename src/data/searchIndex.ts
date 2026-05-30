@@ -73,7 +73,7 @@ export const SEARCH_INDEX: SearchItem[] = [
     description: "Honest self-check to see if design at an IIT aligns with your interests, skills, and daily work preferences.",
     href: "/exams/uceed/is-it-for-you",
     keywords: ["uceed", "is design for me", "career check", "suitability", "work life", "design aptitude"],
-    status: "coming-soon"
+    status: "ready"
   },
   {
     title: "UCEED — Resources & Prep Plan",
@@ -81,7 +81,7 @@ export const SEARCH_INDEX: SearchItem[] = [
     description: "Books worth your money, free mock tests, previous question papers, and self-prep roadmaps without expensive coaching.",
     href: "/exams/uceed/resources",
     keywords: ["uceed", "books", "preparation", "self study", "prep plan", "mock tests", "papers", "study material"],
-    status: "coming-soon"
+    status: "ready"
   },
   {
     title: "UCEED — Convince Your Parents",
@@ -89,7 +89,7 @@ export const SEARCH_INDEX: SearchItem[] = [
     description: "Salary packages, placement figures, recruiters, and handling doubts regarding IIT B.Des vs B.Tech.",
     href: "/exams/uceed/convince-parents",
     keywords: ["uceed", "parents", "placements", "salary", "bdes salary", "recruitment", "career security"],
-    status: "coming-soon"
+    status: "ready"
   },
   {
     title: "NID — National Institute of Design",
@@ -105,7 +105,7 @@ export const SEARCH_INDEX: SearchItem[] = [
     description: "Fashion design, fashion communication, and apparel production entrance guide.",
     href: "/exams/nift",
     keywords: ["nift", "fashion", "apparel", "design", "clothing", "communication"],
-    status: "coming-soon"
+    status: "ready"
   },
   {
     title: "NDA — National Defence Academy",
@@ -121,10 +121,58 @@ export const SEARCH_INDEX: SearchItem[] = [
     description: "Entrance for five-year integrated law degrees (BA LLB, BBA LLB) at India's National Law Universities.",
     href: "/exams/clat",
     keywords: ["clat", "law", "nlu", "legal", "bar council", "llb", "advocate"],
-    status: "coming-soon"
+    status: "ready"
+  },
+  {
+    title: "IMU CET — Indian Maritime University Common Entrance Test",
+    category: "Exams",
+    description: "Entrance exam for B.Sc Nautical Science, B.Tech Marine Engineering, and Diploma in Nautical Science programs at IMU.",
+    href: "/exams/imu-cet",
+    keywords: ["imu cet", "imu", "cet", "merchant navy", "marine engineering", "nautical science", "dns", "bsc", "btech", "maritime"],
+    status: "ready"
   },
 
   // --- CAREERS ---
+  {
+    title: "Design — Creative Problem Solving",
+    category: "Careers",
+    description: "Design user interfaces, digital products, apps, websites, branding, typography, and illustration.",
+    href: "/careers/design",
+    keywords: ["design", "designer", "ux", "ui", "product design", "graphic design", "creative", "branding"],
+    status: "ready"
+  },
+  {
+    title: "Fashion Design — Beyond the Runway",
+    category: "Careers",
+    description: "Merchandising, textiles, retail management, and apparel technology starting packages and pathways in India.",
+    href: "/careers/fashion-design",
+    keywords: ["fashion design", "fashion", "nift", "clothing", "textiles", "apparel", "merchandising"],
+    status: "ready"
+  },
+  {
+    title: "Law — Advocacy, Corporate & Litigation",
+    category: "Careers",
+    description: "High-paying corporate desks vs litigation grinding, National Law School ROI, and integrated LLB routes.",
+    href: "/careers/law",
+    keywords: ["law", "lawyer", "corporate law", "litigation", "clat", "nlu", "advocate", "bar council", "judge"],
+    status: "ready"
+  },
+  {
+    title: "Merchant Navy Officer (Marine Career)",
+    category: "Careers",
+    description: "Salaries, sea time, cadet ships, tax-free income, and the true isolation on merchant vessels.",
+    href: "/careers/merchant-navy",
+    keywords: ["merchant navy", "marine", "ships", "deck cadet", "engine", "captain", "isolation", "sailor", "salary"],
+    status: "ready"
+  },
+  {
+    title: "Urban & Regional Planner",
+    category: "Careers",
+    description: "Design public spaces, smart city transport layouts, sustainable developments, and municipal policies.",
+    href: "/careers/urban-planning",
+    keywords: ["urban planner", "city planning", "smart cities", "municipal", "gis", "geography", "architecture"],
+    status: "ready"
+  },
   {
     title: "UX/UI Designer",
     category: "Careers",
@@ -147,22 +195,6 @@ export const SEARCH_INDEX: SearchItem[] = [
     description: "Communicate visually through branding, layout, advertising, typography, and illustration.",
     href: "/careers/graphic-design",
     keywords: ["graphic", "branding", "logo", "advertising", "marketing", "visual", "illustration", "typography"],
-    status: "coming-soon"
-  },
-  {
-    title: "Merchant Navy Officer (Marine Career)",
-    category: "Careers",
-    description: "Salaries, sea time, cadet ships, tax-free income, and the true isolation on merchant vessels.",
-    href: "/careers/merchant-navy",
-    keywords: ["merchant navy", "marine", "ships", "deck cadet", "engine", "captain", "isolation", "sailor", "salary"],
-    status: "coming-soon"
-  },
-  {
-    title: "Urban & Regional Planner",
-    category: "Careers",
-    description: "Design public spaces, smart city transport layouts, sustainable developments, and municipal policies.",
-    href: "/careers/urban-planning",
-    keywords: ["urban planner", "city planning", "smart cities", "municipal", "gis", "geography", "architecture"],
     status: "coming-soon"
   },
   {

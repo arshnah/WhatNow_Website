@@ -13,10 +13,10 @@ const navyAnalyticsData = {
     { year: 2026, openings: 11000 }
   ],
   salaries: [
-    { level: "Cadet", levelHi: "कैडेट", amount: "₹25K - ₹50K/माह", numericAmount: 35000 },
-    { level: "3rd/4th Off", levelHi: "तृतीय/चतुर्थ अधिकारी", amount: "₹80K - ₹1.5L/माह", numericAmount: 115000 },
-    { level: "2nd Off/Chief", levelHi: "द्वितीय अधिकारी/मुख्य", amount: "₹1.5L - ₹3L/माह", numericAmount: 220000 },
-    { level: "Captain/Chief", levelHi: "कैप्टन/चीफ इंजीनियर", amount: "₹3L - ₹8L/माह", numericAmount: 550000 }
+    { level: "Cadet", levelHi: "कैडेट", amount: "₹25K - ₹50K/Month", numericAmount: 35000 },
+    { level: "3rd/4th Off", levelHi: "तृतीय/चतुर्थ अधिकारी", amount: "₹80K - ₹1.5L/Month", numericAmount: 115000 },
+    { level: "2nd Off/Chief", levelHi: "द्वितीय अधिकारी/मुख्य", amount: "₹1.5L - ₹3L/Month", numericAmount: 220000 },
+    { level: "Captain/Chief", levelHi: "कैप्टन/चीफ इंजीनियर", amount: "₹3L - ₹8L/Month", numericAmount: 550000 }
   ]
 };
 import { Icon } from '@iconify/react';
@@ -68,7 +68,7 @@ const translations = {
     subtitle: "कर-मुक्त वेतन, वैश्विक यात्रा और महीनों का एकांत। हम वास्तविक करियर पथ, प्रवेश मार्ग और ऑफशोर जीवन के बारे में वह सब बताते हैं जो कोई नहीं बताता।",
     lastReviewed: "अंतिम समीक्षा: मई 2026 · सेवारत डेक ऑफिसर्स और मरीन इंजीनियर्स द्वारा संकलित",
     stat1Label: "शुरुआती वेतन",
-    stat1Val: "₹80K-₹3L/माह",
+    stat1Val: "₹80K-₹3L/Month",
     stat2Label: "कर स्थिति",
     stat2Val: "कर-मुक्त*",
     stat3Label: "समुद्री समय",
@@ -118,6 +118,10 @@ export default function MerchantNavyCareerHubPage() {
           </svg>
           <div className="absolute -top-[10%] -right-[5%] w-[400px] h-[400px] bg-orange-500/5 rounded-full blur-[80px]" />
           <div className="absolute -bottom-[20%] -left-[5%] w-[300px] h-[300px] bg-sky-500/5 rounded-full blur-[60px]" />
+          <Icon 
+            icon="solar:anchor-bold-duotone" 
+            className="absolute -right-16 -bottom-16 w-80 h-80 text-[#ea580c] opacity-[0.12] -rotate-12 pointer-events-none select-none"
+          />
         </div>
 
         <div className="max-w-4xl mx-auto w-full px-6 lg:px-12 relative z-10">

@@ -13,10 +13,10 @@ const designAnalyticsData = {
     { year: 2026, openings: 32000 }
   ],
   salaries: [
-    { level: "Entry", levelHi: "शुरुआती", amount: "₹50K - ₹1.2L/माह", numericAmount: 70000 },
-    { level: "Mid", levelHi: "मध्यम", amount: "₹1.2L - ₹2.5L/माह", numericAmount: 180000 },
-    { level: "Senior", levelHi: "वरिष्ठ", amount: "₹2.5L - ₹4L/माह", numericAmount: 320000 },
-    { level: "Director", levelHi: "निदेशक", amount: "₹4L - ₹8L/माह", numericAmount: 500000 }
+    { level: "Entry", levelHi: "शुरुआती", amount: "₹50K - ₹1.2L/Month", numericAmount: 70000 },
+    { level: "Mid", levelHi: "मध्यम", amount: "₹1.2L - ₹2.5L/Month", numericAmount: 180000 },
+    { level: "Senior", levelHi: "वरिष्ठ", amount: "₹2.5L - ₹4L/Month", numericAmount: 320000 },
+    { level: "Director", levelHi: "निदेशक", amount: "₹4L - ₹8L/Month", numericAmount: 500000 }
   ]
 };
 import { Icon } from '@iconify/react';
@@ -118,6 +118,10 @@ export default function DesignCareerHubPage() {
           </svg>
           <div className="absolute -top-[10%] -right-[5%] w-[400px] h-[400px] bg-[#5563ED]/5 rounded-full blur-[80px]" />
           <div className="absolute -bottom-[20%] -left-[5%] w-[300px] h-[300px] bg-[#ff5a1f]/5 rounded-full blur-[60px]" />
+          <Icon 
+            icon="solar:palette-bold-duotone" 
+            className="absolute -right-16 -bottom-16 w-80 h-80 text-[#5563ED] opacity-[0.12] -rotate-12 pointer-events-none select-none"
+          />
         </div>
 
         <div className="max-w-4xl mx-auto w-full px-6 lg:px-12 relative z-10">
