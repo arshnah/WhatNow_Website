@@ -1,10 +1,12 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@iconify/react";
 import { useLanguage, Language } from "@/context/LanguageContext";
+import { SEARCH_INDEX } from "@/data/searchIndex";
 
 interface ExamItem {
   id: string;
@@ -294,7 +296,8 @@ const EXAMS_DATA = {
       seats: "~3,000 सीटें",
       applicants: "~25,000",
       date: "जून 2026",
-      status: "coming-soon" as const,
+      status: "ready" as const,
+      href: "/exams/imu-cet",
       colleges: "IMU और संबद्ध अकादमियां",
       colorClass: {
         badge: "bg-orange-50 text-orange-600 border-orange-100",
@@ -506,8 +509,71 @@ export default function ExamsPage() {
     }
   };
 
-  const handleSearchTrigger = () => {
-    window.dispatchEvent(new CustomEvent("open-search"));
+  const [searchQuery, setSearchQuery] = useState("");
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [searchSelectedIndex, setSearchSelectedIndex] = useState(0);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const searchContainerRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
+
+  // Close dropdown on click outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (searchContainerRef.current && !searchContainerRef.current.contains(event.target as Node)) {
+        setIsSearchFocused(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // Ctrl+K to focus search input
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        searchInputRef.current?.focus();
+        setIsSearchFocused(true);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  // Filter SEARCH_INDEX
+  const searchResults = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    const q = searchQuery.toLowerCase().trim();
+    return SEARCH_INDEX.filter(item => {
+      const matchTitle = item.title.toLowerCase().includes(q);
+      const matchDesc = item.description.toLowerCase().includes(q);
+      const matchKw = item.keywords.some(kw => kw.toLowerCase().includes(q));
+      return matchTitle || matchDesc || matchKw;
+    }).slice(0, 5); // limit to 5 results for clean dropdown height
+  }, [searchQuery]);
+
+  // Handle keyboard navigation inside search dropdown
+  const handleSearchKeyDown = (e: React.KeyboardEvent) => {
+    if (searchResults.length === 0) return;
+
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setSearchSelectedIndex((prev) => (prev + 1) % searchResults.length);
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setSearchSelectedIndex((prev) => (prev - 1 + searchResults.length) % searchResults.length);
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      const activeItem = searchResults[searchSelectedIndex];
+      if (activeItem && activeItem.status !== "coming-soon") {
+        router.push(activeItem.href);
+        setIsSearchFocused(false);
+      }
+    } else if (e.key === "Escape") {
+      e.preventDefault();
+      setIsSearchFocused(false);
+      searchInputRef.current?.blur();
+    }
   };
 
   return (
@@ -553,33 +619,180 @@ export default function ExamsPage() {
         </div>
 
         <div className="container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl relative z-10">
-          <div className="flex items-center gap-2 text-xs md:text-sm font-extrabold tracking-[0.2em] uppercase text-slate-400 mb-8">
-            <Link href="/" className="hover:text-primary transition-colors">{t.home}</Link>
-            <span>›</span>
-            <span className="text-primary">{t.exams}</span>
-          </div>
-
-          <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight mb-6 text-neutral-dark">
-              {t.heroHeadline}<br />
-              <span className="text-primary">{t.heroHeadlineSub}</span>
-            </h1>
-            <p className="text-lg md:text-xl text-slate-500 leading-relaxed font-medium mb-10 max-w-2xl">
-              {t.heroDesc}
-            </p>
-
-            <button
-              onClick={handleSearchTrigger}
-              className="group flex items-center justify-between bg-slate-100 hover:bg-slate-200/80 border border-slate-200/80 rounded-2xl px-5 py-4 w-full max-w-md text-left text-slate-500 text-sm font-medium transition-all shadow-sm cursor-pointer"
-            >
-              <div className="flex items-center gap-3">
-                <Icon icon="solar:magnifer-linear" className="w-5 h-5 text-slate-400" />
-                <span>{t.searchPlaceholder}</span>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-7">
+              <div className="flex items-center gap-2 text-xs md:text-sm font-extrabold tracking-[0.2em] uppercase text-slate-400 mb-8">
+                <Link href="/" className="hover:text-primary transition-colors">{t.home}</Link>
+                <span>›</span>
+                <span className="text-primary">{t.exams}</span>
               </div>
-              <kbd className="hidden sm:inline-block border border-slate-300 bg-white rounded-md px-1.5 py-0.5 text-[10px] font-bold text-slate-400">
-                Ctrl+K
-              </kbd>
-            </button>
+              
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight mb-6 text-neutral-dark">
+                {t.heroHeadline}<br />
+                <span className="text-primary">{t.heroHeadlineSub}</span>
+              </h1>
+              <p className="text-lg md:text-xl text-slate-500 leading-relaxed font-medium max-w-2xl">
+                {t.heroDesc}
+              </p>
+            </div>
+
+            <div className="lg:col-span-5 relative mt-6 lg:mt-0">
+              {/* Glassmorphic dashboard stats & search block */}
+              <motion.div 
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="relative overflow-hidden bg-white/70 backdrop-blur-md border border-slate-200/80 rounded-[2.5rem] p-8 shadow-xl shadow-slate-100/50"
+              >
+                {/* Subtle top primary highlight bar */}
+                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary to-secondary" />
+
+                <h3 className="text-xs font-black uppercase tracking-widest text-slate-400 mb-6 flex items-center gap-2">
+                  <Icon icon="solar:document-text-bold-duotone" className="w-4 h-4 text-primary" />
+                  <span>{language === 'hi' ? 'परीक्षा निर्देशिका' : 'Exams Directory'}</span>
+                </h3>
+
+                {/* Inline Search Bar with Dropdown */}
+                <div ref={searchContainerRef} className="relative mb-6">
+                  <div className="flex items-center gap-3 bg-slate-50 border border-slate-200/60 rounded-2xl px-5 py-4 w-full text-slate-500 text-sm font-medium transition-all shadow-xs focus-within:border-primary focus-within:bg-white">
+                    <Icon icon="solar:magnifer-linear" className="w-5 h-5 text-slate-400 shrink-0" />
+                    <input
+                      ref={searchInputRef}
+                      type="text"
+                      placeholder={language === 'hi' ? 'खोजें (जैसे: uceed, clat)...' : 'Search (e.g. uceed, clat)...'}
+                      value={searchQuery}
+                      onChange={(e) => {
+                        setSearchQuery(e.target.value);
+                        setSearchSelectedIndex(0);
+                      }}
+                      onFocus={() => setIsSearchFocused(true)}
+                      onKeyDown={handleSearchKeyDown}
+                      className="w-full text-neutral-dark placeholder-slate-400 bg-transparent focus:outline-none font-semibold text-sm"
+                    />
+                    {searchQuery && (
+                      <button
+                        onClick={() => {
+                          setSearchQuery("");
+                          setSearchSelectedIndex(0);
+                        }}
+                        className="p-1 rounded-full text-slate-400 hover:text-neutral-dark hover:bg-slate-200/50 transition-colors cursor-pointer shrink-0"
+                      >
+                        <Icon icon="solar:close-circle-bold" className="w-4 h-4" />
+                      </button>
+                    )}
+                    <kbd className="hidden sm:inline-block border border-slate-250 bg-white rounded-md px-1.5 py-0.5 text-[10px] font-bold text-slate-400 shrink-0">
+                      Ctrl+K
+                    </kbd>
+                  </div>
+
+                  {/* Dropdown Menu */}
+                  <AnimatePresence>
+                    {isSearchFocused && searchResults.length > 0 && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 8, scale: 0.98 }}
+                        animate={{ opacity: 1, y: 4, scale: 1 }}
+                        exit={{ opacity: 0, y: 8, scale: 0.98 }}
+                        transition={{ duration: 0.15, ease: "easeOut" }}
+                        className="absolute left-0 right-0 top-full mt-2 z-50 bg-white/95 backdrop-blur-md border border-slate-200/80 rounded-2xl shadow-2xl shadow-slate-900/10 max-h-[300px] overflow-y-auto p-2 space-y-1"
+                      >
+                        {searchResults.map((item, idx) => {
+                          const isSelected = idx === searchSelectedIndex;
+                          const isComingSoon = item.status === 'coming-soon';
+                          return (
+                            <div
+                              key={item.href}
+                              onClick={() => {
+                                if (!isComingSoon) {
+                                  router.push(item.href);
+                                  setIsSearchFocused(false);
+                                }
+                              }}
+                              onMouseEnter={() => setSearchSelectedIndex(idx)}
+                              className={`flex items-start gap-3 p-3 rounded-xl cursor-pointer select-none transition-all ${
+                                isSelected 
+                                  ? "bg-slate-50 border border-slate-100" 
+                                  : "bg-transparent border border-transparent"
+                              } ${isComingSoon ? "opacity-60 cursor-not-allowed" : ""}`}
+                            >
+                              <div className={`h-8 w-8 rounded-lg flex items-center justify-center shrink-0 border ${
+                                item.category === 'Careers' 
+                                  ? 'text-secondary bg-secondary/5 border-secondary/10' 
+                                  : item.category === 'Exams' 
+                                  ? 'text-primary bg-primary/5 border-primary/10' 
+                                  : 'text-accent bg-accent/5 border-accent/10'
+                              }`}>
+                                <Icon 
+                                  icon={
+                                    item.category === 'Careers' 
+                                      ? "solar:compass-bold-duotone" 
+                                      : item.category === 'Exams' 
+                                      ? "solar:document-text-bold-duotone" 
+                                      : "solar:book-bookmark-bold-duotone"
+                                  } 
+                                  className="w-4 h-4" 
+                                />
+                              </div>
+                              <div className="flex-1 min-w-0 pr-1">
+                                <div className="flex items-center gap-1.5 flex-wrap">
+                                  <span className="text-xs font-black text-neutral-dark truncate">{item.title}</span>
+                                  {isComingSoon && (
+                                    <span className="text-[8px] font-black uppercase bg-orange-50 text-orange-500 border border-orange-100 px-1 py-0.2 rounded-sm tracking-wider">
+                                      Soon
+                                    </span>
+                                  )}
+                                </div>
+                                <span className="text-[10px] text-slate-450 line-clamp-1 leading-tight">{item.description}</span>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+
+                  {/* Empty state dropdown if query doesn't match */}
+                  <AnimatePresence>
+                    {isSearchFocused && searchQuery.trim() && searchResults.length === 0 && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 4 }}
+                        exit={{ opacity: 0, y: 8 }}
+                        className="absolute left-0 right-0 top-full mt-2 z-50 bg-white border border-slate-200/80 rounded-2xl shadow-xl p-6 text-center"
+                      >
+                        <span className="text-xs font-bold text-slate-400 block mb-1">
+                          {language === 'hi' ? 'कोई परिणाम नहीं मिला' : 'No results found'}
+                        </span>
+                        <span className="text-[10px] text-slate-400 block">
+                          {language === 'hi' ? 'सक्रिय करियर या परीक्षाओं की खोज करें।' : 'Try searching for active guides.'}
+                        </span>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-slate-50/60 rounded-2xl p-4 border border-slate-100/80 flex flex-col justify-center">
+                    <span className="text-3xl font-black text-neutral-dark block mb-0.5 leading-none">4</span>
+                    <span className="text-[10px] font-black uppercase tracking-wider text-slate-500 leading-none">{language === 'hi' ? 'सक्रिय परीक्षाएं' : 'Active Exams'}</span>
+                  </div>
+                  
+                  <div className="bg-slate-50/60 rounded-2xl p-4 border border-slate-100/80 flex flex-col justify-center">
+                    <span className="text-3xl font-black text-primary block mb-0.5 leading-none">6+</span>
+                    <span className="text-[10px] font-black uppercase tracking-wider text-slate-500 leading-none">{language === 'hi' ? 'जल्द आ रहे हैं' : 'Upcoming Exams'}</span>
+                  </div>
+
+                  <div className="bg-emerald-50/60 border border-emerald-100/50 rounded-2xl p-4 col-span-2 flex items-center gap-3">
+                    <div className="h-8 w-8 rounded-lg bg-emerald-100/60 flex items-center justify-center text-emerald-600 shrink-0">
+                      <Icon icon="solar:shield-check-bold" className="w-4.5 h-4.5" />
+                    </div>
+                    <div>
+                      <span className="text-[11px] font-black text-emerald-800 block mb-0.5 leading-tight">{language === 'hi' ? '100% निष्पक्ष और विज्ञापन-मुक्त' : '100% Unbiased & Ad-Free'}</span>
+                      <span className="text-[9px] font-bold text-emerald-600/90 uppercase tracking-wide leading-none">{language === 'hi' ? 'कोई कोचिंग संबद्धता नहीं' : 'No coaching sponsors or agenda'}</span>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>

@@ -96,15 +96,15 @@ export default function Footer() {
             {/* Language Dropdown */}
             <div className="relative w-48" ref={dropdownRef}>
               <p className="text-white/80 text-sm mb-4">{t.languageLabel}</p>
-              <button 
+              <button
                 type="button"
                 onClick={() => setIsOpen(!isOpen)}
                 className="flex items-center justify-between bg-white/10 hover:bg-white/15 border border-white/10 rounded-xl px-6 py-3 w-full cursor-pointer transition-all focus:outline-none select-none text-left"
               >
                 <span className="text-sm font-medium">{selectedLangName}</span>
-                <Icon 
-                  icon="solar:alt-arrow-down-linear" 
-                  className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} 
+                <Icon
+                  icon="solar:alt-arrow-down-linear"
+                  className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
                 />
               </button>
 
@@ -125,11 +125,10 @@ export default function Footer() {
                           setLanguage(lang.code);
                           setIsOpen(false);
                         }}
-                        className={`w-full text-left px-5 py-3 text-sm transition-colors flex items-center justify-between cursor-pointer focus:outline-none ${
-                          language === lang.code
+                        className={`w-full text-left px-5 py-3 text-sm transition-colors flex items-center justify-between cursor-pointer focus:outline-none ${language === lang.code
                             ? 'bg-white/15 text-white font-bold'
                             : 'text-white/80 hover:bg-white/5 hover:text-white'
-                        }`}
+                          }`}
                       >
                         <span>{lang.name}</span>
                         {language === lang.code && (
@@ -152,7 +151,7 @@ export default function Footer() {
                 <Link href="https://instagram.com/whatnow.in" className="text-white hover:text-white/80 transition-colors" aria-label="Instagram">
                   <Icon icon="ri:instagram-line" className="w-7 h-7" />
                 </Link>
-                <Link href="https://youtube.com/@whatnow_in" className="text-white hover:text-white/80 transition-colors" aria-label="YouTube">
+                <Link href="https://www.youtube.com/@indiawhatnow" className="text-white hover:text-white/80 transition-colors" aria-label="YouTube">
                   <Icon icon="ri:youtube-fill" className="w-7 h-7" />
                 </Link>
               </div>
