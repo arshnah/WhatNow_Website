@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import VisualAnalytics from '@/components/ui/VisualAnalytics';
+import { Icon } from '@iconify/react';
 
 const niftAnalyticsData = {
   trends: [
@@ -209,15 +210,19 @@ export default function NiftHubPage() {
             </Link>
 
             {/* Card 4 */}
-            <Link href="/exams/nift/scholarships" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-pink-300 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-pink-500/5 hover:-translate-y-1">
-              <div className="text-4xl md:text-5xl font-black text-pink-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">04</div>
-              <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-pink-600 transition-colors duration-300">Fees, Scholarships & ROI</h3>
-                <div className="text-pink-600 text-xs font-semibold font-mono mb-4">/exams/nift/scholarships</div>
+            <Link href="/exams/nift/scholarships" className="group flex flex-col md:flex-row gap-6 bg-emerald-50/40 backdrop-blur-sm border border-emerald-200/60 rounded-[2rem] p-6 md:p-8 hover:border-emerald-400/50 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-emerald-500/5 hover:-translate-y-1 relative overflow-hidden">
+              <Icon 
+                icon="solar:diploma-bold-duotone" 
+                className="absolute -right-6 -bottom-6 w-36 h-36 text-emerald-500 opacity-[0.15] -rotate-12 pointer-events-none select-none" 
+              />
+              <div className="text-4xl md:text-5xl font-black text-emerald-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300 relative z-10">04</div>
+              <div className="flex-1 relative z-10">
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-emerald-600 transition-colors duration-300">Fees, Scholarships & ROI</h3>
+                <div className="text-emerald-600 text-xs font-semibold font-mono mb-4">/exams/nift/scholarships</div>
                 <p className="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
                   Complete fee structures across all 16 campuses, government scholarship schemes, category-wise fee waivers, education loan options, and an honest return-on-investment analysis: what a NIFT graduate actually earns in years 1, 3, and 5 across different specialisations.
                 </p>
-                <span className="inline-block bg-emerald-50 text-emerald-700 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm border border-emerald-100">✓ Ready to read</span>
+                <span className="inline-block bg-emerald-55 text-emerald-700 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm border border-emerald-100">✓ Ready to read</span>
               </div>
             </Link>
 

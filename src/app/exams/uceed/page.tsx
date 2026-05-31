@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import VisualAnalytics from '@/components/ui/VisualAnalytics';
+import { Icon } from '@iconify/react';
 
 export const metadata = {
   title: 'UCEED — Design at an IIT | WhatNow',
@@ -209,11 +210,15 @@ export default function UceedHubPage() {
             </Link>
 
             {/* Card 4 */}
-            <Link href="/exams/uceed/scholarships" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-primary/45 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
-              <div className="text-4xl md:text-5xl font-black text-primary leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">04</div>
-              <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-primary transition-colors duration-300">Scholarships — Don&apos;t pay more than you have to</h3>
-                <div className="text-primary text-xs font-semibold font-mono mb-4">/exams/uceed/scholarships</div>
+            <Link href="/exams/uceed/scholarships" className="group flex flex-col md:flex-row gap-6 bg-emerald-50/40 backdrop-blur-sm border border-emerald-200/60 rounded-[2rem] p-6 md:p-8 hover:border-emerald-400/50 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-emerald-500/5 hover:-translate-y-1 relative overflow-hidden">
+              <Icon 
+                icon="solar:diploma-bold-duotone" 
+                className="absolute -right-6 -bottom-6 w-36 h-36 text-emerald-500 opacity-[0.15] -rotate-12 pointer-events-none select-none" 
+              />
+              <div className="text-4xl md:text-5xl font-black text-emerald-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300 relative z-10">04</div>
+              <div className="flex-1 relative z-10">
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-emerald-600 transition-colors duration-300">Scholarships — Don&apos;t pay more than you have to</h3>
+                <div className="text-emerald-600 text-xs font-semibold font-mono mb-4">/exams/uceed/scholarships</div>
                 <p className="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
                   Institute-wise fee waivers, government scholarship schemes, and everything available to BDes students at IITs. SC/ST students get full tuition waiver. General category students under ₹5 lakh annual income qualify for significant relief. The fee is not as scary as it looks.
                 </p>
@@ -222,15 +227,19 @@ export default function UceedHubPage() {
             </Link>
 
             {/* Card 5 */}
-            <Link href="/exams/uceed/convince-parents" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-primary/45 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
-              <div className="text-4xl md:text-5xl font-black text-primary leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">05</div>
-              <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-primary transition-colors duration-300">Convince Your Parents — With actual data</h3>
-                <div className="text-primary text-xs font-semibold font-mono mb-4">/exams/uceed/convince-parents</div>
+            <Link href="/exams/uceed/convince-parents" className="group flex flex-col md:flex-row gap-6 bg-amber-50/40 backdrop-blur-sm border border-amber-200/60 rounded-[2rem] p-6 md:p-8 hover:border-amber-400/50 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-amber-500/5 hover:-translate-y-1 relative overflow-hidden">
+              <Icon 
+                icon="solar:users-group-two-rounded-bold-duotone" 
+                className="absolute -right-6 -bottom-6 w-36 h-36 text-amber-500 opacity-[0.15] -rotate-12 pointer-events-none select-none" 
+              />
+              <div className="text-4xl md:text-5xl font-black text-amber-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300 relative z-10">05</div>
+              <div className="flex-1 relative z-10">
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-amber-600 transition-colors duration-300">Convince Your Parents — With actual data</h3>
+                <div className="text-amber-600 text-xs font-semibold font-mono mb-4">/exams/uceed/convince-parents</div>
                 <p className="text-slate-650 leading-relaxed mb-4 text-sm md:text-base">
                   Design at an IIT isn&apos;t a risk — but you&apos;ll need to explain that. This guide arms you with placement data, salary figures, career paths, and how to answer the hard questions: job security, prestige, &ldquo;is this a real IIT degree?&rdquo; Have the conversation with facts, not feeling.
                 </p>
-                <span className="inline-block bg-indigo-50 text-indigo-750 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-indigo-100 shadow-sm">✓ Shell Ready</span>
+                <span className="inline-block bg-amber-50 text-amber-700 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-amber-100 shadow-sm">✓ Shell Ready</span>
               </div>
             </Link>
 
