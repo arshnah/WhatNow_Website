@@ -105,7 +105,39 @@ export const SEARCH_INDEX: SearchItem[] = [
     description: "Fashion design, fashion communication, and apparel production entrance guide.",
     href: "/exams/nift",
     keywords: ["nift", "fashion", "apparel", "design", "clothing", "communication"],
-    status: "coming-soon"
+    status: "ready"
+  },
+  {
+    title: "NIFT — What It Is (Exam Breakdown)",
+    category: "Exams",
+    description: "Detailed guide to NIFT CAT & GAT paper patterns, marks weightage, eligibility, and the Situation Test.",
+    href: "/exams/nift/what-it-is",
+    keywords: ["nift", "syllabus", "creative ability test", "cat", "general ability test", "gat", "situation test", "eligibility", "weightage"],
+    status: "ready"
+  },
+  {
+    title: "NIFT — Fees & Scholarships",
+    category: "Exams",
+    description: "Course fee details for B.Des and B.FTech at NIFT, and the Sarthak Financial Assistance scheme waivers.",
+    href: "/exams/nift/scholarships",
+    keywords: ["nift", "fees", "scholarships", "cost", "sarthak scheme", "fee waiver", "financial aid"],
+    status: "ready"
+  },
+  {
+    title: "NIFT — Is It For You?",
+    category: "Exams",
+    description: "Honest self-check to see if studying fashion design, technology, or merchandising at NIFT is the right fit.",
+    href: "/exams/nift/is-it-for-you",
+    keywords: ["nift", "is fashion design for me", "suitability", "fashion career", "work life", "merchandising"],
+    status: "ready"
+  },
+  {
+    title: "NIFT — Resources & Prep Plan",
+    category: "Exams",
+    description: "Curated self-study guides, sample questions, and books to prep for CAT, GAT, and the Situation Test.",
+    href: "/exams/nift/resources",
+    keywords: ["nift", "books", "preparation", "self study", "mock tests", "situation test prep"],
+    status: "ready"
   },
   {
     title: "NDA — National Defence Academy",

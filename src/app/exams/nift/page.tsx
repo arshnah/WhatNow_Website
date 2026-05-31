@@ -63,7 +63,7 @@ export default function NiftHubPage() {
 
         <div className="max-w-4xl mx-auto w-full px-6 lg:px-12 relative z-10">
           <div className="flex items-center gap-2 text-xs md:text-sm font-extrabold tracking-[0.2em] uppercase text-slate-500 mb-8">
-            <Link href="/exams" className="hover:text-primary transition-colors">Exams</Link>
+            <Link href="/exams" className="hover:text-[#5563ED] transition-colors">Exams</Link>
             <span>›</span>
             <span className="text-pink-600">NIFT</span>
           </div>
@@ -82,7 +82,7 @@ export default function NiftHubPage() {
         </div>
       </section>
 
-      <div className="px-6 lg:px-12 pb-20 md:pb-32 max-w-4xl mx-auto w-full space-y-20">
+      <div className="px-6 lg:px-12 pb-20 md:pb-32 max-w-4xl mx-auto w-full space-y-20 mt-12">
 
         {/* ─── STAT BAR ─── */}
         <div className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 shadow-sm">
@@ -170,52 +170,56 @@ export default function NiftHubPage() {
           <div className="space-y-4">
 
             {/* Card 1 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 backdrop-blur-sm border border-slate-200/80 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm">
-              <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">01</div>
+            <Link href="/exams/nift/what-it-is" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-pink-300 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-pink-500/5 hover:-translate-y-1">
+              <div className="text-4xl md:text-5xl font-black text-pink-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">01</div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">What It Is — The complete breakdown</h3>
-                <p className="text-slate-500 leading-relaxed mb-4 text-sm md:text-base">
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-pink-600 transition-colors duration-300">What It Is — The complete breakdown</h3>
+                <div className="text-pink-600 text-xs font-semibold font-mono mb-4">/exams/nift/what-it-is</div>
+                <p className="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
                   Everything about the NIFT entrance: CAT and GAT paper patterns, marking scheme, eligibility criteria (age limits, stream requirements), all 16 campus profiles, seat matrix by category, counselling process, and what closing ranks actually look like.
                 </p>
-                <span className="inline-block bg-orange-50/50 text-orange-600 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-orange-100">Coming soon</span>
+                <span className="inline-block bg-emerald-50 text-emerald-700 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm border border-emerald-100">✓ Ready to read</span>
               </div>
-            </div>
+            </Link>
 
             {/* Card 2 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 backdrop-blur-sm border border-slate-200/80 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm">
-              <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">02</div>
+            <Link href="/exams/nift/is-it-for-you" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-pink-300 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-pink-500/5 hover:-translate-y-1">
+              <div className="text-4xl md:text-5xl font-black text-pink-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">02</div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">Is It For You — Suitability Check</h3>
-                <p className="text-slate-500 leading-relaxed mb-4 text-sm md:text-base">
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-pink-600 transition-colors duration-300">Is It For You — Suitability Check</h3>
+                <div className="text-pink-600 text-xs font-semibold font-mono mb-4">/exams/nift/is-it-for-you</div>
+                <p className="text-slate-650 leading-relaxed mb-4 text-sm md:text-base">
                   Should you actually target NIFT? What kind of students thrive here versus regret it? The reality of fashion industry jobs, salary expectations, and whether the investment makes sense for your financial background. Honest self-assessment before you commit.
                 </p>
-                <span className="inline-block bg-orange-50/50 text-orange-600 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-orange-100">Coming soon</span>
+                <span className="inline-block bg-pink-50 text-pink-700 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-pink-100 shadow-sm">✓ Shell Ready</span>
               </div>
-            </div>
+            </Link>
 
             {/* Card 3 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 backdrop-blur-sm border border-slate-200/80 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm">
-              <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">03</div>
+            <Link href="/exams/nift/resources" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-pink-300 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-pink-500/5 hover:-translate-y-1">
+              <div className="text-4xl md:text-5xl font-black text-pink-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">03</div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">Resources — CAT, GAT & Situation Test Prep</h3>
-                <p className="text-slate-500 leading-relaxed mb-4 text-sm md:text-base">
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-pink-600 transition-colors duration-300">Resources — CAT, GAT & Situation Test Prep</h3>
+                <div className="text-pink-600 text-xs font-semibold font-mono mb-4">/exams/nift/resources</div>
+                <p className="text-slate-655 leading-relaxed mb-4 text-sm md:text-base">
                   Detailed syllabus breakdowns for CAT (drawing, colour theory, spatial reasoning) and GAT (quant, verbal, GK). Past papers, mock tests, coaching vs. self-study analysis, and a practical week-by-week preparation roadmap. Plus: how to actually prepare for the Situation Test.
                 </p>
-                <span className="inline-block bg-orange-50/50 text-orange-600 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-orange-100">Coming soon</span>
+                <span className="inline-block bg-pink-50 text-pink-700 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-pink-100 shadow-sm">✓ Shell Ready</span>
               </div>
-            </div>
+            </Link>
 
             {/* Card 4 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 backdrop-blur-sm border border-slate-200/80 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm">
-              <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">04</div>
+            <Link href="/exams/nift/scholarships" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-pink-300 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-pink-500/5 hover:-translate-y-1">
+              <div className="text-4xl md:text-5xl font-black text-pink-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">04</div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">Fees, Scholarships & ROI</h3>
-                <p className="text-slate-500 leading-relaxed mb-4 text-sm md:text-base">
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-pink-600 transition-colors duration-300">Fees, Scholarships & ROI</h3>
+                <div className="text-pink-600 text-xs font-semibold font-mono mb-4">/exams/nift/scholarships</div>
+                <p className="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
                   Complete fee structures across all 16 campuses, government scholarship schemes, category-wise fee waivers, education loan options, and an honest return-on-investment analysis: what a NIFT graduate actually earns in years 1, 3, and 5 across different specialisations.
                 </p>
-                <span className="inline-block bg-orange-50/50 text-orange-600 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-orange-100">Coming soon</span>
+                <span className="inline-block bg-emerald-50 text-emerald-700 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm border border-emerald-100">✓ Ready to read</span>
               </div>
-            </div>
+            </Link>
 
           </div>
         </section>
