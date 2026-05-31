@@ -105,7 +105,7 @@ export const SEARCH_INDEX: SearchItem[] = [
     description: "Fashion design, fashion communication, and apparel production entrance guide.",
     href: "/exams/nift",
     keywords: ["nift", "fashion", "apparel", "design", "clothing", "communication"],
-    status: "ready"
+    status: "coming-soon"
   },
   {
     title: "NDA — National Defence Academy",
@@ -121,7 +121,7 @@ export const SEARCH_INDEX: SearchItem[] = [
     description: "Entrance for five-year integrated law degrees (BA LLB, BBA LLB) at India's National Law Universities.",
     href: "/exams/clat",
     keywords: ["clat", "law", "nlu", "legal", "bar council", "llb", "advocate"],
-    status: "ready"
+    status: "coming-soon"
   },
   {
     title: "IMU CET — Indian Maritime University Common Entrance Test",
@@ -129,7 +129,7 @@ export const SEARCH_INDEX: SearchItem[] = [
     description: "Entrance exam for B.Sc Nautical Science, B.Tech Marine Engineering, and Diploma in Nautical Science programs at IMU.",
     href: "/exams/imu-cet",
     keywords: ["imu cet", "imu", "cet", "merchant navy", "marine engineering", "nautical science", "dns", "bsc", "btech", "maritime"],
-    status: "ready"
+    status: "coming-soon"
   },
 
   // --- CAREERS ---
