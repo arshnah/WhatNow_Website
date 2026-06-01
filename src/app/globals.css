@@ -1,16 +1,21 @@
 @import "tailwindcss";
 
+
+
 @theme {
   --color-background: #ffffff;
   --color-foreground: #111827;
   --font-sans: var(--font-geist-sans), sans-serif;
   --font-heading: var(--font-geist-sans), sans-serif;
   --color-primary: #4F46E5;
+  --color-primary-hover: #4338ca;
   --color-secondary: #0A8B74;
   --color-secondary-hover: #087A66;
   --color-accent: #F59E0B;
   --color-highlight: #EC4899;
   --color-neutral-dark: #0D1B3D;
+  --color-bg-tint: #F8F8F6;
+  --color-bg-tint2: #F1F5F9;
 }
 
 body {
@@ -60,3 +65,6 @@ html.lang-hi h6 {
 *::-webkit-scrollbar-thumb:hover {
   background-color: rgba(15, 23, 42, 0.3);
 }
+
+
+

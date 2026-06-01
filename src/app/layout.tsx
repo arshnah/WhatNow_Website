@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SearchModal from "@/components/SearchModal";
 import ContextMenu from "@/components/ContextMenu";
+import NoticeBoard from "@/components/NoticeBoard";
+import AdminNoticeBoard from "@/components/AdminNoticeBoard";
 import { Geist, Mukta } from "next/font/google";
 import { LanguageProvider } from "@/context/LanguageContext";
 import "./globals.css";
@@ -39,6 +41,8 @@ export default function RootLayout({
           <Footer />
           <SearchModal />
           <ContextMenu />
+          <NoticeBoard />
+          <AdminNoticeBoard />
         </LanguageProvider>
       </body>
     </html>

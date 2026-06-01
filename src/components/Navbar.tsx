@@ -20,8 +20,10 @@ const translations = {
     comingSoonLabel: "Coming Soon",
     searchTitle: "Search (Ctrl+K)",
     searchMobile: "Search",
+    themeLabel: "Vibe Theme",
     activeGuidesHeader: "Active Guides",
     incubatingHeader: "Under Incubation",
+    jeePaper3: "JEE Paper 3 (B.Planning)",
     
     // Careers
     uxDesign: "Product & UX Design",
@@ -59,8 +61,10 @@ const translations = {
     comingSoonLabel: "जल्द आ रहे हैं",
     searchTitle: "खोजें (Ctrl+K)",
     searchMobile: "खोजें",
+    themeLabel: "वाइब थीम",
     activeGuidesHeader: "सक्रिय मार्गदर्शिकाएँ",
     incubatingHeader: "तैयारी जारी है",
+    jeePaper3: "JEE पेपर 3 (B.Planning)",
 
     // Careers
     uxDesign: "प्रोडक्ट और यूएक्स डिज़ाइन",
@@ -88,11 +92,94 @@ const translations = {
   }
 };
 
+const THEMES = [
+  {
+    id: "indigo",
+    nameEn: "Default Indigo", nameHi: "डिफ़ॉल्ट इंडिगो",
+    primary: "#4F46E5", hover: "#4338ca",
+    secondary: "#0A8B74", secondaryHover: "#087A66",
+    bgTint: "#F8F8F6", bgTint2: "#F1F5F9",
+    color: "bg-[#4F46E5]",
+  },
+  {
+    id: "lavender",
+    nameEn: "Lavender Breeze", nameHi: "लैवेंडर ब्रीज़",
+    primary: "#8B5CF6", hover: "#7c3aed",
+    secondary: "#7C3AED", secondaryHover: "#6d28d9",
+    bgTint: "#F5F3FF", bgTint2: "#EDE9FE",
+    color: "bg-[#8B5CF6]",
+  },
+  {
+    id: "mint",
+    nameEn: "Fresh Mint", nameHi: "फ्रेश मिंट",
+    primary: "#10B981", hover: "#059669",
+    secondary: "#0D9488", secondaryHover: "#0F766E",
+    bgTint: "#F0FDF9", bgTint2: "#ECFDF5",
+    color: "bg-[#10B981]",
+  },
+  {
+    id: "peach",
+    nameEn: "Sweet Peach", nameHi: "स्वीट पीच",
+    primary: "#F59E0B", hover: "#d97706",
+    secondary: "#EA580C", secondaryHover: "#C2410C",
+    bgTint: "#FFFBEB", bgTint2: "#FEF3C7",
+    color: "bg-[#F59E0B]",
+  },
+  {
+    id: "rose",
+    nameEn: "Soft Rose", nameHi: "सॉफ्ट रोज़",
+    primary: "#EC4899", hover: "#db2777",
+    secondary: "#DB2777", secondaryHover: "#BE185D",
+    bgTint: "#FFF1F2", bgTint2: "#FFE4E6",
+    color: "bg-[#EC4899]",
+  },
+];
+
 export default function Navbar() {
-  const { language } = useLanguage();
+  const { language, setLanguage } = useLanguage();
   const t = translations[language];
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  
+  const [activeTheme, setActiveTheme] = useState("indigo");
+  const [isThemeOpen, setIsThemeOpen] = useState(false);
+  const themeDropdownRef = useRef<HTMLDivElement>(null);
+
+  const applyTheme = (themeId: string) => {
+    const selectedTheme = THEMES.find(t => t.id === themeId) || THEMES[0];
+    document.documentElement.style.setProperty("--color-primary", selectedTheme.primary);
+    document.documentElement.style.setProperty("--color-primary-hover", selectedTheme.hover);
+    document.documentElement.style.setProperty("--color-secondary", selectedTheme.secondary);
+    document.documentElement.style.setProperty("--color-secondary-hover", selectedTheme.secondaryHover);
+    document.documentElement.style.setProperty("--color-bg-tint", selectedTheme.bgTint);
+    document.documentElement.style.setProperty("--color-bg-tint2", selectedTheme.bgTint2);
+    localStorage.setItem("whatnow-vibe-theme", themeId);
+    setActiveTheme(themeId);
+  };
+
+  // Close dropdown on click outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (themeDropdownRef.current && !themeDropdownRef.current.contains(event.target as Node)) {
+        setIsThemeOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  // Load theme and clean up dark mode on mount
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("whatnow-vibe-theme");
+    if (savedTheme) {
+      applyTheme(savedTheme);
+    }
+    // Force light mode
+    document.documentElement.classList.remove("dark");
+    localStorage.removeItem("whatnow-dark-mode");
+  }, []);
 
   // Mobile Accordion state
   const [mobileAccordions, setMobileAccordions] = useState({
@@ -137,6 +224,7 @@ export default function Navbar() {
     { href: "/exams/clat", label: t.clat, status: "ready" },
     { label: t.nda, status: "coming-soon" },
     { href: "/exams/imu-cet", label: t.imucet, status: "ready" },
+    { href: "/exams/jee-paper3", label: t.jeePaper3, status: "ready" },
     { label: t.jee, status: "coming-soon" },
     { label: t.neet, status: "coming-soon" }
   ];
@@ -396,8 +484,21 @@ export default function Navbar() {
               </Link>
             </div>
 
-            {/* Desktop Actions (Search only) */}
-            <div className="hidden lg:flex items-center shrink-0">
+            {/* Desktop Actions (Search, Language and Theme) */}
+            <div className="hidden lg:flex items-center shrink-0 gap-3">
+              {/* Notice Board Button */}
+              <button
+                onClick={() => window.dispatchEvent(new CustomEvent("open-notice-board"))}
+                className="relative text-gray-600 hover:text-gray-900 transition-colors p-2 cursor-pointer flex items-center justify-center rounded-xl hover:bg-slate-50"
+                title={language === "hi" ? "सूचना पट्ट (लाइव)" : "Notice Board (Live)"}
+              >
+                <Icon icon="solar:bell-bing-bold-duotone" className="w-5.5 h-5.5 text-slate-600 hover:text-primary transition-colors" />
+                <span className="absolute top-1.5 right-1.5 flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                </span>
+              </button>
+
               <button 
                 onClick={() => window.dispatchEvent(new CustomEvent("open-search"))}
                 className="text-gray-600 hover:text-gray-900 transition-colors p-2 cursor-pointer flex items-center gap-1.5"
@@ -411,10 +512,88 @@ export default function Navbar() {
                   ⌘K
                 </kbd>
               </button>
+
+              {/* Language Toggle — Desktop */}
+              <button
+                onClick={() => setLanguage(language === "en" ? "hi" : "en")}
+                className="flex items-center gap-0.5 rounded-xl border border-slate-200 overflow-hidden text-[11px] font-black tracking-tight shadow-sm hover:border-primary/40 transition-all duration-200 cursor-pointer"
+                title={language === "en" ? "Switch to Hindi" : "Switch to English"}
+              >
+                <span className={`px-2.5 py-1.5 transition-all duration-200 ${
+                  language === "en" ? "bg-primary text-white" : "text-slate-500 hover:bg-slate-50"
+                }`}>EN</span>
+                <span className={`px-2.5 py-1.5 transition-all duration-200 ${
+                  language === "hi" ? "bg-primary text-white" : "text-slate-500 hover:bg-slate-50"
+                }`}>हि</span>
+              </button>
+
+              {/* Vibe Theme Switcher */}
+              <div className="relative" ref={themeDropdownRef}>
+                <button
+                  onClick={() => setIsThemeOpen(!isThemeOpen)}
+                  className="text-gray-600 hover:text-gray-900 transition-colors p-2 cursor-pointer flex items-center justify-center rounded-xl hover:bg-slate-50"
+                  title={t.themeLabel}
+                >
+                  <Icon icon="solar:palette-bold-duotone" className="w-5.5 h-5.5 text-slate-600 hover:text-primary transition-colors" />
+                </button>
+
+                <AnimatePresence>
+                  {isThemeOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                      transition={{ duration: 0.15 }}
+                      className="absolute right-0 top-full mt-2 w-56 bg-white border border-slate-200 rounded-2xl shadow-xl p-4 z-50 flex flex-col gap-2.5"
+                    >
+                      <span className="text-[10px] font-black uppercase text-slate-400 tracking-wider px-1">
+                        {t.themeLabel}
+                      </span>
+                      <div className="flex flex-col gap-1">
+                        {THEMES.map((theme) => (
+                          <button
+                            key={theme.id}
+                            onClick={() => {
+                              applyTheme(theme.id);
+                              setIsThemeOpen(false);
+                            }}
+                            className={`flex items-center justify-between px-2.5 py-2 rounded-xl text-left text-xs font-bold transition-all cursor-pointer ${
+                              activeTheme === theme.id
+                                ? "bg-slate-50 text-slate-900"
+                                : "text-slate-650 hover:bg-slate-50"
+                            }`}
+                          >
+                            <div className="flex items-center gap-2.5">
+                              <span className={`w-3.5 h-3.5 rounded-full ${theme.color} shadow-sm border border-black/5`} />
+                              <span>{language === "hi" ? theme.nameHi : theme.nameEn}</span>
+                            </div>
+                            {activeTheme === theme.id && (
+                              <Icon icon="ph:check-bold" className="w-3.5 h-3.5 text-slate-850" />
+                            )}
+                          </button>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
             </div>
 
             {/* Mobile menu trigger */}
-            <div className="flex lg:hidden items-center gap-2">
+            <div className="flex lg:hidden items-center gap-1.5">
+              {/* Notice Board mobile button */}
+              <button
+                onClick={() => window.dispatchEvent(new CustomEvent("open-notice-board"))}
+                className="relative text-gray-600 hover:text-gray-900 p-2 cursor-pointer rounded-xl hover:bg-slate-50 transition-colors"
+                title="Notice Board"
+              >
+                <Icon icon="solar:bell-bing-bold-duotone" className="w-5.5 h-5.5" />
+                <span className="absolute top-1.5 right-1.5 flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                </span>
+              </button>
+
               <button 
                 onClick={() => window.dispatchEvent(new CustomEvent("open-search"))}
                 className="text-gray-600 hover:text-gray-900 p-2 cursor-pointer rounded-xl hover:bg-slate-50 transition-colors"
@@ -682,6 +861,60 @@ export default function Navbar() {
                     <Icon icon="solar:info-circle-bold-duotone" className="w-4.5 h-4.5 text-slate-550" />
                     <span>{t.about}</span>
                   </Link>
+
+                  {/* Language Toggle — Mobile */}
+                  <div className="border-t border-slate-100 pt-5 mt-4">
+                    <span className="px-2 text-[10px] font-black uppercase text-slate-400 tracking-wider block mb-3">
+                      {language === "en" ? "Language" : "भाषा"}
+                    </span>
+                    <div className="flex gap-3 px-2">
+                      <button
+                        onClick={() => setLanguage("en")}
+                        className={`flex-1 py-2.5 rounded-xl text-sm font-black transition-all cursor-pointer border ${
+                          language === "en"
+                            ? "bg-primary text-white border-primary"
+                            : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50"
+                        }`}
+                      >
+                        English
+                      </button>
+                      <button
+                        onClick={() => setLanguage("hi")}
+                        className={`flex-1 py-2.5 rounded-xl text-sm font-black transition-all cursor-pointer border ${
+                          language === "hi"
+                            ? "bg-primary text-white border-primary"
+                            : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50"
+                        }`}
+                      >
+                        हिंदी
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Mobile Vibe Theme Switcher */}
+                  <div className="border-t border-slate-100 pt-5 mt-4">
+                    <span className="px-2 text-[10px] font-black uppercase text-slate-400 tracking-wider block mb-3">
+                      {t.themeLabel}
+                    </span>
+                    <div className="flex gap-3 px-2">
+                      {THEMES.map((theme) => (
+                        <button
+                          key={theme.id}
+                          onClick={() => applyTheme(theme.id)}
+                          className={`w-10 h-10 rounded-full border-2 transition-all flex items-center justify-center cursor-pointer shadow-sm ${theme.color} ${
+                            activeTheme === theme.id
+                              ? "border-slate-800 scale-110 ring-2 ring-slate-800/10"
+                              : "border-transparent hover:scale-105"
+                          }`}
+                          title={language === "hi" ? theme.nameHi : theme.nameEn}
+                        >
+                          {activeTheme === theme.id && (
+                            <Icon icon="ph:check-bold" className="w-5 h-5 text-white" />
+                          )}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
 
                 </div>
               </div>
