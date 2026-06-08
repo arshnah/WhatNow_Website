@@ -101,56 +101,135 @@ export default function UceedIsItForYouPage() {
       />
 
       <div className="max-w-5xl mx-auto w-full px-6 lg:px-12 pb-24">
-        <Section number="01" title="Busting the 'Sketching' Myth">
+        <Section number="01" title="What kind of person actually ends up here">
           <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium">
-            The most common misconception about design is that it is only for fine artists or sketchers. While UCEED tests basic visual and spatial thinking in Part B, a career in design is about **cognitive problem solving**.
+            Most people who end up at a B.Des program at an IIT didn&apos;t follow a
+            straight path to it. Some found design early — through drawing, through
+            noticing how things are made, through frustration with how apps or
+            products work. Others found it by elimination — they knew they didn&apos;t
+            want pure engineering, but they didn&apos;t want to lose the IIT option either.
           </p>
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8 space-y-4 mb-6">
-            <h3 className="font-black text-xl text-neutral-dark">Design is 80% Logic, 20% Aesthetics</h3>
-            <p className="text-slate-650 leading-relaxed font-semibold">
-              UI/UX design, product design, and interaction design require analyzing user behavior, drafting layouts, testing screen micro-interactions, and coding prototypes. If you enjoy psychology, logic, mapping systems, and layout coordination, you will excel in design, regardless of whether you can paint a canvas.
+          <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium">
+            Both are valid starting points. But they lead to very different
+            experiences. If design is the thing you&apos;re actually drawn to, the program
+            feeds it. If you&apos;re there because you wanted the IIT tag and this seemed
+            like a less competitive route, it&apos;s a miserable four years.
+          </p>
+          <p className="text-lg text-slate-600 leading-relaxed mb-8 font-medium">
+            This page is about helping you figure out which one you are — before you
+            spend a year preparing.
+          </p>
+          <blockquote className="border-l-4 border-primary bg-indigo-50 rounded-r-2xl p-6 md:p-8 my-8">
+            <p className="text-slate-700 italic font-medium leading-relaxed mb-4">
+              &ldquo;The first time I came across UCEED, I was around 13. I had joined
+              a portrait course at what I later found out was a design coaching. I just
+              kept drawing after that and made up my mind about a creative field. UCEED
+              was my main goal because I wasn&apos;t much interested in fashion, and NID
+              wasn&apos;t as well-known — my parents would&apos;ve been harder to convince.&rdquo;
             </p>
-          </div>
+            <footer className="text-primary font-black text-sm not-italic">
+              — A UCEED 2026 qualifier, in conversation with WhatNow
+            </footer>
+          </blockquote>
         </Section>
 
-        <Section number="02" title="The Honest Suitability Checklist">
-          <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium">
-            Ask yourself these questions to determine if design at an IIT matches your interests:
-          </p>
+        <Section number="02" title="Four honest questions to ask yourself">
           <div className="space-y-6">
             <div className="border border-slate-200 p-6 rounded-2xl bg-white">
-              <h4 className="font-black text-lg text-neutral-dark mb-2">1. Do you prefer subjective solving over objective formulas?</h4>
+              <h4 className="font-black text-lg text-neutral-dark mb-2">1. Do you notice the world, or just move through it?</h4>
               <p className="text-slate-600 font-semibold leading-relaxed">
-                In engineering, a mathematical equation has one correct answer. In design, a product interface has infinite solutions. You must be comfortable with ambiguity, open feedback sessions, and constant revisions based on user research.
+                UCEED Part A has a section on observation and design sensitivity.
+                It asks you to look at an image and catch what most people miss — a
+                structural anomaly, a visual inconsistency, something that doesn&apos;t belong.
+                This isn&apos;t a skill you can mug up. It&apos;s a habit of noticing. If you tend
+                to look at a product and think about why it&apos;s shaped that way, or look at
+                a poster and think about why the text is placed where it is, you already
+                have this. If you&apos;ve never thought about it before, it&apos;s worth asking
+                whether you&apos;ll enjoy developing it.
               </p>
             </div>
             <div className="border border-slate-200 p-6 rounded-2xl bg-white">
-              <h4 className="font-black text-lg text-neutral-dark mb-2">2. Are you detail-oriented with digital interfaces?</h4>
+              <h4 className="font-black text-lg text-neutral-dark mb-2">2. Are you drawn to making things, or to figuring things out — or both?</h4>
               <p className="text-slate-600 font-semibold leading-relaxed">
-                If you look at apps (like Spotify or Instagram) and constantly think about why buttons are placed in specific areas, how a swipe transition feels, or how a booking process could be simplified, you already possess design aptitude.
+                B.Des covers a wide range: product design, communication design,
+                interaction design, animation, spatial design. The common thread is that
+                you&apos;re either making something or solving a problem that results in
+                something made. You don&apos;t have to be a great technical draughtsperson,
+                but you have to care about the output — the object, the interface, the
+                image, the space.
               </p>
             </div>
             <div className="border border-slate-200 p-6 rounded-2xl bg-white">
-              <h4 className="font-black text-lg text-neutral-dark mb-2">3. Can you handle constructive feedback?</h4>
+              <h4 className="font-black text-lg text-neutral-dark mb-2">3. Can you sit with a bad drawing and keep going?</h4>
               <p className="text-slate-600 font-semibold leading-relaxed">
-                Design education is built around "Jury reviews" where peers and professors critique your portfolios openly. If you take criticism personally, the design studio environment can feel highly stressful.
+                Part B has a drawing question. If you&apos;ve never drawn anything in
+                your life, you&apos;ll need to build this skill — and it takes more than a few
+                weeks. But drawing ability is not fixed talent. What separates people who
+                improve from people who don&apos;t is tolerance for the early phase of being
+                bad at something and continuing anyway.
+              </p>
+            </div>
+            <div className="border border-slate-200 p-6 rounded-2xl bg-white">
+              <h4 className="font-black text-lg text-neutral-dark mb-2">4. What specifically draws you to design? Can you answer this in one sentence?</h4>
+              <p className="text-slate-600 font-semibold leading-relaxed">
+                You don&apos;t need a polished answer. But if you have no answer
+                at all — if you can&apos;t point to a thing you like, a type of problem you want
+                to work on, a kind of output you find satisfying — that&apos;s worth paying
+                attention to. Not as a disqualifier, but as a signal to explore more
+                before committing a year to preparation.
               </p>
             </div>
           </div>
         </Section>
 
-        <Section number="03" title="The Industrial Realities">
+        <Section number="03" title="What the program is actually like">
           <div className="p-6 md:p-8 rounded-2xl border border-slate-200 bg-slate-50">
-            <h3 className="text-xl font-black text-neutral-dark mb-4">
-              What does life look like after IIT B.Des?
-            </h3>
             <p className="text-lg text-slate-700 font-medium leading-relaxed mb-4">
-              Fresh B.Des graduates from IITs primarily enter tech sectors as Associate Product Designers or UI/UX Designers. The starting packages match standard B.Tech ranges, stretching from **₹8L to ₹20L per annum**.
+              B.Des at an IIT is studio-based learning. That means project work,
+              critiques, iteration, and a lot of time working on things that don&apos;t
+              have one correct answer. It is not lecture-heavy. The workload is real —
+              design projects take time in ways that are different from solving problem
+              sets — but the stress is creative rather than exam-based.
             </p>
-            <p className="text-lg text-slate-750 font-medium leading-relaxed">
-              However, the job demands high mental agility. Tech evolves rapidly, and you will need to constantly learn new software (Figma, Blender, Framer), manage stakeholder reviews, and coordinate with software engineers. If you crave creative autonomy coupled with tech-adjacent salaries, design is an exceptional path.
+            <p className="text-lg text-slate-700 font-medium leading-relaxed mb-4">
+              Most B.Des programs at IITs cover a broad design foundation in years one
+              and two before you specialise. The disciplines available vary by institute
+              — IIT Bombay&apos;s IDC covers industrial design, communication design,
+              animation, interaction design, and mobility design. IIT Hyderabad&apos;s B.Des
+              has specialisation tracks across product design, visual design, interaction
+              design, and film and animation. IIT Indore&apos;s program is framed around
+              innovation systems — urban, healthcare, education, energy.
+            </p>
+            <p className="text-lg text-slate-700 font-medium leading-relaxed">
+              On careers: fresh B.Des graduates from IITs primarily enter tech sectors,
+              design consultancies, and product companies. Starting salary ranges are
+              broadly comparable to B.Tech graduates from the same institutes — ₹8–20
+              lakhs per annum at placement, with variation by role, company, and
+              specialisation. The honest version: the floor is good, the ceiling is high,
+              and the trajectory depends heavily on what you build during the four years.
             </p>
           </div>
+        </Section>
+
+        <Section number="04" title="If you're from Arts or Commerce">
+          <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium">
+            You can write UCEED. And you can get into IIT Bombay, IIT Delhi, IIT
+            Hyderabad, and IIT Indore — which includes the most prestigious design
+            program in the country (IDC, IIT Bombay). The PCM stream restriction
+            applies only to IIT Guwahati, IIT Roorkee, and IIITDM Jabalpur.
+          </p>
+          <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium">
+            This is not a consolation prize. Arts and Commerce students bring
+            something to design programs that Science students often have to work
+            to develop — comfort with ambiguity, cultural awareness, a different
+            relationship with visual language.
+          </p>
+          <p className="text-lg text-slate-600 leading-relaxed font-medium">
+            What you will need to prepare for: Part A tests logical reasoning, spatial
+            ability, and English comprehension — none of which requires a Science
+            background. Part B tests drawing and design thinking. Neither section has
+            Physics, Chemistry, or Mathematics as prerequisites.
+          </p>
         </Section>
       </div>
     </main>

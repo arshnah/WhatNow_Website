@@ -183,6 +183,50 @@ export default function UceedConvinceParentsPage() {
               If they qualify for fee concessions based on family income, the same rules apply. Pursuing a B.Des at an IIT is a safe, high-paying, and prestigious career choice that offers immediate entry into top tech firms.
             </p>
           </div>
+          <div className="border-l-4 border-orange-400 bg-orange-50 rounded-r-2xl p-5 mt-6">
+            <p className="text-slate-700 font-semibold leading-relaxed text-sm">
+              On the &apos;it&apos;s too expensive&apos; objection: SC/ST/PwD students get full
+              tuition waiver — the four-year program at IIT Bombay costs roughly
+              ₹82,500 total rather than the full ₹8.83 lakhs. For families with
+              annual income under ₹5 lakh, the MCM scholarship covers full tuition
+              regardless of category. See the{" "}
+              <Link href="/exams/uceed/scholarships" className="text-primary font-black underline underline-offset-2 hover:text-primary/80 transition-colors">
+                Scholarships page
+              </Link>{" "}
+              on this site for the complete breakdown.
+            </p>
+          </div>
+        </Section>
+
+        <Section number="04" title="When the counsellor argues your side">
+          <blockquote className="border-l-4 border-orange-500 bg-orange-50 rounded-r-2xl p-6 md:p-8 my-8">
+            <p className="text-slate-700 italic font-medium leading-relaxed mb-4">
+              &ldquo;My parents were very against UCEED from the start. I even went to
+              join Allen. The counsellor there actually ended up convincing them.
+              I even tried to say no, that I&apos;d be fine doing engineering — but they
+              were set on UCEED after whatever the counsellor said.&rdquo;
+            </p>
+            <footer className="text-orange-600 font-black text-sm not-italic">
+              — A UCEED 2026 qualifier, in conversation with WhatNow
+            </footer>
+          </blockquote>
+          <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium">
+            The pushback on UCEED doesn&apos;t always come from parents being
+            closed-minded. Sometimes it comes from genuine uncertainty — about
+            stability, about prestige, about whether design is a real career.
+            That uncertainty is reasonable.
+          </p>
+          <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium">
+            What&apos;s interesting is that even traditional coaching institute
+            counsellors — who have every financial incentive to push engineering
+            preparation — sometimes see the value in design for the right student.
+          </p>
+          <p className="text-lg text-slate-600 leading-relaxed font-medium">
+            The implication: if your parents trust a specific authority figure — a
+            family friend in a relevant field, a counsellor, a senior whose opinion
+            they respect — that endorsement may carry more weight than your own
+            argument. Find that person and have the conversation with them first.
+          </p>
         </Section>
       </div>
     </main>

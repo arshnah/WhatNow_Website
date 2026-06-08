@@ -313,6 +313,14 @@ export default function UceedWhatItIsPage() {
             </table>
           </div>
         </Section>
+
+        {/* TODO: Section 05 — Syllabus: what actually appears */}
+        {/* TODO: Section 06 — The cutoff system: two walls, not one */}
+        {/* TODO: Section 07 — The seven institutes: what each one actually is */}
+        {/* TODO: Section 08 — Seat matrix: category-wise breakdown */}
+        {/* TODO: Section 09 — Important dates: UCEED 2026 timeline */}
+        {/* TODO: Section 10 — Counselling: how seats get allocated */}
+        {/* TODO: Section 11 — Exam day: what to bring and expect */}
       </div>
     </main>
   );
