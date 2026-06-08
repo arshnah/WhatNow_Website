@@ -75,7 +75,7 @@ export default function ImuCetHubPage() {
           </p>
 
           <div className="text-sm font-bold text-slate-400">
-            Last reviewed: May 2026 · Based on IMU CET 2026 official notification
+            Last reviewed: June 2026 · Researched from first-hand accounts of serving and trainee mariners, plus DG Shipping &amp; IMU official notifications.
           </div>
         </div>
       </section>
@@ -181,11 +181,11 @@ export default function ImuCetHubPage() {
             </Link>
 
             {/* Card 2 */}
-            <Link href="/exams/imu-cet/scholarships" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-orange-300 hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:-translate-y-1">
+            <Link href="/exams/imu-cet/entry-paths" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-orange-300 hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:-translate-y-1">
               <div className="text-4xl md:text-5xl font-black text-orange-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">02</div>
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-orange-600 transition-colors duration-300">DNS vs B.Sc vs B.Tech — Which path?</h3>
-                <div className="text-orange-600 text-xs font-semibold font-mono mb-4">/exams/imu-cet/scholarships</div>
+                <div className="text-orange-600 text-xs font-semibold font-mono mb-4">/exams/imu-cet/entry-paths</div>
                 <p className="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
                   Duration, cost, career trajectory, and earning potential compared across all three maritime entry paths. Which is fastest, which pays best long-term, and which suits PCM backgrounds.
                 </p>
@@ -194,11 +194,11 @@ export default function ImuCetHubPage() {
             </Link>
 
             {/* Card 3 */}
-            <Link href="/exams/imu-cet/resources" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-orange-300 hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:-translate-y-1">
+            <Link href="/exams/imu-cet/prep" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-orange-300 hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:-translate-y-1">
               <div className="text-4xl md:text-5xl font-black text-orange-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">03</div>
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-orange-600 transition-colors duration-300">Preparation Strategy — Self-study roadmap</h3>
-                <div className="text-orange-600 text-xs font-semibold font-mono mb-4">/exams/imu-cet/resources</div>
+                <div className="text-orange-600 text-xs font-semibold font-mono mb-4">/exams/imu-cet/prep</div>
                 <p className="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
                   Subject-wise preparation strategy, best books, mock test resources, previous year paper analysis, and a 3-month preparation timeline. Coaching is not necessary for IMU CET — here is how to do it yourself.
                 </p>
@@ -207,11 +207,11 @@ export default function ImuCetHubPage() {
             </Link>
 
             {/* Card 4 */}
-            <Link href="/exams/imu-cet/is-it-for-you" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-orange-300 hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:-translate-y-1">
+            <Link href="/exams/imu-cet/medical" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-orange-300 hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:-translate-y-1">
               <div className="text-4xl md:text-5xl font-black text-orange-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">04</div>
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-orange-600 transition-colors duration-300">Medical Test & DG Shipping Norms</h3>
-                <div className="text-orange-600 text-xs font-semibold font-mono mb-4">/exams/imu-cet/is-it-for-you</div>
+                <div className="text-orange-600 text-xs font-semibold font-mono mb-4">/exams/imu-cet/medical</div>
                 <p className="text-slate-600 leading-relaxed mb-4 text-sm md:text-base">
                   Complete guide to the mandatory medical fitness test: vision requirements (6/6 rule), colour blindness tests, BMI standards, and what disqualifies you.
                 </p>

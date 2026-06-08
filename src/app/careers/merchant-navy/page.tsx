@@ -29,7 +29,7 @@ const translations = {
     breadcrumbsMerchantNavy: "Merchant Navy",
     title: "Merchant Navy — Life at Sea, Pay on Land",
     subtitle: "Tax-free salaries, global travel, and months of isolation. We break down the real career path, entry routes, and what nobody tells you about life offshore.",
-    lastReviewed: "Last reviewed: May 2026 · Compiled by serving Deck Officers & Marine Engineers",
+    lastReviewed: "Last reviewed: June 2026 · Researched from first-hand accounts of serving and trainee mariners, plus DG Shipping & BIMCO/ICS data.",
     stat1Label: "Starting Salary",
     stat1Val: "₹80K-₹3L/mo",
     stat2Label: "Tax Status",
@@ -40,8 +40,8 @@ const translations = {
     stat4Val: "IMU CET",
     stat5Label: "Study Duration",
     stat5Val: "1-4 Years",
-    stat6Label: "Career Span",
-    stat6Val: "20-25 Years",
+    stat6Label: "Sea Career",
+    stat6Val: "~15-20 yrs",
     sectionTitle: "What is a Career in Merchant Navy?",
     descParagraph1: "The Merchant Navy is the commercial shipping fleet that carries 90% of global trade — crude oil, container cargo, LNG, automobiles, grain. Officers either navigate ships (Deck Officers) or manage their propulsion and electrical systems (Marine Engineers). You work on contracts: typically 4-9 months at sea, followed by 2-4 months of paid leave on land.",
     descParagraph2: "The pay is extraordinary for Indian standards — a Second Officer or Fourth Engineer can earn ₹80,000-₹1,50,000 per month tax-free within 2 years of graduating. A Captain or Chief Engineer draws ₹3,00,000-₹8,00,000 per month. The catch: months of isolation, minimal internet at sea, zero social life during contracts, and extremely demanding physical and mental conditions.",
@@ -58,6 +58,8 @@ const translations = {
     card4Title: "Salary, Ranks & Career Progression",
     card4Desc: "From Trainee Cadet to Captain/Chief Engineer. Rank-by-rank salary breakdowns, CDC requirements, competency exams (MEO/Mate), and the 20-year career arc in shipping.",
     badgeComingSoon: "Coming soon",
+    badgeReady: "✓ Ready to read",
+    taxFootnote: "* Tax-free on foreign earnings only if you qualify as Non-Resident by the days-outside-India rule for seafarers. Check the current Income-Tax position for your year.",
     imucetExamLinkText: "Related Exam Guide: IMU CET (Maritime Entrance)"
   },
   hi: {
@@ -66,7 +68,7 @@ const translations = {
     breadcrumbsMerchantNavy: "मर्चेंट नेवी",
     title: "मर्चेंट नेवी — समुद्र पर जीवन, जमीन पर वेतन",
     subtitle: "कर-मुक्त वेतन, वैश्विक यात्रा और महीनों का एकांत। हम वास्तविक करियर पथ, प्रवेश मार्ग और ऑफशोर जीवन के बारे में वह सब बताते हैं जो कोई नहीं बताता।",
-    lastReviewed: "अंतिम समीक्षा: मई 2026 · सेवारत डेक ऑफिसर्स और मरीन इंजीनियर्स द्वारा संकलित",
+    lastReviewed: "अंतिम समीक्षा: जून 2026 · सेवारत और प्रशिक्षु मारीनर्स के प्रत्यक्ष अनुभवों से शोधित, साथ में DG शिपिंग और BIMCO/ICS डेटा।",
     stat1Label: "शुरुआती वेतन",
     stat1Val: "₹80K-₹3L/Month",
     stat2Label: "कर स्थिति",
@@ -77,8 +79,8 @@ const translations = {
     stat4Val: "IMU CET",
     stat5Label: "अध्ययन अवधि",
     stat5Val: "1-4 वर्ष",
-    stat6Label: "करियर अवधि",
-    stat6Val: "20-25 वर्ष",
+    stat6Label: "समुद्री करियर",
+    stat6Val: "~15-20 वर्ष",
     sectionTitle: "मर्चेंट नेवी में करियर क्या है?",
     descParagraph1: "मर्चेंट नेवी वाणिज्यिक शिपिंग बेड़ा है जो वैश्विक व्यापार का 90% — कच्चा तेल, कंटेनर कार्गो, LNG, ऑटोमोबाइल, अनाज — ढोता है। अधिकारी या तो जहाजों को नेविगेट करते हैं (डेक अधिकारी) या उनके प्रणोदन और विद्युत प्रणालियों का प्रबंधन करते हैं (मरीन इंजीनियर)। आप अनुबंधों पर काम करते हैं: आमतौर पर 4-9 महीने समुद्र में, उसके बाद 2-4 महीने की सवेतन छुट्टी।",
     descParagraph2: "भारतीय मानकों के लिए वेतन असाधारण है — एक सेकंड ऑफिसर या फोर्थ इंजीनियर स्नातक होने के 2 साल के भीतर ₹80,000-₹1,50,000 प्रति माह कर-मुक्त कमा सकता है। एक कैप्टन या चीफ इंजीनियर ₹3,00,000-₹8,00,000 प्रति माह कमाता है। कठिनाई: महीनों का एकांत, समुद्र में न्यूनतम इंटरनेट, अनुबंधों के दौरान शून्य सामाजिक जीवन।",
@@ -95,6 +97,8 @@ const translations = {
     card4Title: "वेतन, रैंक और करियर प्रगति",
     card4Desc: "ट्रेनी कैडेट से कैप्टन/चीफ इंजीनियर तक। रैंक-दर-रैंक वेतन विवरण, CDC आवश्यकताएं, योग्यता परीक्षाएं (MEO/Mate), और शिपिंग में 20 साल का करियर आर्क।",
     badgeComingSoon: "जल्द आ रहा है",
+    badgeReady: "✓ पढ़ने के लिए तैयार",
+    taxFootnote: "* विदेशी आय पर कर-मुक्त केवल तभी जब आप भारत के बाहर दिनों की गिनती के नियम के अनुसार अनिवासी (NRI) की योग्यता पूरी करते हों। अपने वर्ष के लिए वर्तमान Income-Tax स्थिति जांचें।",
     imucetExamLinkText: "संबद्ध परीक्षा गाइड: IMU CET (मैरीटाइम प्रवेश)"
   }
 };
@@ -176,6 +180,9 @@ export default function MerchantNavyCareerHubPage() {
           </div>
         </div>
 
+        {/* TAX FOOTNOTE */}
+        <p className="text-xs text-slate-400 font-medium -mt-14">{t.taxFootnote}</p>
+
         {/* RELATED EXAM LINK */}
         <div className="bg-orange-50 border border-orange-100 rounded-2xl p-6 flex items-center justify-between shadow-sm">
           <div className="flex items-center gap-3">
@@ -218,44 +225,44 @@ export default function MerchantNavyCareerHubPage() {
 
           <div className="space-y-4">
             {/* Card 1 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 backdrop-blur-sm border border-slate-200/80 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm">
-              <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">01</div>
+            <Link href="/careers/merchant-navy/is-it-for-you" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-orange-300 hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:-translate-y-1">
+              <div className="text-4xl md:text-5xl font-black text-orange-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">01</div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">{t.card1Title}</h3>
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-orange-600 transition-colors duration-300">{t.card1Title}</h3>
                 <p className="text-slate-500 leading-relaxed mb-4 text-sm md:text-base">{t.card1Desc}</p>
-                <span className="inline-block bg-orange-50/50 text-orange-600 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-orange-100">{t.badgeComingSoon}</span>
+                <span className="inline-block bg-emerald-50 text-emerald-700 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 shadow-sm">{t.badgeReady}</span>
               </div>
-            </div>
+            </Link>
 
             {/* Card 2 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 backdrop-blur-sm border border-slate-200/80 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm">
-              <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">02</div>
+            <Link href="/careers/merchant-navy/entry-routes" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-orange-300 hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:-translate-y-1">
+              <div className="text-4xl md:text-5xl font-black text-orange-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">02</div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">{t.card2Title}</h3>
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-orange-600 transition-colors duration-300">{t.card2Title}</h3>
                 <p className="text-slate-500 leading-relaxed mb-4 text-sm md:text-base">{t.card2Desc}</p>
-                <span className="inline-block bg-orange-50/50 text-orange-600 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-orange-100">{t.badgeComingSoon}</span>
+                <span className="inline-block bg-emerald-50 text-emerald-700 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 shadow-sm">{t.badgeReady}</span>
               </div>
-            </div>
+            </Link>
 
             {/* Card 3 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 backdrop-blur-sm border border-slate-200/80 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm">
-              <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">03</div>
+            <Link href="/careers/merchant-navy/colleges" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-orange-300 hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:-translate-y-1">
+              <div className="text-4xl md:text-5xl font-black text-orange-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">03</div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">{t.card3Title}</h3>
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-orange-600 transition-colors duration-300">{t.card3Title}</h3>
                 <p className="text-slate-500 leading-relaxed mb-4 text-sm md:text-base">{t.card3Desc}</p>
-                <span className="inline-block bg-orange-50/50 text-orange-600 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-orange-100">{t.badgeComingSoon}</span>
+                <span className="inline-block bg-emerald-50 text-emerald-700 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 shadow-sm">{t.badgeReady}</span>
               </div>
-            </div>
+            </Link>
 
             {/* Card 4 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 backdrop-blur-sm border border-slate-200/80 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm">
-              <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">04</div>
+            <Link href="/careers/merchant-navy/salary-ranks" className="group flex flex-col md:flex-row gap-6 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-[2rem] p-6 md:p-8 hover:border-orange-300 hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:-translate-y-1">
+              <div className="text-4xl md:text-5xl font-black text-orange-600 leading-none opacity-80 group-hover:scale-105 transition-transform duration-300">04</div>
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">{t.card4Title}</h3>
+                <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-orange-600 transition-colors duration-300">{t.card4Title}</h3>
                 <p className="text-slate-500 leading-relaxed mb-4 text-sm md:text-base">{t.card4Desc}</p>
-                <span className="inline-block bg-orange-50/50 text-orange-600 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-orange-100">{t.badgeComingSoon}</span>
+                <span className="inline-block bg-emerald-50 text-emerald-700 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 shadow-sm">{t.badgeReady}</span>
               </div>
-            </div>
+            </Link>
           </div>
         </section>
       </div>

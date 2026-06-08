@@ -154,7 +154,8 @@ const GUIDES_DATA = {
       title: <>Merchant Navy — Salary, sea time & reality</>,
       description: "From DG Shipping to your first contract. What cadets earn, what they don't tell you, and how to actually break in.",
       badgeClass: "bg-orange-50/80 text-orange-600 border-orange-100/50",
-      status: "coming-soon" as const,
+      status: "ready" as const,
+      href: "/careers/merchant-navy",
     }
   ],
   hi: [
@@ -178,7 +179,8 @@ const GUIDES_DATA = {
       title: <>मर्चेंट नेवी — वेतन, समुद्री समय और वास्तविकता</>,
       description: "डीजी शिपिंग से लेकर आपके पहले अनुबंध तक। कैडेट्स क्या कमाते हैं, वे आपको क्या नहीं बताते हैं, और वास्तव में प्रवेश कैसे करें।",
       badgeClass: "bg-orange-50/80 text-orange-600 border-orange-100/50",
-      status: "coming-soon" as const,
+      status: "ready" as const,
+      href: "/careers/merchant-navy",
     }
   ]
 };
