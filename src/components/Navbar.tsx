@@ -456,7 +456,7 @@ export default function Navbar() {
                             className="px-3 py-2.5 rounded-lg bg-slate-50 border border-slate-100 flex items-center justify-between gap-2"
                           >
                             <span className="text-[12px] font-medium text-slate-500 leading-tight">{item.label}</span>
-                            <span className="text-[9px] font-semibold uppercase text-slate-400 tracking-wide shrink-0">Soon</span>
+                            <span className="text-[9px] font-semibold uppercase text-slate-400 tracking-wide shrink-0">{language === "hi" ? "जल्द" : "Soon"}</span>
                           </div>
                         ))}
                       </div>

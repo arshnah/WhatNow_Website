@@ -136,7 +136,7 @@ const CAREERS_DATA = {
       status: "ready" as const,
       href: "/careers/merchant-navy",
       colorClass: {
-        badge: "bg-orange-550 text-orange-600 border-orange-100",
+        badge: "bg-orange-50 text-orange-600 border-orange-100",
         text: "text-orange-600",
         border: "hover:border-orange-300",
         glow: "group-hover:shadow-orange-500/5",
@@ -333,6 +333,7 @@ const localTranslations = {
     colleges: "Institutes",
     exitRisk: "Risk Profile",
     inDev: "Blueprint in development",
+    viewBlueprint: "View Blueprint",
   },
   hi: {
     home: "होम",
@@ -346,6 +347,7 @@ const localTranslations = {
     colleges: "संस्थान",
     exitRisk: "जोखिम प्रोफ़ाइल",
     inDev: "ब्लूप्रिंट विकास में है",
+    viewBlueprint: "ब्लूप्रिंट देखें",
   }
 };
 
@@ -631,7 +633,7 @@ export default function CareersPage() {
       <section className="py-16 md:py-24 container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl">
         {/* Category Filters */}
         <div className="flex items-center gap-8 overflow-x-auto pb-0 mb-12 scrollbar-none border-b border-slate-200/50">
-          {(["All", "Design", "Fashion Design", "Law", "Defence", "Management", "Maritime"] as const).map((category) => {
+          {(["All", "Design", "Fashion Design", "Law", "Defence", "Management", "Maritime", "Urban Planning"] as const).map((category) => {
             const isActive = selectedCategory === category;
             return (
               <button
@@ -752,7 +754,7 @@ export default function CareersPage() {
                         </div>
 
                         <div className="flex items-center gap-1.5 justify-end text-xs font-black uppercase tracking-wider text-neutral-dark group-hover:text-primary transition-colors duration-300">
-                          <span>View Blueprint</span>
+                          <span>{t.viewBlueprint}</span>
                           <Icon icon="ph:arrow-right" className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
                         </div>
                       </div>

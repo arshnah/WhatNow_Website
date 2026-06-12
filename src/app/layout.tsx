@@ -21,7 +21,10 @@ const mukta = Mukta({
 });
 
 export const metadata: Metadata = {
-  title: "WhatNow",
+  title: {
+    template: "%s | WhatNow",
+    default: "WhatNow — You have options.",
+  },
   description: "You have options. We help you find the right one.",
 };
 

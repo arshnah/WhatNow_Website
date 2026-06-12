@@ -814,7 +814,7 @@ export default function ExamsPage() {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-slate-50/60 rounded-2xl p-4 border border-slate-100/80 flex flex-col justify-center">
-                    <span className="text-3xl font-black text-neutral-dark block mb-0.5 leading-none">4</span>
+                    <span className="text-3xl font-black text-neutral-dark block mb-0.5 leading-none">5</span>
                     <span className="text-[10px] font-black uppercase tracking-wider text-slate-500 leading-none">{language === 'hi' ? 'सक्रिय परीक्षाएं' : 'Active Exams'}</span>
                   </div>
                   
@@ -843,7 +843,7 @@ export default function ExamsPage() {
       <section className="py-16 md:py-24 container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl">
         {/* Category Filters */}
         <div className="flex items-center gap-8 overflow-x-auto pb-0 mb-12 scrollbar-none border-b border-slate-200/50">
-          {(["All", "Design", "Law", "Defense", "Maritime", "Engineering", "Medical"] as const).map((category) => {
+          {(["All", "Design", "Law", "Defense", "Maritime", "Engineering", "Medical", "Planning"] as const).map((category) => {
             const isActive = selectedCategory === category;
             return (
               <button
@@ -1006,7 +1006,7 @@ export default function ExamsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-slate-50 border border-slate-200/50 rounded-3xl p-8 lg:p-10">
               <div className="h-12 w-12 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 mb-6 shadow-inner">
-                <Icon icon="solar:question-square-bold-duotone" className="w-66 h-6" />
+                <Icon icon="solar:question-square-bold-duotone" className="w-6 h-6" />
               </div>
               <h4 className="text-xl font-black text-neutral-dark mb-3">{t.op1Title}</h4>
               <p className="text-slate-500 text-sm leading-relaxed">
