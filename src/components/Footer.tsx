@@ -126,10 +126,10 @@ export default function Footer() {
             <div>
               <h3 className="text-base font-semibold text-white/70 mb-6">{t.legal}</h3>
               <ul className="space-y-4">
-                <li><Link href="/coming-soon" className="text-white/90 hover:text-white hover:underline transition-all">{t.privacyPolicy}</Link></li>
-                <li><Link href="/coming-soon" className="text-white/90 hover:text-white hover:underline transition-all">{t.termsOfService}</Link></li>
-                <li><Link href="/coming-soon" className="text-white/90 hover:text-white hover:underline transition-all">{t.cookiePolicy}</Link></li>
-                <li><Link href="/coming-soon" className="text-white/90 hover:text-white hover:underline transition-all">{t.editorialGuidelines}</Link></li>
+                <li><Link href="/privacy" className="text-white/90 hover:text-white hover:underline transition-all">{t.privacyPolicy}</Link></li>
+                <li><Link href="/terms" className="text-white/90 hover:text-white hover:underline transition-all">{t.termsOfService}</Link></li>
+                <li><Link href="/cookies" className="text-white/90 hover:text-white hover:underline transition-all">{t.cookiePolicy}</Link></li>
+                <li><Link href="/editorial-guidelines" className="text-white/90 hover:text-white hover:underline transition-all">{t.editorialGuidelines}</Link></li>
               </ul>
             </div>
           </div>
