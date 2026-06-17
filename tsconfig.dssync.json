@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./src/*"],
+      "next/link": ["./.design-sync/ds-src/shims/next-link.tsx"],
+      "next/image": ["./.design-sync/ds-src/shims/next-image.tsx"],
+      "next/navigation": ["./.design-sync/ds-src/shims/next-navigation.ts"]
+    }
+  }
+}
