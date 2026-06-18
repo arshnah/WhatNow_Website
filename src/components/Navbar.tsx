@@ -485,23 +485,23 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Actions (Search, Language and Theme) */}
-            <div className="hidden lg:flex items-center shrink-0 gap-3">
+            <div className="hidden lg:flex items-center shrink-0 gap-1.5">
               {/* Notice Board Button */}
               <button
                 onClick={() => window.dispatchEvent(new CustomEvent("open-notice-board"))}
-                className="relative text-gray-600 hover:text-gray-900 transition-colors p-2 cursor-pointer flex items-center justify-center rounded-xl hover:bg-slate-50"
+                className="relative h-9 w-9 flex items-center justify-center rounded-xl text-slate-600 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors cursor-pointer"
                 title={language === "hi" ? "सूचना पट्ट (लाइव)" : "Notice Board (Live)"}
               >
-                <Icon icon="solar:bell-bing-bold-duotone" className="w-5.5 h-5.5 text-slate-600 hover:text-primary transition-colors" />
+                <Icon icon="solar:bell-bing-bold-duotone" className="w-5.5 h-5.5" />
                 <span className="absolute top-1.5 right-1.5 flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
                 </span>
               </button>
 
-              <button 
+              <button
                 onClick={() => window.dispatchEvent(new CustomEvent("open-search"))}
-                className="text-gray-600 hover:text-gray-900 transition-colors p-2 cursor-pointer flex items-center gap-1.5"
+                className="h-9 flex items-center gap-1.5 px-2.5 rounded-xl text-slate-600 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors cursor-pointer"
                 title={t.searchTitle}
               >
                 <span className="sr-only">{t.searchMobile}</span>
@@ -516,21 +516,21 @@ export default function Navbar() {
               {/* Language Toggle — Desktop */}
               <button
                 onClick={() => setLanguage(language === "en" ? "hi" : "en")}
-                className="flex items-center gap-0.5 rounded-xl border border-slate-200 overflow-hidden text-[11px] font-black tracking-tight shadow-sm hover:border-primary/40 transition-all duration-200 cursor-pointer"
+                className="flex items-center h-9 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden text-[11px] font-black tracking-tight shadow-sm hover:border-primary/40 transition-all duration-200 cursor-pointer"
                 title={language === "en" ? "Switch to Hindi" : "Switch to English"}
               >
-                <span className={`px-2.5 py-1.5 transition-all duration-200 ${
-                  language === "en" ? "bg-primary text-white" : "text-slate-500 hover:bg-slate-50"
+                <span className={`flex items-center h-full px-2.5 transition-all duration-200 ${
+                  language === "en" ? "bg-primary text-white" : "text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800"
                 }`}>EN</span>
-                <span className={`px-2.5 py-1.5 transition-all duration-200 ${
-                  language === "hi" ? "bg-primary text-white" : "text-slate-500 hover:bg-slate-50"
+                <span className={`flex items-center h-full px-2.5 transition-all duration-200 ${
+                  language === "hi" ? "bg-primary text-white" : "text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800"
                 }`}>हि</span>
               </button>
 
               {/* Dark Mode Toggle — Desktop */}
               <button
                 onClick={toggleTheme}
-                className="text-gray-600 hover:text-gray-900 dark:text-slate-300 dark:hover:text-white transition-colors p-2 cursor-pointer flex items-center justify-center rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800"
+                className="h-9 w-9 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:border-primary/40 transition-all duration-200 cursor-pointer"
                 title={theme === "dark"
                   ? (language === "hi" ? "लाइट मोड" : "Light mode")
                   : (language === "hi" ? "डार्क मोड" : "Dark mode")}
@@ -538,7 +538,7 @@ export default function Navbar() {
               >
                 <Icon
                   icon={theme === "dark" ? "solar:sun-bold-duotone" : "solar:moon-bold-duotone"}
-                  className="w-5.5 h-5.5 text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
+                  className="w-5 h-5"
                 />
               </button>
 
@@ -546,10 +546,10 @@ export default function Navbar() {
               <div className="relative" ref={themeDropdownRef}>
                 <button
                   onClick={() => setIsThemeOpen(!isThemeOpen)}
-                  className="text-gray-600 hover:text-gray-900 transition-colors p-2 cursor-pointer flex items-center justify-center rounded-xl hover:bg-slate-50"
+                  className="h-9 w-9 flex items-center justify-center rounded-xl text-slate-600 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors cursor-pointer"
                   title={t.themeLabel}
                 >
-                  <Icon icon="solar:palette-bold-duotone" className="w-5.5 h-5.5 text-slate-600 hover:text-primary transition-colors" />
+                  <Icon icon="solar:palette-bold-duotone" className="w-5.5 h-5.5" />
                 </button>
 
                 <AnimatePresence>
