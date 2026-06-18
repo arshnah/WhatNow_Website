@@ -82,9 +82,9 @@ export default function Hero() {
                 {/* Right Content - Image */}
                 <div className="order-2 lg:order-2 w-full flex justify-center relative">
                     <div className="relative w-full max-w-[550px] lg:max-w-[750px] aspect-[4/3] lg:aspect-auto lg:h-[600px]">
-                        {/* Light-mode hero (default, LCP-priority) */}
+                        {/* Light-mode hero (default, LCP-priority) — transparent PNG blends on the white page */}
                         <Image
-                            src="/hero.png"
+                            src="/transparent-hero.png"
                             alt={t.alt}
                             fill
                             priority
