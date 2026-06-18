@@ -46,3 +46,6 @@ ref/
 #misc
 webplan.pdf
 message.txt
+
+# confidential working docs (design audit / overhaul guide / ops manual) — keep local only
+stuff.related.to.whatnow/
