@@ -217,7 +217,7 @@ export default function DesignCareerHubPage() {
 
           <div className="space-y-4">
             {/* Card 1 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200/80 dark:border-slate-700 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm">
+            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200/80 dark:border-slate-700 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 dark:hover:bg-slate-800/70 transition-all duration-300 shadow-sm">
               <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">01</div>
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">{t.card1Title}</h3>
@@ -227,7 +227,7 @@ export default function DesignCareerHubPage() {
             </div>
 
             {/* Card 2 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200/80 dark:border-slate-700 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm">
+            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200/80 dark:border-slate-700 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 dark:hover:bg-slate-800/70 transition-all duration-300 shadow-sm">
               <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">02</div>
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">{t.card2Title}</h3>
@@ -237,7 +237,7 @@ export default function DesignCareerHubPage() {
             </div>
 
             {/* Card 3 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200/80 dark:border-slate-700 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm">
+            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200/80 dark:border-slate-700 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 dark:hover:bg-slate-800/70 transition-all duration-300 shadow-sm">
               <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">03</div>
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">{t.card3Title}</h3>
@@ -247,7 +247,7 @@ export default function DesignCareerHubPage() {
             </div>
 
             {/* Card 4 */}
-            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200/80 dark:border-slate-700 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 transition-all duration-300 shadow-sm">
+            <div className="group flex flex-col md:flex-row gap-6 bg-white/60 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200/80 dark:border-slate-700 rounded-[2rem] p-6 md:p-8 hover:border-slate-300 hover:bg-white/80 dark:hover:bg-slate-800/70 transition-all duration-300 shadow-sm">
               <div className="text-4xl md:text-5xl font-black text-slate-300 leading-none">04</div>
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">{t.card4Title}</h3>
