@@ -679,7 +679,6 @@ export default function VisualAnalytics({ type, data, colorTheme = 'indigo' }: V
                     {/* Step interaction dots */}
                     {careerData.salaries.map((s, i) => {
                       const p = points[i];
-                      const levelName = language === 'hi' ? s.levelHi : s.level;
                       return (
                         <g 
                           key={i}

@@ -38,9 +38,9 @@ export default function NoticeBoard() {
       } else {
         throw new Error("Invalid response format");
       }
-    } catch (err: any) {
+    } catch (err) {
       console.error("Notice Board Fetch Error:", err);
-      setError(err.message || "Failed to load real-time alerts.");
+      setError(err instanceof Error ? err.message : "Failed to load real-time alerts.");
       // Fallback fallback notices so the board is never empty
       setNotices([
         {
@@ -109,7 +109,7 @@ export default function NoticeBoard() {
       const days = Math.floor(hours / 24);
       if (days === 1) return "Yesterday";
       return `${days} days ago`;
-    } catch (e) {
+    } catch {
       return "Recently";
     }
   };
@@ -202,7 +202,8 @@ export default function NoticeBoard() {
                       {/* Content image if present in media enclosure */}
                       {notice.enclosure?.link && (
                         <div className="relative w-full h-32 rounded-lg overflow-hidden bg-slate-100 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
-                          <img 
+                          {/* eslint-disable-next-line @next/next/no-img-element -- remote RSS feed image, arbitrary domains */}
+                          <img
                             src={notice.enclosure.link} 
                             alt={notice.title}
                             className="object-cover w-full h-full group-hover:scale-103 transition-transform duration-300"
