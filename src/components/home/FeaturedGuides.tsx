@@ -235,7 +235,7 @@ export default function FeaturedGuides() {
           </div>
 
           <Link
-            href="/reads"
+            href="/careers"
             className="group flex items-center gap-2 font-medium text-neutral-500 dark:text-slate-400 hover:text-neutral-800 dark:hover:text-slate-100 transition-colors w-fit pb-2"
           >
             <span>{t.viewAll}</span>
