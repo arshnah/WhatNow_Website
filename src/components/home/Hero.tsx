@@ -92,7 +92,7 @@ export default function Hero() {
                         />
                         {/* Dark-mode hero. Only loads when dark mode is active (display:none until then). */}
                         <Image
-                            src="/hero_dark.webp"
+                            src="/hero-dark.png"
                             alt={t.alt}
                             fill
                             className="object-contain object-center lg:object-right hidden dark:block"
