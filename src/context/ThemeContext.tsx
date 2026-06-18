@@ -28,28 +28,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   // paint; this state just mirrors it so the toggle UI is in sync.
   const [theme, setThemeState] = useState<Theme>('light');
 
-  // Resolve the initial value: an explicit saved choice wins, else the OS setting.
+  // Default is light. Only an explicit saved choice (the toggle) switches to dark.
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY) as Theme | null;
-    if (saved === 'light' || saved === 'dark') {
-      setThemeState(saved);
-    } else {
-      setThemeState(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    }
-  }, []);
-
-  // Follow OS changes live — but only while the user hasn't picked an explicit theme.
-  useEffect(() => {
-    const mq = window.matchMedia('(prefers-color-scheme: dark)');
-    const handler = (e: MediaQueryListEvent) => {
-      if (!localStorage.getItem(STORAGE_KEY)) {
-        const next: Theme = e.matches ? 'dark' : 'light';
-        setThemeState(next);
-        applyThemeClass(next);
-      }
-    };
-    mq.addEventListener('change', handler);
-    return () => mq.removeEventListener('change', handler);
+    setThemeState(saved === 'dark' ? 'dark' : 'light');
   }, []);
 
   const setTheme = (next: Theme) => {

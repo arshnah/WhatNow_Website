@@ -10,8 +10,8 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import "./globals.css";
 
-// Runs before paint to set the theme class and avoid a light flash on dark loads.
-const themeScript = `(function(){try{var t=localStorage.getItem('whatnow-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.classList.add('dark');}}catch(e){}})();`;
+// Runs before paint. Light is the default; only apply dark when the user has explicitly chosen it.
+const themeScript = `(function(){try{if(localStorage.getItem('whatnow-theme')==='dark'){document.documentElement.classList.add('dark');}}catch(e){}})();`;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
