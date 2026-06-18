@@ -245,7 +245,7 @@ export default function SearchModal() {
       case "Reads":
         return "text-accent bg-accent/5 border-accent/10";
       default:
-        return "text-slate-500 bg-slate-50 border-slate-100";
+        return "text-slate-500 bg-slate-50 dark:bg-slate-800 border-slate-100 dark:border-slate-700";
     }
   };
 
@@ -422,7 +422,7 @@ export default function SearchModal() {
                 </span>
               </div>
               <span className="flex items-center gap-1.5">
-                <kbd className="border border-slate-200/80 bg-white rounded px-1.5 py-0.5 shadow-sm font-sans font-black text-[9px]">Esc</kbd> {t.close}
+                <kbd className="border border-slate-200/80 dark:border-slate-700 bg-white dark:bg-slate-900 rounded px-1.5 py-0.5 shadow-sm font-sans font-black text-[9px]">Esc</kbd> {t.close}
               </span>
             </div>
           </motion.div>
