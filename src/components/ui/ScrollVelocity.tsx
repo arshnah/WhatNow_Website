@@ -23,6 +23,7 @@ interface ScrollVelocityProps {
   scrollerClassName?: string;
   parallaxStyle?: React.CSSProperties;
   scrollerStyle?: React.CSSProperties;
+  paused?: boolean;
 }
 
 interface VelocityTextProps {
@@ -38,6 +39,7 @@ interface VelocityTextProps {
   scrollerClassName?: string;
   parallaxStyle?: React.CSSProperties;
   scrollerStyle?: React.CSSProperties;
+  paused?: boolean;
 }
 
 function useElementWidth(ref: React.RefObject<HTMLElement | null>) {
@@ -69,7 +71,8 @@ function VelocityText({
   parallaxClassName = 'parallax',
   scrollerClassName = 'scroller',
   parallaxStyle,
-  scrollerStyle
+  scrollerStyle,
+  paused = false
 }: VelocityTextProps) {
   const baseX = useMotionValue(0);
   const scrollOptions = scrollContainerRef ? { container: scrollContainerRef } : {};
@@ -102,6 +105,7 @@ function VelocityText({
 
   const directionFactor = useRef(1);
   useAnimationFrame((_t, delta) => {
+    if (paused) return;
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
     if (velocityFactor.get() < 0) {
@@ -144,7 +148,8 @@ export const ScrollVelocity = ({
   parallaxClassName = 'parallax',
   scrollerClassName = 'scroller',
   parallaxStyle,
-  scrollerStyle
+  scrollerStyle,
+  paused = false
 }: ScrollVelocityProps) => {
   return (
     <section>
@@ -162,6 +167,7 @@ export const ScrollVelocity = ({
           scrollerClassName={scrollerClassName}
           parallaxStyle={parallaxStyle}
           scrollerStyle={scrollerStyle}
+          paused={paused}
         >
           {text}
         </VelocityText>

@@ -7,11 +7,11 @@
   --color-background: #ffffff;
   --color-foreground: #111827;
   --font-sans: var(--font-geist-sans), sans-serif;
-  --font-heading: var(--font-geist-sans), sans-serif;
+  --font-heading: var(--font-bricolage), var(--font-geist-sans), sans-serif;
   --color-primary: #4F46E5;
   --color-primary-hover: #4338ca;
-  --color-secondary: #0A8B74;
-  --color-secondary-hover: #087A66;
+  --color-secondary: #4F46E5;
+  --color-secondary-hover: #4338ca;
   --color-accent: #F59E0B;
   --color-highlight: #EC4899;
   --color-neutral-dark: #0D1B3D;

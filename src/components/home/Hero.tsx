@@ -8,24 +8,20 @@ import { useLanguage } from "@/context/LanguageContext";
 
 const translations = {
   en: {
-    title1: "You have options.",
-    title2: "We help you find",
-    title3: "the ",
-    title4: "right one.",
-    subtitle: "Unbiased guides, real stories, and clear roadmaps for every stage of your journey.",
+    title1: "Boards are over.",
+    title2: "Now what?",
+    subtitle: "Honest guides to every course, career, and entrance exam — from people who don't earn a cut when you choose.",
     explore: "Explore Careers",
     browse: "About WhatNow",
-    alt: "Student making career choices",
+    alt: "Line illustration of a student weighing different career paths",
   },
   hi: {
-    title1: "आपके पास विकल्प हैं।",
-    title2: "हम सही विकल्प खोजने",
-    title3: "में आपकी ",
-    title4: "मदद करते हैं।",
-    subtitle: "आपकी यात्रा के हर चरण के लिए निष्पक्ष मार्गदर्शिकाएँ, सच्ची कहानियाँ और स्पष्ट रोडमैप।",
+    title1: "बोर्ड खत्म हो गए।",
+    title2: "अब आगे क्या?",
+    subtitle: "हर कोर्स, करियर और प्रवेश परीक्षा के लिए ईमानदार मार्गदर्शन — उन लोगों से जिन्हें आपके चुनाव पर कोई कमीशन नहीं मिलता।",
     explore: "करियर खोजें",
     browse: "व्हाटनाव के बारे में",
-    alt: "करियर का चुनाव करता छात्र",
+    alt: "अलग-अलग करियर विकल्पों पर विचार करते छात्र का चित्रण",
   }
 };
 
@@ -43,10 +39,8 @@ export default function Hero() {
 
                     <h1 className="text-[2.5rem] leading-[1.1] sm:text-5xl lg:text-[4rem] font-extrabold text-[#111827] dark:text-slate-50 mb-6 tracking-tight">
                         {t.title1}<br />
-                        {t.title2}<br />
-                        {t.title3}
                         <span className="relative inline-block whitespace-nowrap">
-                            <span className="text-secondary">{t.title4}</span>
+                            <span className="text-secondary">{t.title2}</span>
                             <svg className="absolute -bottom-2 left-0 w-full h-2.5 text-secondary pointer-events-none" viewBox="0 0 100 10" preserveAspectRatio="none">
                                 <path d="M 2 4 Q 50 8 98 4" stroke="currentColor" strokeWidth="3" strokeLinecap="round" fill="none" />
                                 <path d="M 6 6 Q 50 9 94 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.7" />
@@ -88,6 +82,7 @@ export default function Hero() {
                             alt={t.alt}
                             fill
                             priority
+                            sizes="(max-width: 640px) 100vw, (max-width: 1023px) 550px, 750px"
                             className="object-contain object-center lg:object-right block dark:hidden"
                         />
                         {/* Dark-mode hero (watermark-free, bg matches #0E111E). Only loads in dark mode. */}
@@ -95,6 +90,7 @@ export default function Hero() {
                             src="/hero-dark.webp"
                             alt={t.alt}
                             fill
+                            sizes="(max-width: 640px) 100vw, (max-width: 1023px) 550px, 750px"
                             className="object-contain object-center lg:object-right hidden dark:block"
                         />
                     </div>

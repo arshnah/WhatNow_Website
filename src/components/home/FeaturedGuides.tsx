@@ -36,11 +36,13 @@ const CATEGORY_TRANSLATIONS: Record<string, Record<string, string>> = {
     "design": "Design",
     "defence": "Defence",
     "maritime": "Maritime",
+    "law": "Law",
   },
   hi: {
     "design": "डिज़ाइन",
     "defence": "रक्षा",
     "maritime": "मर्चेंट नेवी",
+    "law": "कानून",
   }
 };
 
@@ -58,6 +60,8 @@ function GuideCard({ category, title, description, badgeClass, status, href }: G
         return "bg-emerald-500/5 group-hover:bg-emerald-500/10";
       case "maritime":
         return "bg-orange-500/5 group-hover:bg-orange-500/10";
+      case "law":
+        return "bg-rose-500/5 group-hover:bg-rose-500/10";
       default:
         return "bg-slate-500/5 group-hover:bg-slate-500/10";
     }
@@ -143,11 +147,12 @@ const GUIDES_DATA = {
       href: "/exams/uceed",
     },
     {
-      category: "Defence",
-      title: <>NDA — Beyond the uniform myth</>,
-      description: "What life looks like after Class 12 if you pick this path. Pay, postings, exit options, and the parts recruiters skip.",
-      badgeClass: "bg-emerald-50/80 text-emerald-600 border-emerald-100/50",
-      status: "coming-soon" as const,
+      category: "Law",
+      title: <>CLAT — Law school without<br className="hidden lg:block" /> the coaching trap</>,
+      description: "What CLAT actually tests, how toppers prepped without ₹2-lakh coaching, and which NLUs are genuinely worth it.",
+      badgeClass: "bg-rose-50/80 text-rose-600 border-rose-100/50",
+      status: "ready" as const,
+      href: "/exams/clat",
     },
     {
       category: "Maritime",
@@ -168,11 +173,12 @@ const GUIDES_DATA = {
       href: "/exams/uceed",
     },
     {
-      category: "Defence",
-      title: <>NDA — वर्दी के मिथक से परे</>,
-      description: "यदि आप इस मार्ग को चुनते हैं तो कक्षा 12 के बाद जीवन कैसा दिखता है। वेतन, पोस्टिंग, बाहर निकलने के विकल्प, और वे हिस्से जिन्हें भर्ती करने वाले छोड़ देते हैं।",
-      badgeClass: "bg-emerald-50/80 text-emerald-600 border-emerald-100/50",
-      status: "coming-soon" as const,
+      category: "Law",
+      title: <>CLAT — बिना कोचिंग जाल के<br className="hidden lg:block" /> लॉ स्कूल</>,
+      description: "CLAT वास्तव में क्या परखता है, टॉपर्स ने बिना ₹2 लाख की कोचिंग के कैसे तैयारी की, और कौन से NLU वाकई इसके लायक हैं।",
+      badgeClass: "bg-rose-50/80 text-rose-600 border-rose-100/50",
+      status: "ready" as const,
+      href: "/exams/clat",
     },
     {
       category: "Maritime",

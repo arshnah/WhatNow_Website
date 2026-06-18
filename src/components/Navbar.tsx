@@ -98,7 +98,7 @@ const THEMES = [
     id: "indigo",
     nameEn: "Default Indigo", nameHi: "डिफ़ॉल्ट इंडिगो",
     primary: "#4F46E5", hover: "#4338ca",
-    secondary: "#0A8B74", secondaryHover: "#087A66",
+    secondary: "#4F46E5", secondaryHover: "#4338ca",
     bgTint: "#F8F8F6", bgTint2: "#F1F5F9",
     color: "bg-[#4F46E5]",
   },

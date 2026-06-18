@@ -41,6 +41,30 @@ export const SEARCH_INDEX: SearchItem[] = [
     keywords: ["scholarships", "financial aid", "fees", "loans", "waiver", "funding"],
     status: "ready"
   },
+  {
+    title: "Contact",
+    category: "General",
+    description: "How to reach WhatNow — email, community Discord, and social channels.",
+    href: "/contact",
+    keywords: ["contact", "email", "reach us", "support", "discord", "get in touch", "help"],
+    status: "ready"
+  },
+  {
+    title: "FAQ",
+    category: "General",
+    description: "Honest answers to what students ask most — is it free, who's behind it, how accurate is the data.",
+    href: "/faq",
+    keywords: ["faq", "questions", "is it free", "who made this", "help", "answers", "frequently asked"],
+    status: "ready"
+  },
+  {
+    title: "Content Policy",
+    category: "General",
+    description: "What WhatNow publishes, accuracy and corrections, community rules, IP, and how to report content.",
+    href: "/content-policy",
+    keywords: ["content policy", "rules", "report", "takedown", "copyright", "community", "moderation", "corrections"],
+    status: "ready"
+  },
 
   // --- EXAMS ---
   {
