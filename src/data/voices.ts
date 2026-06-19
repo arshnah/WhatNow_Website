@@ -34,10 +34,10 @@ export const VOICES: Voice[] = [
     dept: "Deck",
     date: "June 2026",
     vertical: "merchant-navy",
-    // Consent obtained; tax figure verified (182). Remaining gate before publishing:
-    // Abhay's full Q9 answer (cut off in the source). Flip status to "published" then.
+    // Consent obtained; tax figure verified (182). Full Q9 answer received (June 2026)
+    // — all nine answers now complete. Published.
     consent: true,
-    status: "draft",
+    status: "published",
     intro:
       "Abhay is a serving Deck Cadet. He answered nine questions about life and work in the Merchant Navy over WhatsApp — the honest version, not the brochure.",
     pullQuote: "It was my own willingness that brought me here. I genuinely find this environment fascinating.",
@@ -76,9 +76,8 @@ export const VOICES: Voice[] = [
         a: "Contracts depend on rank — the more senior the rank, the shorter the contract. As a Deck Cadet, my contract is seven months.",
       },
       {
-        q: "How do you handle the mental side — isolation at sea?",
-        a: "There is very little personal time to sit and think about all that. Time runs fast when you work continuously. For me — yes, in the beginning it feels lonely, but later you adapt. We also have several things onboard for…",
-        note: "INCOMPLETE: this answer was cut off in the source. Follow up with Abhay for the full response (likely covers onboard recreation) before publishing.",
+        q: "How do you handle the mental side — isolation and boredom at sea?",
+        a: "There is very little personal time to sit and think about all that — time runs fast when you work continuously. For me, yes, in the beginning it feels lonely, but later you adapt to it. We also have plenty of things onboard — games and other activities — to get through the boredom and loneliness.",
       },
     ],
   },
