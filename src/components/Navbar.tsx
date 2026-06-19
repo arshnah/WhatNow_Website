@@ -531,19 +531,29 @@ export default function Navbar() {
                 }`}>हि</span>
               </button>
 
-              {/* Dark Mode Toggle — Desktop */}
+              {/* Dark Mode Toggle — Desktop (sliding switch) */}
               <button
                 onClick={toggleTheme}
-                className="h-9 w-9 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm text-slate-600 dark:text-slate-300 hover:text-primary hover:border-primary/40 transition-all duration-200 cursor-pointer"
+                role="switch"
+                aria-checked={theme === "dark"}
+                aria-label="Toggle dark mode"
                 title={theme === "dark"
                   ? (language === "hi" ? "लाइट मोड" : "Light mode")
                   : (language === "hi" ? "डार्क मोड" : "Dark mode")}
-                aria-label="Toggle dark mode"
+                className="relative h-9 w-[62px] rounded-full border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800/80 shadow-inner hover:border-primary/40 transition-colors duration-300 cursor-pointer"
               >
-                <Icon
-                  icon={theme === "dark" ? "solar:sun-bold-duotone" : "solar:moon-bold-duotone"}
-                  className="w-5 h-5"
-                />
+                <Icon icon="solar:sun-bold-duotone" aria-hidden="true" className="absolute left-[9px] top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-amber-500/70" />
+                <Icon icon="solar:moon-bold-duotone" aria-hidden="true" className="absolute right-[9px] top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-indigo-300/70" />
+                <span
+                  className={`absolute top-1 left-1 h-7 w-7 rounded-full bg-white dark:bg-slate-900 shadow-md flex items-center justify-center transition-transform duration-300 ease-out motion-reduce:transition-none ${
+                    theme === "dark" ? "translate-x-[26px]" : "translate-x-0"
+                  }`}
+                >
+                  <Icon
+                    icon={theme === "dark" ? "solar:moon-bold-duotone" : "solar:sun-bold-duotone"}
+                    className={`w-4 h-4 ${theme === "dark" ? "text-indigo-300" : "text-amber-500"}`}
+                  />
+                </span>
               </button>
 
               {/* Vibe Theme Switcher */}
