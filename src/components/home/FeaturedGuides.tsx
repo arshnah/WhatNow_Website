@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import React, { useRef, useState, useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import { motion } from "framer-motion";
 
 interface GuideCardProps {
   category: string;
@@ -72,34 +73,40 @@ function GuideCard({ category, title, description, badgeClass, status, href }: G
 
   if (isReady) {
     return (
-      <Link
-        href={href || "#"}
-        className="relative rounded-3xl p-8 sm:p-10 flex flex-col h-full border border-slate-200/80 dark:border-slate-700/70 hover:border-slate-300 dark:hover:border-slate-600 bg-white/80 dark:bg-slate-800/50 backdrop-blur-md cursor-pointer shadow-sm hover:shadow-xl hover:shadow-black/5 dark:hover:shadow-black/40 hover:-translate-y-1.5 transition-all duration-500 text-left select-none group"
+      <motion.div
+        whileHover={{ y: -8, scale: 1.01 }}
+        transition={{ type: "spring", stiffness: 350, damping: 20 }}
+        className="h-full"
       >
-        {/* Ambient background glow */}
-        <div className={`absolute -right-10 -bottom-10 w-44 h-44 rounded-full blur-3xl transition-all duration-500 pointer-events-none ${getGlowColor(category)}`} />
+        <Link
+          href={href || "#"}
+          className="relative rounded-3xl p-8 sm:p-10 flex flex-col h-full border border-slate-200/80 dark:border-slate-700/70 hover:border-slate-350 dark:hover:border-slate-600 bg-white/80 dark:bg-slate-800/50 backdrop-blur-md cursor-pointer shadow-sm hover:shadow-xl hover:shadow-black/5 dark:hover:shadow-black/40 transition-colors duration-300 text-left select-none group"
+        >
+          {/* Ambient background glow */}
+          <div className={`absolute -right-10 -bottom-10 w-44 h-44 rounded-full blur-3xl transition-all duration-500 pointer-events-none ${getGlowColor(category)}`} />
 
-        <div className="mb-6 flex items-center justify-between relative z-10 w-full">
-          <span className={`font-black text-[10px] uppercase tracking-wider px-3.5 py-1.5 rounded-full border shadow-sm ${badgeClass}`}>
-            {displayCategory}
-          </span>
-        </div>
+          <div className="mb-6 flex items-center justify-between relative z-10 w-full">
+            <span className={`font-black text-[10px] uppercase tracking-wider px-3.5 py-1.5 rounded-full border shadow-sm ${badgeClass}`}>
+              {displayCategory}
+            </span>
+          </div>
 
-        <h3 className="text-2xl lg:text-[1.65rem] font-black text-neutral-dark mb-5 leading-tight tracking-tight relative z-10 transition-colors duration-300 group-hover:text-primary">
-          {title}
-        </h3>
+          <h3 className="text-2xl lg:text-[1.65rem] font-black text-neutral-dark mb-5 leading-tight tracking-tight relative z-10 transition-colors duration-300 group-hover:text-primary">
+            {title}
+          </h3>
 
-        <p className="text-slate-550 dark:text-slate-400 leading-relaxed mb-10 flex-grow font-medium text-sm sm:text-base relative z-10">
-          {description}
-        </p>
+          <p className="text-slate-550 dark:text-slate-400 leading-relaxed mb-10 flex-grow font-medium text-sm sm:text-base relative z-10">
+            {description}
+          </p>
 
-        <div className="mt-auto flex items-center gap-2 justify-end relative z-10">
-          <span className="text-xs font-black uppercase tracking-wider text-slate-500 group-hover:text-primary transition-colors duration-300">
-            {t.readGuide}
-          </span>
-          <Icon icon="ph:arrow-right" className="w-4 h-4 text-slate-400 group-hover:text-primary transition-all transform group-hover:translate-x-1 duration-300" />
-        </div>
-      </Link>
+          <div className="mt-auto flex items-center gap-2 justify-end relative z-10">
+            <span className="text-xs font-black uppercase tracking-wider text-slate-500 group-hover:text-primary transition-colors duration-300">
+              {t.readGuide}
+            </span>
+            <Icon icon="ph:arrow-right" className="w-4 h-4 text-slate-400 group-hover:text-primary transition-all transform group-hover:translate-x-1 duration-300" />
+          </div>
+        </Link>
+      </motion.div>
     );
   }
 

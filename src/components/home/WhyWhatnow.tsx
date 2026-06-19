@@ -1,7 +1,9 @@
 "use client";
 
+import React, { useRef } from "react";
 import { Icon } from "@iconify/react";
 import { useLanguage } from "@/context/LanguageContext";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 const translations = {
   en: {
@@ -32,6 +34,55 @@ const translations = {
   }
 };
 
+function TiltCard({ children, className }: { children: React.ReactNode; className: string }) {
+  const cardRef = useRef<HTMLDivElement>(null);
+  
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  
+  const springX = useSpring(x, { damping: 25, stiffness: 180 });
+  const springY = useSpring(y, { damping: 25, stiffness: 180 });
+  
+  // Rotate up to 8 degrees
+  const rotateX = useTransform(springY, [-0.5, 0.5], [8, -8]);
+  const rotateY = useTransform(springX, [-0.5, 0.5], [-8, 8]);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!cardRef.current) return;
+    const rect = cardRef.current.getBoundingClientRect();
+    const width = rect.width;
+    const height = rect.height;
+    const mouseX = e.clientX - rect.left - width / 2;
+    const mouseY = e.clientY - rect.top - height / 2;
+    
+    x.set(mouseX / width);
+    y.set(mouseY / height);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
+  return (
+    <motion.div
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        rotateX,
+        rotateY,
+        transformStyle: "preserve-3d"
+      }}
+      className={className}
+    >
+      <div style={{ transform: "translateZ(20px)", transformStyle: "preserve-3d" }} className="h-full w-full">
+        {children}
+      </div>
+    </motion.div>
+  );
+}
+
 export default function WhyWhatnow() {
   const { language } = useLanguage();
   const t = translations[language];
@@ -57,13 +108,13 @@ export default function WhyWhatnow() {
         </div>
 
         {/* Asymmetric bento: the lead value gets a big tile; 02 + 03 stack smaller. */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-8 items-stretch" style={{ perspective: 1200 }}>
           {/* Card 1 — lead tile */}
-          <div className="relative bg-white dark:bg-slate-800/50 dark:hover:from-slate-800 dark:hover:to-slate-800 hover:bg-gradient-to-b hover:from-white hover:to-green-50/10 rounded-[2.5rem] p-10 lg:p-14 border border-slate-200/85 dark:border-slate-700/70 hover:border-green-500/30 dark:hover:border-green-500/40 shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_25px_60px_rgba(34,197,94,0.07)] hover:-translate-y-1.5 transition-all duration-500 overflow-hidden group cursor-default flex flex-col justify-center min-h-[20rem]">
-            <div className="absolute -top-12 -right-12 opacity-[0.03] rotate-12 transition-transform duration-700 ease-out group-hover:scale-110 group-hover:rotate-[24deg] select-none pointer-events-none">
+          <TiltCard className="relative bg-white dark:bg-slate-800/50 dark:hover:from-slate-800 dark:hover:to-slate-800 hover:bg-gradient-to-b hover:from-white hover:to-green-50/10 rounded-[2.5rem] p-10 lg:p-14 border border-slate-200/85 dark:border-slate-700/70 hover:border-green-500/30 dark:hover:border-green-500/40 shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_25px_60px_rgba(34,197,94,0.07)] transition-all duration-300 overflow-hidden group cursor-default flex flex-col justify-center min-h-[22rem]">
+            <div className="absolute -top-12 -right-12 opacity-[0.03] rotate-12 transition-transform duration-700 ease-out group-hover:scale-110 group-hover:rotate-[24deg] select-none pointer-events-none z-0">
               <Icon icon="solar:lock-unlocked-bold-duotone" className="w-80 h-80 text-green-600" />
             </div>
-            <div className="h-20 w-20 bg-green-50 text-green-600 rounded-3xl flex items-center justify-center mb-8 shadow-inner group-hover:scale-110 transition-transform duration-500">
+            <div className="h-20 w-20 bg-green-50 text-green-600 rounded-3xl flex items-center justify-center mb-8 shadow-inner group-hover:scale-110 transition-transform duration-500 relative z-10">
               <Icon icon="solar:lock-unlocked-bold-duotone" className="w-10 h-10" />
             </div>
             <div className="flex items-end gap-4 mb-6 relative z-10">
@@ -76,16 +127,16 @@ export default function WhyWhatnow() {
             <p className="text-slate-500 dark:text-slate-400/90 leading-relaxed relative z-10 text-base lg:text-lg max-w-md mt-5">
               {t.card1Desc2}
             </p>
-          </div>
+          </TiltCard>
 
           {/* Cards 02 + 03 — stacked, secondary */}
           <div className="flex flex-col gap-8">
             {/* Card 2 */}
-            <div className="relative flex-1 bg-white dark:bg-slate-800/50 dark:hover:from-slate-800 dark:hover:to-slate-800 hover:bg-gradient-to-b hover:from-white hover:to-orange-50/10 rounded-[2.5rem] p-8 lg:p-10 border border-slate-200/85 dark:border-slate-700/70 hover:border-orange-500/30 dark:hover:border-orange-500/40 shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_25px_60px_rgba(249,115,22,0.07)] hover:-translate-y-1.5 transition-all duration-500 overflow-hidden group cursor-default">
-              <div className="absolute -top-8 -right-8 opacity-[0.03] rotate-12 transition-transform duration-700 ease-out group-hover:scale-110 group-hover:rotate-[24deg] select-none pointer-events-none">
+            <TiltCard className="relative flex-1 bg-white dark:bg-slate-800/50 dark:hover:from-slate-800 dark:hover:to-slate-800 hover:bg-gradient-to-b hover:from-white hover:to-orange-50/10 rounded-[2.5rem] p-8 lg:p-10 border border-slate-200/85 dark:border-slate-700/70 hover:border-orange-500/30 dark:hover:border-orange-500/40 shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_25px_60px_rgba(249,115,22,0.07)] transition-all duration-300 overflow-hidden group cursor-default">
+              <div className="absolute -top-8 -right-8 opacity-[0.03] rotate-12 transition-transform duration-700 ease-out group-hover:scale-110 group-hover:rotate-[24deg] select-none pointer-events-none z-0">
                 <Icon icon="solar:shield-check-bold-duotone" className="w-52 h-52 text-orange-500" />
               </div>
-              <div className="h-14 w-14 bg-orange-50 text-orange-500 rounded-2xl flex items-center justify-center mb-7 shadow-inner group-hover:scale-110 transition-transform duration-500">
+              <div className="h-14 w-14 bg-orange-50 text-orange-500 rounded-2xl flex items-center justify-center mb-7 shadow-inner group-hover:scale-110 transition-transform duration-500 relative z-10">
                 <Icon icon="solar:shield-check-bold-duotone" className="w-7 h-7" />
               </div>
               <div className="flex items-end gap-3 mb-4 relative z-10">
@@ -95,14 +146,14 @@ export default function WhyWhatnow() {
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed relative z-10 text-base">
                 {t.card2Desc}
               </p>
-            </div>
+            </TiltCard>
 
             {/* Card 3 */}
-            <div className="relative flex-1 bg-white dark:bg-slate-800/50 dark:hover:from-slate-800 dark:hover:to-slate-800 hover:bg-gradient-to-b hover:from-white hover:to-blue-50/10 rounded-[2.5rem] p-8 lg:p-10 border border-slate-200/85 dark:border-slate-700/70 hover:border-blue-500/30 dark:hover:border-blue-500/40 shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_25px_60px_rgba(59,130,246,0.07)] hover:-translate-y-1.5 transition-all duration-500 overflow-hidden group cursor-default">
-              <div className="absolute -top-8 -right-8 opacity-[0.03] rotate-12 transition-transform duration-700 ease-out group-hover:scale-110 group-hover:rotate-[24deg] select-none pointer-events-none">
+            <TiltCard className="relative flex-1 bg-white dark:bg-slate-800/50 dark:hover:from-slate-800 dark:hover:to-slate-800 hover:bg-gradient-to-b hover:from-white hover:to-blue-50/10 rounded-[2.5rem] p-8 lg:p-10 border border-slate-200/85 dark:border-slate-700/70 hover:border-blue-500/30 dark:hover:border-blue-500/40 shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_25px_60px_rgba(59,130,246,0.07)] transition-all duration-300 overflow-hidden group cursor-default">
+              <div className="absolute -top-8 -right-8 opacity-[0.03] rotate-12 transition-transform duration-700 ease-out group-hover:scale-110 group-hover:rotate-[24deg] select-none pointer-events-none z-0">
                 <Icon icon="solar:compass-bold-duotone" className="w-52 h-52 text-blue-600" />
               </div>
-              <div className="h-14 w-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-7 shadow-inner group-hover:scale-110 transition-transform duration-500">
+              <div className="h-14 w-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-7 shadow-inner group-hover:scale-110 transition-transform duration-500 relative z-10">
                 <Icon icon="solar:compass-bold-duotone" className="w-7 h-7" />
               </div>
               <div className="flex items-end gap-3 mb-4 relative z-10">
@@ -112,7 +163,7 @@ export default function WhyWhatnow() {
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed relative z-10 text-base">
                 {t.card3Desc}
               </p>
-            </div>
+            </TiltCard>
           </div>
         </div>
       </div>
