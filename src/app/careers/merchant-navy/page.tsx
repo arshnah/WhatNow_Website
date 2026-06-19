@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import VisualAnalytics from '@/components/ui/VisualAnalytics';
+import RealVoices from '@/components/RealVoices';
 
 const navyAnalyticsData = {
   jobs: [
@@ -43,9 +44,10 @@ const translations = {
     stat6Label: "Sea Career",
     stat6Val: "~15-20 yrs",
     sectionTitle: "What is a Career in Merchant Navy?",
-    descParagraph1: "The Merchant Navy is the commercial shipping fleet that carries 90% of global trade — crude oil, container cargo, LNG, automobiles, grain. Officers either navigate ships (Deck Officers) or manage their propulsion and electrical systems (Marine Engineers). You work on contracts: typically 4-9 months at sea, followed by 2-4 months of paid leave on land.",
-    descParagraph2: "The pay is extraordinary for Indian standards — a Second Officer or Fourth Engineer can earn ₹80,000-₹1,50,000 per month tax-free within 2 years of graduating. A Captain or Chief Engineer draws ₹3,00,000-₹8,00,000 per month. The catch: months of isolation, minimal internet at sea, zero social life during contracts, and extremely demanding physical and mental conditions.",
+    descParagraph1: "The Merchant Navy is the commercial shipping fleet that carries 90% of global trade — crude oil, container cargo, LNG, automobiles, grain. Officers either navigate ships (Deck Officers) or manage their propulsion and electrical systems (Marine Engineers). You work on contracts: typically 4-9 months at sea, followed by 2-4 months of paid leave on land. Contract length scales with rank — junior cadets and officers usually serve the longer stints, while senior officers rotate on shorter ones.",
+    descParagraph2: "The pay is extraordinary for Indian standards — a Second Officer or Fourth Engineer can earn ₹80,000-₹1,50,000 per month tax-free within 2 years of graduating. A Captain or Chief Engineer draws ₹3,00,000-₹8,00,000 per month. Treat those figures as ballpark, though — real pay swings with the type of ship, the company, the vessel's flag state, and the charterer, not just rank. Two officers of identical rank can earn very differently depending on who runs their vessel. The catch: months of isolation, minimal internet at sea, zero social life during contracts, and extremely demanding physical and mental conditions.",
     descParagraph3: "Entry is through IMU CET (Indian Maritime University Common Entrance Test) or direct admission to DG Shipping-approved institutes. The two primary paths are B.Sc Nautical Science (Deck side) and B.Tech Marine Engineering (Engine side). A faster route is the DNS course (Diploma in Nautical Science) — just 1 year of academics followed by 18 months of sea training.",
+    descParagraph4: "There's also a third path most guides skip entirely: the Ratings department — the non-officer crew who keep a ship running (deck hands, motormen, engine-room staff). Entry is a General Purpose Rating (GPR) course at a DG Shipping-approved college, open after Class 12 in any stream, and it's faster and cheaper than the officer-track degrees. It isn't a dead end either — experienced Ratings can upgrade to officer rank later through competency exams.",
     warningTitle: "Reality check:",
     warningText: "Most YouTube channels and coaching centres sell the glamour — international travel, high salary, uniform. What they don't tell you: you will miss weddings, birthdays, festivals, and emergencies. Relationships are hard. Mental health at sea is a real issue. You need to be genuinely okay with isolation before committing.",
     roadmapTitle: "Merchant Navy Career Guides & Roadmaps",
@@ -82,9 +84,10 @@ const translations = {
     stat6Label: "समुद्री करियर",
     stat6Val: "~15-20 वर्ष",
     sectionTitle: "मर्चेंट नेवी में करियर क्या है?",
-    descParagraph1: "मर्चेंट नेवी वाणिज्यिक शिपिंग बेड़ा है जो वैश्विक व्यापार का 90% — कच्चा तेल, कंटेनर कार्गो, LNG, ऑटोमोबाइल, अनाज — ढोता है। अधिकारी या तो जहाजों को नेविगेट करते हैं (डेक अधिकारी) या उनके प्रणोदन और विद्युत प्रणालियों का प्रबंधन करते हैं (मरीन इंजीनियर)। आप अनुबंधों पर काम करते हैं: आमतौर पर 4-9 महीने समुद्र में, उसके बाद 2-4 महीने की सवेतन छुट्टी।",
-    descParagraph2: "भारतीय मानकों के लिए वेतन असाधारण है — एक सेकंड ऑफिसर या फोर्थ इंजीनियर स्नातक होने के 2 साल के भीतर ₹80,000-₹1,50,000 प्रति माह कर-मुक्त कमा सकता है। एक कैप्टन या चीफ इंजीनियर ₹3,00,000-₹8,00,000 प्रति माह कमाता है। कठिनाई: महीनों का एकांत, समुद्र में न्यूनतम इंटरनेट, अनुबंधों के दौरान शून्य सामाजिक जीवन।",
+    descParagraph1: "मर्चेंट नेवी वाणिज्यिक शिपिंग बेड़ा है जो वैश्विक व्यापार का 90% — कच्चा तेल, कंटेनर कार्गो, LNG, ऑटोमोबाइल, अनाज — ढोता है। अधिकारी या तो जहाजों को नेविगेट करते हैं (डेक अधिकारी) या उनके प्रणोदन और विद्युत प्रणालियों का प्रबंधन करते हैं (मरीन इंजीनियर)। आप अनुबंधों पर काम करते हैं: आमतौर पर 4-9 महीने समुद्र में, उसके बाद 2-4 महीने की सवेतन छुट्टी। अनुबंध की अवधि रैंक के अनुसार बदलती है — जूनियर कैडेट और अधिकारी आमतौर पर लंबे अनुबंध पर जाते हैं, जबकि वरिष्ठ अधिकारी छोटे अनुबंध पर।",
+    descParagraph2: "भारतीय मानकों के लिए वेतन असाधारण है — एक सेकंड ऑफिसर या फोर्थ इंजीनियर स्नातक होने के 2 साल के भीतर ₹80,000-₹1,50,000 प्रति माह कर-मुक्त कमा सकता है। एक कैप्टन या चीफ इंजीनियर ₹3,00,000-₹8,00,000 प्रति माह कमाता है। पर इन आंकड़ों को अनुमानित ही मानें — असली वेतन जहाज के प्रकार, कंपनी, जहाज के फ्लैग देश और चार्टरर पर निर्भर करता है, सिर्फ रैंक पर नहीं। एक ही रैंक के दो अधिकारी अलग-अलग कंपनी में बहुत अलग कमा सकते हैं। कठिनाई: महीनों का एकांत, समुद्र में न्यूनतम इंटरनेट, अनुबंधों के दौरान शून्य सामाजिक जीवन।",
     descParagraph3: "प्रवेश IMU CET (भारतीय समुद्री विश्वविद्यालय सामान्य प्रवेश परीक्षा) या DG शिपिंग-अनुमोदित संस्थानों में सीधे प्रवेश के माध्यम से होता है। दो प्राथमिक मार्ग हैं: B.Sc नॉटिकल साइंस (डेक साइड) और B.Tech मरीन इंजीनियरिंग (इंजन साइड)। एक तेज मार्ग DNS कोर्स (डिप्लोमा इन नॉटिकल साइंस) है — केवल 1 वर्ष का शैक्षणिक कार्य और 18 महीने का समुद्री प्रशिक्षण।",
+    descParagraph4: "एक तीसरा रास्ता भी है जिसे ज़्यादातर गाइड छोड़ देते हैं: रेटिंग्स विभाग — जहाज़ चलाने वाला नॉन-ऑफिसर क्रू (डेक हैंड, मोटरमैन, इंजन-रूम स्टाफ)। प्रवेश 12वीं के बाद किसी भी स्ट्रीम से, DG शिपिंग-अनुमोदित कॉलेज में GPR (जनरल पर्पस रेटिंग) कोर्स के ज़रिए होता है — यह ऑफिसर-ट्रैक डिग्री से तेज़ और सस्ता है। यह डेड-एंड भी नहीं है — अनुभवी रेटिंग्स बाद में योग्यता परीक्षा देकर ऑफिसर रैंक तक पहुँच सकते हैं।",
     warningTitle: "वास्तविकता जांच:",
     warningText: "अधिकांश YouTube चैनल और कोचिंग सेंटर ग्लैमर बेचते हैं — अंतर्राष्ट्रीय यात्रा, उच्च वेतन, वर्दी। जो वे नहीं बताते: आप शादियां, जन्मदिन, त्योहार और आपातकालीन स्थितियां मिस करेंगे। रिश्ते कठिन होते हैं। समुद्र में मानसिक स्वास्थ्य एक वास्तविक मुद्दा है।",
     roadmapTitle: "मर्चेंट नेवी करियर गाइड और रोडमैप",
@@ -207,6 +210,7 @@ export default function MerchantNavyCareerHubPage() {
             <p>{t.descParagraph1}</p>
             <p>{t.descParagraph2}</p>
             <p>{t.descParagraph3}</p>
+            <p>{t.descParagraph4}</p>
           </div>
 
           <div className="bg-orange-50 dark:bg-orange-950/30 border-l-4 border-orange-500 p-6 rounded-r-xl">
@@ -216,6 +220,9 @@ export default function MerchantNavyCareerHubPage() {
             </p>
           </div>
         </section>
+
+        {/* REAL VOICES */}
+        <RealVoices vertical="merchant-navy" />
 
         {/* CAREER GUIDES */}
         <section>
