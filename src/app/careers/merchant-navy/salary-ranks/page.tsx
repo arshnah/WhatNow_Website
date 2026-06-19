@@ -90,6 +90,18 @@ const Section = ({
   </section>
 );
 
+// Real-voice pull-quote from the Abhay Singh interview (consent confirmed).
+const CadetQuote = ({ children }: { children: React.ReactNode }) => (
+  <figure className="border-l-4 border-orange-500 bg-orange-50/60 dark:bg-orange-950/20 rounded-r-2xl pl-6 pr-6 py-5 my-8">
+    <blockquote className="text-slate-800 dark:text-slate-200 font-medium leading-relaxed italic text-lg">
+      {children}
+    </blockquote>
+    <figcaption className="mt-3 text-sm font-black text-orange-700 dark:text-orange-300 not-italic">
+      — Abhay Singh, Deck Cadet (currently serving)
+    </figcaption>
+  </figure>
+);
+
 export default function MerchantNavySalaryRanksPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
@@ -112,8 +124,12 @@ export default function MerchantNavySalaryRanksPage() {
 
         <Section number="01" title="How the pay actually works">
           <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-medium">
-            Four things to understand before the numbers. <strong>(1)</strong> Officers are paid in <strong>US dollars</strong>, per contract — so the rupee figure you see drifts up over the years mostly because the rupee weakens, not because the real wage rose. <strong>(2)</strong> Food and accommodation on board are free, so your salary is close to pure savings while you&apos;re sailing. <strong>(3)</strong> Leave between contracts is usually <strong>unpaid</strong> — your &apos;annual&apos; pay is really your contract months. <strong>(4)</strong> Pay varies with rank, <strong>ship type</strong> (tanker, LNG, chemical and offshore generally pay more than bulk/container), company, and route (international &gt; coastal).
+            Four things to understand before the numbers. <strong>(1)</strong> Officers are paid in <strong>US dollars</strong>, per contract — so the rupee figure you see drifts up over the years mostly because the rupee weakens, not because the real wage rose. <strong>(2)</strong> Food and accommodation on board are free, so your salary is close to pure savings while you&apos;re sailing. <strong>(3)</strong> Leave between contracts is usually <strong>unpaid</strong> — your &apos;annual&apos; pay is really your contract months. <strong>(4)</strong> Pay varies with rank, <strong>ship type</strong> (tanker, LNG, chemical and offshore generally pay more than bulk/container), company, the vessel&apos;s <strong>flag state</strong>, the charterer, and route (international &gt; coastal) — so two officers of the same rank can earn very differently.
           </p>
+
+          <CadetQuote>
+            &ldquo;It is never fixed. It depends not only on rank but on the type of ship, the company, the registered country of the vessel, the charterer, and more. Same rank, different company — completely different salaries.&rdquo;
+          </CadetQuote>
 
           <div className="bg-orange-50 dark:bg-orange-950/30 border-l-4 border-orange-500 p-6 rounded-r-xl">
             <p className="text-slate-800 dark:text-slate-300 leading-relaxed font-medium">
@@ -162,6 +178,23 @@ export default function MerchantNavySalaryRanksPage() {
           <p className="text-sm text-slate-400 dark:text-slate-400 font-medium mt-4">
             Add a premium for tanker/LNG/chemical/offshore vessels and top companies. Coastal/Indian-flag pay sits below international rates.
           </p>
+
+          <CadetQuote>
+            &ldquo;Different field, different rank — there are three departments: Deck, Engine, and Rating, each with its own ladder.&rdquo;
+          </CadetQuote>
+
+          <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8">
+            <h3 className="font-black text-lg text-neutral-dark mb-2">The third ladder: Ratings</h3>
+            <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium mb-4">
+              The table above is the <em>officer</em> track. Ratings — the non-officer crew — run a separate, shorter ladder, broadly:
+            </p>
+            <p className="text-neutral-dark font-black mb-4">
+              GP Rating → Able Seaman / Oiler-Motorman → Bosun (deck) or No.&nbsp;1 Oiler &amp; Petty Officer (engine)
+            </p>
+            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed font-medium">
+              Ratings earn less than officers at entry, but the route is cheaper and faster to reach — and experienced Ratings can cross over to officer rank through competency exams. Exact rank names, pay bands, and the upgrade path vary by department and company; confirm against current DG Shipping norms.
+            </p>
+          </div>
         </Section>
 
         <Section number="03" title="The certification ladder (this gates every promotion)">

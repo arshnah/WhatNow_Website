@@ -90,6 +90,18 @@ const Section = ({
   </section>
 );
 
+// Real-voice pull-quote from the Abhay Singh interview (consent confirmed).
+const CadetQuote = ({ children }: { children: React.ReactNode }) => (
+  <figure className="border-l-4 border-orange-500 bg-orange-50/60 dark:bg-orange-950/20 rounded-r-2xl pl-6 pr-6 py-5 my-8">
+    <blockquote className="text-slate-800 dark:text-slate-200 font-medium leading-relaxed italic text-lg">
+      {children}
+    </blockquote>
+    <figcaption className="mt-3 text-sm font-black text-orange-700 dark:text-orange-300 not-italic">
+      — Abhay Singh, Deck Cadet (currently serving)
+    </figcaption>
+  </figure>
+);
+
 export default function MerchantNavyEntryRoutesPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
@@ -211,6 +223,13 @@ export default function MerchantNavyEntryRoutesPage() {
               <strong className="font-black text-orange-700 dark:text-orange-300">Treat sponsorship as the thing to chase, not the college brochure.</strong> Without sponsorship, you complete the course and then have to find a berth yourself — manageable from a top institute, genuinely risky from a low-tier one. A course completed with no onboard placement is the single most common way this plan fails.
             </p>
           </div>
+
+          <CadetQuote>
+            &ldquo;Use your IMU CET rank to get eligible, then apply to a private college for better sponsorship. The government IMU college — sometimes placement is very less.&rdquo;
+          </CadetQuote>
+          <p className="text-base text-slate-500 dark:text-slate-400 leading-relaxed font-medium -mt-4">
+            That last point is one cadet&apos;s experience, not a rule — government-college placement varies by year and branch. The takeaway that does hold: your IMU CET rank is a credential, not just a government seat. Use it to compare the actual sponsorship tie-ups and placement records of each DG-approved college, government or private, before you choose.
+          </p>
         </Section>
 
         <Section number="05" title="Eligibility snapshot">
@@ -256,6 +275,25 @@ export default function MerchantNavyEntryRoutesPage() {
             </div>
             <p className="leading-relaxed font-medium text-slate-200">
               <strong className="text-white">A marine-only degree from a low-tier academy with no sponsorship can leave you with neither a sea job nor a portable one.</strong> The degree alone doesn&apos;t place you on a ship — the berth does. If you can&apos;t secure sponsorship or a top institute, a regular engineering degree (Mechanical + GME later) is the safer bet, because at worst you still hold a degree that works on land.
+            </p>
+          </div>
+        </Section>
+
+        <Section number="06" title="The non-officer route: Ratings (GPR)">
+          <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-medium">
+            Every route above leads to <em>officer</em> rank — and that&apos;s where most guides stop. There&apos;s a fifth way in that needs no PCM and no multi-year degree: joining as a <strong>Rating</strong>. Ratings are the non-officer crew who keep a ship running — deck hands, motormen, engine-room staff.
+          </p>
+          <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8 font-medium">
+            Entry is a <strong>General Purpose Rating (GPR)</strong> course at a DG Shipping&ndash;approved marine college, open after Class 12 in <strong>any stream</strong>. It&apos;s shorter and significantly cheaper than the officer-track degrees, and it gets you to sea sooner. It isn&apos;t a dead end either — experienced Ratings can upgrade to officer rank later through the relevant competency exams.
+          </p>
+
+          <CadetQuote>
+            &ldquo;There are three departments — Deck, Engine, and Rating. For Ratings, after Class 12 you do a General Purpose Rating course at a marine college.&rdquo;
+          </CadetQuote>
+
+          <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8">
+            <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+              <strong className="font-black text-neutral-dark">Before you commit:</strong> GPR course length, fees, and the list of DG-approved colleges that run it vary — confirm them against the college&apos;s DG Shipping&ndash;approved prospectus, and check the exact Rating-to-officer upgrade path (and its exams) for the department you want.
             </p>
           </div>
         </Section>

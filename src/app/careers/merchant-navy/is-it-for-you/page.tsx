@@ -90,6 +90,18 @@ const Section = ({
   </section>
 );
 
+// Real-voice pull-quote from the Abhay Singh interview (consent confirmed).
+const CadetQuote = ({ children }: { children: React.ReactNode }) => (
+  <figure className="border-l-4 border-orange-500 bg-orange-50/60 dark:bg-orange-950/20 rounded-r-2xl pl-6 pr-6 py-5 my-8">
+    <blockquote className="text-slate-800 dark:text-slate-200 font-medium leading-relaxed italic text-lg">
+      {children}
+    </blockquote>
+    <figcaption className="mt-3 text-sm font-black text-orange-700 dark:text-orange-300 not-italic">
+      — Abhay Singh, Deck Cadet (currently serving)
+    </figcaption>
+  </figure>
+);
+
 export default function MerchantNavyIsItForYouPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
@@ -115,6 +127,10 @@ export default function MerchantNavyIsItForYouPage() {
             Strip away the uniform and the travel photos, and a career at sea is one exchange, repeated for twenty years: you give up being present in your own life on land, and in return you get money that&apos;s high for your age, time off in large blocks, and a job that switches off completely the moment your contract ends. If that trade sounds good to you stated this plainly, read on. If it only sounds good wrapped in glamour, this career will hurt.
           </p>
 
+          <CadetQuote>
+            &ldquo;It was my own willingness that brought me here. I genuinely find this environment fascinating.&rdquo; The cadets who last tend to come in for a reason like that — not for the salary, the uniform, or the travel photos.
+          </CadetQuote>
+
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8">
             <h3 className="font-black text-xl text-neutral-dark mb-4">Two honest outcomes, both real</h3>
             <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
@@ -130,6 +146,10 @@ export default function MerchantNavyIsItForYouPage() {
           <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8 font-medium">
             The ones who thrive almost all share one habit — they bring something that travels: the gym, books, a craft, study for the next certificate. Idle time at sea is what breaks people. Occupied time at sea is survivable, even good.
           </p>
+
+          <CadetQuote>
+            &ldquo;There&rsquo;s very little personal time to sit and overthink — time runs fast when you work continuously. In the beginning it feels lonely, but later you adapt.&rdquo;
+          </CadetQuote>
 
           <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8">
             <h3 className="font-black text-lg text-neutral-dark mb-4">Ask yourself, honestly:</h3>
@@ -158,6 +178,10 @@ export default function MerchantNavyIsItForYouPage() {
           <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8 font-medium">
             Glamour shots don&apos;t show the engine room at 45 °C, the noise, or a junior engineer on a watch rotation doing hot, manual, dirty work. On the deck side it&apos;s bridge watches including nights, mooring operations, cargo work, and weather that doesn&apos;t care about your schedule. The good news: the heavy physical labour decreases as you rise in rank. The catch: it&apos;s replaced by responsibility and accountability — at the top, every decision and every incident is on you.
           </p>
+
+          <CadetQuote>
+            &ldquo;There are MLC rules on working and rest hours, but as a seafarer you have to be ready for the job at any time. There are watches — at the bridge when you&rsquo;re sailing, or at cargo operations when you&rsquo;re in port.&rdquo; The convention sets the floor; the ship decides when you&rsquo;re needed.
+          </CadetQuote>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
