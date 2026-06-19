@@ -29,10 +29,10 @@ const iconSets = [
 ];
 
 const team: { name: string; role: string; url?: string }[] = [
-  { name: "Vasu", role: "Founder & direction" },
-  { name: "Yawwsh", role: "Lead developer — tech & product" },
+  { name: "Vasu", role: "Founder & direction", url: "https://github.com/VasuCoded" },
+  { name: "Yawwsh", role: "Lead developer — tech & product", url: "https://github.com/Yashvardhan4646" },
   { name: "Arsh", role: "Developer & lead maintainer", url: "https://github.com/arshnah" },
-  { name: "Antinity", role: "Advisory developer" },
+  { name: "Antinity", role: "Advisory developer", url: "https://github.com/antinity" },
   { name: "Infernum", role: "Design & short-form content" },
   { name: "Saammm", role: "Outreach & partnerships" },
   { name: "Doraemon", role: "Outreach & partnerships" },
