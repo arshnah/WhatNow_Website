@@ -94,8 +94,9 @@ const careerGuides = [
     toColor: "#4F46E5",
     icon: "solar:palette-bold-duotone",
     calculateScore: (stream: string, strength: string, pref: string) => {
-      let score = 50;
-      if (strength === "design") score += 35;
+      let score = 40;
+      if (strength === "design") score += 45;
+      else if (strength === "space") score += 20;
       if (stream === "arts") score += 10;
       if (pref === "entrance") score += 5;
       return Math.min(score, 98);
@@ -112,10 +113,11 @@ const careerGuides = [
     toColor: "#BE185D",
     icon: "solar:scissors-bold-duotone",
     calculateScore: (stream: string, strength: string, pref: string) => {
-      let score = 45;
-      if (strength === "design") score += 30;
-      if (pref === "entrance") score += 15;
-      if (stream === "arts" || stream === "commerce") score += 10;
+      let score = 35;
+      if (strength === "design") score += 45;
+      if (stream === "arts") score += 15;
+      if (pref === "travel") score += 10;
+      if (pref === "entrance") score += 5;
       return Math.min(score, 96);
     }
   },
@@ -130,8 +132,8 @@ const careerGuides = [
     toColor: "#047857",
     icon: "solar:document-text-bold-duotone",
     calculateScore: (stream: string, strength: string, pref: string) => {
-      let score = 40;
-      if (strength === "reading") score += 45;
+      let score = 30;
+      if (strength === "reading") score += 55;
       if (stream === "arts" || stream === "commerce") score += 10;
       if (pref === "entrance") score += 5;
       return Math.min(score, 97);
@@ -148,10 +150,11 @@ const careerGuides = [
     toColor: "#EA580C",
     icon: "solar:compass-bold-duotone",
     calculateScore: (stream: string, strength: string, pref: string) => {
-      let score = 30;
-      if (stream === "science") score += 20;
-      if (strength === "travel") score += 40;
-      if (pref === "travel") score += 10;
+      if (stream !== "science") return 0;
+      let score = 20;
+      if (strength === "travel") score += 55;
+      else if (strength === "math") score += 15;
+      if (pref === "travel") score += 20;
       return Math.min(score, 99);
     }
   },
@@ -166,10 +169,13 @@ const careerGuides = [
     toColor: "#0369A1",
     icon: "solar:map-draw-bold-duotone",
     calculateScore: (stream: string, strength: string, pref: string) => {
-      let score = 40;
-      if (strength === "space") score += 45;
+      if (stream !== "science" && stream !== "commerce") return 0;
+      let score = 25;
+      if (strength === "space") score += 50;
+      else if (strength === "design") score += 15;
       if (stream === "science") score += 10;
-      if (pref === "india") score += 5;
+      if (pref === "india") score += 10;
+      if (pref === "entrance") score += 5;
       return Math.min(score, 95);
     }
   }
@@ -190,6 +196,7 @@ export default function CareerWizard({ isOpen, onClose }: CareerWizardProps) {
         ...guide,
         score: guide.calculateScore(stream, strength, preference)
       }))
+      .filter((item) => item.score > 0)
       .sort((a, b) => b.score - a.score);
   };
 
