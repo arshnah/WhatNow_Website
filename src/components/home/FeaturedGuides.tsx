@@ -229,7 +229,7 @@ export default function FeaturedGuides() {
   const guides = GUIDES_DATA[language];
 
   return (
-    <section className="bg-[#F8F8F6] dark:bg-[#0B111C] py-20 lg:py-28 overflow-hidden">
+    <section id="featured-guides" className="bg-[#F8F8F6] dark:bg-[#0B111C] py-20 lg:py-28 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header Section */}
