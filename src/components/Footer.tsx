@@ -18,6 +18,7 @@ const translations = {
     company: "Company",
     aboutUs: "About Us",
     contact: "Contact",
+    credits: "Credits",
     resources: "Resources",
     communityDiscord: "Community Discord",
     contentPolicy: "Content Policy",
@@ -39,6 +40,7 @@ const translations = {
     company: "कंपनी",
     aboutUs: "हमारे बारे में",
     contact: "संपर्क करें",
+    credits: "श्रेय",
     resources: "संसाधन",
     communityDiscord: "कम्युनिटी डिस्कॉर्ड",
     contentPolicy: "सामग्री नीति",
@@ -109,6 +111,7 @@ export default function Footer() {
               <ul className="space-y-4">
                 <li><Link href="/about" className="text-white/90 hover:text-white hover:underline transition-all">{t.aboutUs}</Link></li>
                 <li><Link href="/contact" className="text-white/90 hover:text-white hover:underline transition-all">{t.contact}</Link></li>
+                <li><Link href="/credits" className="text-white/90 hover:text-white hover:underline transition-all">{t.credits}</Link></li>
               </ul>
             </div>
 

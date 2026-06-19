@@ -65,6 +65,14 @@ export const SEARCH_INDEX: SearchItem[] = [
     keywords: ["content policy", "rules", "report", "takedown", "copyright", "community", "moderation", "corrections"],
     status: "ready"
   },
+  {
+    title: "Credits",
+    category: "General",
+    description: "The people behind WhatNow and the open-source projects, typefaces, and icon sets the site is built with.",
+    href: "/credits",
+    keywords: ["credits", "colophon", "built with", "open source", "fonts", "icons", "attribution", "thanks", "tech stack"],
+    status: "ready"
+  },
 
   // --- EXAMS ---
   {
