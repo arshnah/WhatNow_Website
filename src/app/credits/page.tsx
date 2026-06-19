@@ -27,6 +27,17 @@ const iconSets = [
   { name: "Lucide", by: "open-source icon set", url: "https://lucide.dev" },
 ];
 
+const team = [
+  { name: "Vasu", role: "Founder & direction" },
+  { name: "Yawwsh", role: "Lead developer — tech & product" },
+  { name: "Arsh", role: "Developer" },
+  { name: "Antinity", role: "Advisory developer" },
+  { name: "Infernum", role: "Design & short-form content" },
+  { name: "Saammm", role: "Outreach & partnerships" },
+  { name: "Doraemon", role: "Outreach & partnerships" },
+  { name: "Yukt", role: "Interview host" },
+];
+
 const translations = {
   en: {
     pageLabel: "Colophon",
@@ -94,16 +105,23 @@ export default function CreditsPage() {
           </div>
         )}
 
-        {/* People */}
+        {/* Team */}
         <section className="mb-10">
           <h2 className="text-xl font-black text-slate-900 dark:text-slate-100 mb-4 pb-2 border-b border-slate-100 dark:border-slate-800">
-            People
+            Team
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4 font-medium">
-            Built and maintained by Vasu (Hyderabad, Telangana), with a small team of students and
-            developers who contribute design, code, and the guides themselves. Vasu is the
-            registered operator.
+          <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-5 font-medium">
+            WhatNow was created by Vasu (Hyderabad, Telangana), who leads its direction and is the
+            registered operator. It's built and run by a small, independent team:
           </p>
+          <ul className="space-y-2.5 mb-6">
+            {team.map((m) => (
+              <li key={m.name} className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                <span className="text-sm font-black text-slate-900 dark:text-slate-100">{m.name}</span>
+                <span className="text-sm text-slate-500 dark:text-slate-400 font-medium">— {m.role}</span>
+              </li>
+            ))}
+          </ul>
           <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed font-medium">
             The guides draw on first-hand accounts from students and professionals who have actually
             walked these paths — our editorial network. If you have cleared a major entrance exam or
