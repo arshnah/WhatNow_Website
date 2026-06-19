@@ -30,7 +30,7 @@ const iconSets = [
 const team = [
   { name: "Vasu", role: "Founder & direction" },
   { name: "Yawwsh", role: "Lead developer — tech & product" },
-  { name: "Arsh", role: "Developer" },
+  { name: "Arsh", role: "Developer & lead maintainer" },
   { name: "Antinity", role: "Advisory developer" },
   { name: "Infernum", role: "Design & short-form content" },
   { name: "Saammm", role: "Outreach & partnerships" },
