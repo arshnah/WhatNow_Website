@@ -192,7 +192,10 @@ export default function MerchantNavySalaryRanksPage() {
               GP Rating → Able Seaman / Oiler-Motorman → Bosun (deck) or No.&nbsp;1 Oiler &amp; Petty Officer (engine)
             </p>
             <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed font-medium">
-              Ratings earn less than officers at entry, but the route is cheaper and faster to reach — and experienced Ratings can cross over to officer rank through competency exams. Exact rank names, pay bands, and the upgrade path vary by department and company; confirm against current DG Shipping norms.
+              Ratings earn less than officers at entry, but the route is cheaper and faster to reach — and it isn&apos;t a ceiling. The recognised crossover to officer rank is the{" "}
+              <strong className="text-slate-700 dark:text-slate-300">Near Coastal Voyage (NWKO)</strong> route: roughly 12 months of onboard sea service with an approved training record, then the DG Shipping NWKO examination for a Certificate of Competency (CoC) as a watchkeeping officer (
+              <a href="https://mti.shipindia.com/courses/gp-rating-leading-to-2nd-mate-ncv/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">SCI MTI</a>
+              ). Entry pay bands vary widely by vessel type and company — confirm current figures against the institute and your employer&apos;s collective agreement.
             </p>
           </div>
         </Section>

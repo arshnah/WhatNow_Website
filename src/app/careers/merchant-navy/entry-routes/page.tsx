@@ -290,16 +290,61 @@ export default function MerchantNavyEntryRoutesPage() {
             Every route above leads to <em>officer</em> rank — and that&apos;s where most guides stop. There&apos;s a fifth way in that needs no PCM and no multi-year degree: joining as a <strong>Rating</strong>. Ratings are the non-officer crew who keep a ship running — deck hands, motormen, engine-room staff.
           </p>
           <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8 font-medium">
-            Entry is a <strong>General Purpose Rating (GPR)</strong> course at a DG Shipping&ndash;approved marine college, open after Class 12 in <strong>any stream</strong>. It&apos;s shorter and significantly cheaper than the officer-track degrees, and it gets you to sea sooner. It isn&apos;t a dead end either — experienced Ratings can upgrade to officer rank later through the relevant competency exams.
+            Entry is a <strong>General Purpose Rating (GPR)</strong> course at a DG Shipping&ndash;approved marine institute — a <strong>6-month residential pre-sea programme</strong>, open after <strong>Class 10</strong> (or Class 12 in any stream). It&apos;s shorter and significantly cheaper than the officer-track degrees, and it gets you to sea sooner. It isn&apos;t a dead end either — experienced Ratings can upgrade to officer rank later through the DG Shipping competency route (detailed below).
           </p>
 
           <CadetQuote>
             &ldquo;There are three departments — Deck, Engine, and Rating. For Ratings, after Class 12 you do a General Purpose Rating course at a marine college.&rdquo;
           </CadetQuote>
 
-          <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8">
-            <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
-              <strong className="font-black text-neutral-dark">Before you commit:</strong> GPR course length, fees, and the list of DG-approved colleges that run it vary — confirm them against the college&apos;s DG Shipping&ndash;approved prospectus, and check the exact Rating-to-officer upgrade path (and its exams) for the department you want.
+          <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 space-y-5">
+            <h3 className="font-black text-xl text-neutral-dark">The GPR route, in real numbers</h3>
+
+            <div>
+              <div className="font-black text-neutral-dark mb-1">Duration</div>
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+                A <strong>6-month</strong> residential pre-sea course, followed by onboard sea service — consistent across DG-approved institutes (e.g.{" "}
+                <a href="https://www.himtcollege.com/himt_courses/gp-rating/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">HIMT</a>,{" "}
+                <a href="https://imi.edu.in/course/pre-sea-courses/gp-rating/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">IMI</a>,{" "}
+                <a href="https://www.tsrahaman.org/pre-sea-general-purpose-rating-training-course" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">TS Rahaman</a>).
+              </p>
+            </div>
+
+            <div>
+              <div className="font-black text-neutral-dark mb-1">Eligibility</div>
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+                <strong>Class 10 pass</strong> with English, Maths &amp; Science (~40% aggregate), <em>or</em> Class 12 in any stream (~40%); English ≥ 40%. Age <strong>17.5&ndash;25</strong>. DG medical including <strong>6/6 unaided eyesight and no colour blindness</strong>. Some institutes set a higher bar — IMI, for instance, asks for 50% and PCM in Class 12 (
+                <a href="https://mti.shipindia.com/courses/gp-rating-leading-to-2nd-mate-ncv/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">SCI MTI</a>,{" "}
+                <a href="https://imi.edu.in/course/pre-sea-courses/gp-rating/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">IMI</a>).
+              </p>
+            </div>
+
+            <div>
+              <div className="font-black text-neutral-dark mb-1">Fees</div>
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+                The standalone pre-sea GPR course commonly runs <strong>₹2.6&ndash;3 lakh</strong> all-in (hostel, mess, uniform, STCW) — e.g. ₹2.65L at{" "}
+                <a href="https://www.tsrahaman.org/pre-sea-general-purpose-rating-training-course" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">TS Rahaman</a>, ₹2.95L at{" "}
+                <a href="https://www.himtcollege.com/himt_courses/gp-rating/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">HIMT</a> (many institutes give female candidates a concession). Integrated &ldquo;GPR&nbsp;→&nbsp;NCV officer&rdquo; programmes cost more — SCI&apos;s runs ₹3.6&ndash;4.5L.
+              </p>
+            </div>
+
+            <div>
+              <div className="font-black text-neutral-dark mb-1">Becoming an officer later</div>
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+                The recognised crossover is the <strong>Near Coastal Voyage (NWKO)</strong> route: about <strong>12 months of onboard sea service</strong> (with an approved training record), then the DG Shipping NWKO examination for a <strong>Certificate of Competency (CoC)</strong> as a watchkeeping officer.
+              </p>
+            </div>
+
+            <div>
+              <div className="font-black text-neutral-dark mb-1">Where</div>
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+                Confirm an institute&apos;s <em>current</em> approval against the official{" "}
+                <a href="https://www.dgshipping.gov.in/Content/PageUrl.aspx?page_name=ListofallapprovedTrainingInstitutes" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">DG Shipping list of approved training institutes</a>. Established examples that run GPR include HIMT (Chennai), TS Rahaman (Chennai), IMI (Greater Noida) and SCI MTI (Mumbai).
+              </p>
+            </div>
+
+            <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-medium pt-2 border-t border-slate-200 dark:border-slate-700">
+              Figures are from institute prospectuses (reviewed June 2026) and vary by institute, batch and what&apos;s bundled — always verify the latest fees, eligibility and approval status directly with the institute and DG Shipping before applying.
             </p>
           </div>
         </Section>
