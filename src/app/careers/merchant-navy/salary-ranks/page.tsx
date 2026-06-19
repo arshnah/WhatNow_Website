@@ -133,7 +133,7 @@ export default function MerchantNavySalaryRanksPage() {
 
           <div className="bg-orange-50 dark:bg-orange-950/30 border-l-4 border-orange-500 p-6 rounded-r-xl">
             <p className="text-slate-800 dark:text-slate-300 leading-relaxed font-medium">
-              <strong className="font-black text-orange-700 dark:text-orange-300">&quot;Tax-free&quot; — with an asterisk.</strong> A seafarer&apos;s foreign earnings are tax-free in India <em>only</em> if you qualify as a Non-Resident (broadly, by spending enough days outside India in the financial year under the rules for seafarers). Fall short of the day-count and it becomes taxable. This is general information, not tax advice — check the current Income-Tax position for your year.
+              <strong className="font-black text-orange-700 dark:text-orange-300">&quot;Tax-free&quot; — with an asterisk.</strong> A seafarer&apos;s foreign earnings are tax-free in India <em>only</em> if you qualify as a Non-Resident — broadly, by spending more than <strong>182 days</strong> outside India in the financial year under the rules for seafarers. Fall short of the day-count and it becomes taxable, and the status has to be re-established every year. This is general information, not tax advice — check the current Income-Tax position for your year.
             </p>
           </div>
         </Section>

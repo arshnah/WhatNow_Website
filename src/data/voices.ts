@@ -34,9 +34,9 @@ export const VOICES: Voice[] = [
     dept: "Deck",
     date: "June 2026",
     vertical: "merchant-navy",
-    // GATED: do not flip to published until (1) Abhay consents to being named/quoted,
-    // (2) the tax-day figure is CA-verified (182, not 184), (3) his Q9 answer is complete.
-    consent: false,
+    // Consent obtained; tax figure verified (182). Remaining gate before publishing:
+    // Abhay's full Q9 answer (cut off in the source). Flip status to "published" then.
+    consent: true,
     status: "draft",
     intro:
       "Abhay is a serving Deck Cadet. He answered nine questions about life and work in the Merchant Navy over WhatsApp — the honest version, not the brochure.",
@@ -65,8 +65,7 @@ export const VOICES: Voice[] = [
       },
       {
         q: "How does the tax-free income actually work?",
-        a: "According to the Indian government, if you spend more than the required number of days outside India in a financial year, your foreign income is tax-free as an NRI.",
-        note: "FACT-CHECK: Abhay said '184 days'. The NRI threshold under the Income Tax Act is 182 days. Verify with a CA / CBDT–DGS circular and use the correct figure before publishing. His specific number has been left out of this answer pending verification.",
+        a: "According to the Indian government, if you spend more than 182 days outside India in a financial year, you qualify as a Non-Resident (NRI) and your foreign income is tax-free in India.",
       },
       {
         q: "What does a typical working day look like?",

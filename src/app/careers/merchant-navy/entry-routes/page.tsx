@@ -224,12 +224,18 @@ export default function MerchantNavyEntryRoutesPage() {
             </p>
           </div>
 
-          <CadetQuote>
-            &ldquo;Use your IMU CET rank to get eligible, then apply to a private college for better sponsorship. The government IMU college — sometimes placement is very less.&rdquo;
-          </CadetQuote>
-          <p className="text-base text-slate-500 dark:text-slate-400 leading-relaxed font-medium -mt-4">
-            That last point is one cadet&apos;s experience, not a rule — government-college placement varies by year and branch. The takeaway that does hold: your IMU CET rank is a credential, not just a government seat. Use it to compare the actual sponsorship tie-ups and placement records of each DG-approved college, government or private, before you choose.
-          </p>
+          <h3 className="font-black text-xl text-neutral-dark mt-8 mb-4">IMU CET vs private colleges</h3>
+          <div className="space-y-4 text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+            <p>
+              Many students use their IMU CET rank not only to compete for seats at government maritime institutes, but also to become eligible for admission at private DG Shipping&ndash;approved colleges. Some private colleges have strong company sponsorship programs, which can help cadets secure onboard training opportunities earlier.
+            </p>
+            <p>
+              According to Abhay Singh, a serving Deck Cadet interviewed for this guide, a common strategy is to use a good IMU CET rank to keep both government and private-college options open, then compare factors such as fees, sponsorship opportunities, and placement support before deciding.
+            </p>
+            <p>
+              Government institutes often have lower fees, while private colleges may offer different industry tie-ups. Prospective students should compare current placement and sponsorship data from individual colleges rather than assuming one route is always better. The claim that government-college placements are weaker reflects his own experience and should not be treated as a general fact without supporting data.
+            </p>
+          </div>
         </Section>
 
         <Section number="05" title="Eligibility snapshot">

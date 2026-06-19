@@ -61,7 +61,7 @@ const translations = {
     card4Desc: "From Trainee Cadet to Captain/Chief Engineer. Rank-by-rank salary breakdowns, CDC requirements, competency exams (MEO/Mate), and the 20-year career arc in shipping.",
     badgeComingSoon: "Coming soon",
     badgeReady: "✓ Ready to read",
-    taxFootnote: "* Tax-free on foreign earnings only if you qualify as Non-Resident by the days-outside-India rule for seafarers. Check the current Income-Tax position for your year.",
+    taxFootnote: "* Tax-free, explained: Indian seafarers qualify as Non-Resident (NRI) by spending 182+ days outside India in a financial year — then foreign earnings are exempt from Indian income tax. The status must be re-established every financial year (it isn't automatic), and you should still file your returns even when exempt. General information, not tax advice.",
     imucetExamLinkText: "Related Exam Guide: IMU CET (Maritime Entrance)"
   },
   hi: {
@@ -101,7 +101,7 @@ const translations = {
     card4Desc: "ट्रेनी कैडेट से कैप्टन/चीफ इंजीनियर तक। रैंक-दर-रैंक वेतन विवरण, CDC आवश्यकताएं, योग्यता परीक्षाएं (MEO/Mate), और शिपिंग में 20 साल का करियर आर्क।",
     badgeComingSoon: "जल्द आ रहा है",
     badgeReady: "✓ पढ़ने के लिए तैयार",
-    taxFootnote: "* विदेशी आय पर कर-मुक्त केवल तभी जब आप भारत के बाहर दिनों की गिनती के नियम के अनुसार अनिवासी (NRI) की योग्यता पूरी करते हों। अपने वर्ष के लिए वर्तमान Income-Tax स्थिति जांचें।",
+    taxFootnote: "* कर-मुक्त का मतलब: भारतीय नाविक एक वित्तीय वर्ष में भारत के बाहर 182+ दिन बिताकर अनिवासी (NRI) बनते हैं — तब विदेशी आय भारतीय आयकर से मुक्त होती है। यह दर्जा हर वित्तीय वर्ष फिर से स्थापित करना पड़ता है (यह स्वतः नहीं होता), और छूट होने पर भी रिटर्न दाखिल करें। यह सामान्य जानकारी है, कर सलाह नहीं।",
     imucetExamLinkText: "संबद्ध परीक्षा गाइड: IMU CET (मैरीटाइम प्रवेश)"
   }
 };
