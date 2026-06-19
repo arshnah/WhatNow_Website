@@ -11,6 +11,7 @@ const translations = {
     description: "We made the thing we needed when we were 17 and confused. Three things make us different — and we're stubborn about all of them.",
     card1Title: "Actually free",
     card1Desc: "No paywall, no email gate, no upsell. Every guide stays free because the next student behind you deserves the same head start.",
+    card1Desc2: "There's no ‘premium’ version with the good parts locked away, no account to create, and nothing to cancel later. What you see is the whole thing — and it stays that way.",
     card2Title: "No coaching agenda",
     card2Desc: "We don't sell courses or get kickbacks. We're not pushing IIT or IIM. Just honest reads on what each path actually demands.",
     card3Title: "Careers nobody covers",
@@ -23,6 +24,7 @@ const translations = {
     description: "हमने वह चीज़ बनाई जिसकी ज़रूरत हमें 17 साल की उम्र में थी जब हम असमंजस में थे। तीन बातें हमें अलग बनाती हैं - और हम उन सभी को लेकर अडिग हैं।",
     card1Title: "वास्तव में मुफ़्त",
     card1Desc: "कोई पेवॉल नहीं, कोई ईमेल गेट नहीं, कोई अपसेल नहीं। हर गाइड मुफ़्त रहती है क्योंकि आपके बाद आने वाले छात्र भी एक समान शुरुआत के हकदार हैं।",
+    card1Desc2: "कोई ‘प्रीमियम’ वर्शन नहीं जिसमें काम की चीज़ें छिपी हों, कोई अकाउंट नहीं बनाना, और बाद में कुछ कैंसिल नहीं करना। जो दिख रहा है, वही पूरा है — और वैसा ही रहेगा।",
     card2Title: "कोई कोचिंग एजेंडा नहीं",
     card2Desc: "हम कोई कोर्स नहीं बेचते या कमीशन नहीं लेते। हम IIT या IIM में जाने का कोई दबाव नहीं डाल रहे। बस प्रत्येक मार्ग की वास्तविक आवश्यकताओं के बारे में ईमानदार विश्लेषण देते हैं।",
     card3Title: "ऐसे करियर जिन्हें कोई नहीं बताता",
@@ -70,6 +72,9 @@ export default function WhyWhatnow() {
             </div>
             <p className="text-slate-600 dark:text-slate-400 leading-relaxed relative z-10 text-lg lg:text-xl max-w-md">
               {t.card1Desc}
+            </p>
+            <p className="text-slate-500 dark:text-slate-400/90 leading-relaxed relative z-10 text-base lg:text-lg max-w-md mt-5">
+              {t.card1Desc2}
             </p>
           </div>
 
