@@ -144,7 +144,7 @@ export default function JeePaper3ResourcesPage() {
               </div>
               <div>
                 <h4 className="font-black text-slate-800 dark:text-slate-100 text-lg">Self-Study Guide for B.Arch & B.Planning (PK Mishra / Arihant Publications)</h4>
-                <p className="text-slate-650 dark:text-slate-300 leading-relaxed mt-1 text-sm font-semibold">
+                <p className="text-slate-600 dark:text-slate-300 leading-relaxed mt-1 text-sm font-semibold">
                   The primary reference guide covering both general aptitude and mock planning questions. Includes past papers with detailed explanations of design and planning logic.
                 </p>
               </div>
@@ -156,7 +156,7 @@ export default function JeePaper3ResourcesPage() {
               </div>
               <div>
                 <h4 className="font-black text-slate-800 dark:text-slate-100 text-lg">Class XI & XII Geography NCERTs (Human Geography & Indian Economy)</h4>
-                <p className="text-slate-650 dark:text-slate-300 leading-relaxed mt-1 text-sm font-semibold">
+                <p className="text-slate-600 dark:text-slate-300 leading-relaxed mt-1 text-sm font-semibold">
                   Essential for Part III. Covers urban settlements, transportation patterns, demographics, rural-urban migration models, and resources in India. Almost 40% of Part III planning questions are directly derived from these textbooks.
                 </p>
               </div>
@@ -168,7 +168,7 @@ export default function JeePaper3ResourcesPage() {
               </div>
               <div>
                 <h4 className="font-black text-slate-800 dark:text-slate-100 text-lg">NTA Past Year Question Papers (2020 - 2025)</h4>
-                <p className="text-slate-650 dark:text-slate-300 leading-relaxed mt-1 text-sm font-semibold">
+                <p className="text-slate-600 dark:text-slate-300 leading-relaxed mt-1 text-sm font-semibold">
                   Available on the official NTA website. Practicing past papers is the single most effective way to understand Part III questions since the planning syllabus is highly objective and repeats specific themes.
                 </p>
               </div>
@@ -183,7 +183,7 @@ export default function JeePaper3ResourcesPage() {
               <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium mb-4">
                 Since Math is highly competitive, prioritize topics that require less calculation time but have high accuracy:
               </p>
-              <ul className="list-disc pl-5 space-y-2 text-slate-655 dark:text-slate-300 text-sm font-semibold">
+              <ul className="list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-300 text-sm font-semibold">
                 <li>**Matrices & Determinants**: Scoring and relatively easy to practice.</li>
                 <li>**Mathematical Reasoning & Statistics**: Usually yields 2 direct questions that are highly scoring.</li>
                 <li>**Vector Algebra & 3D Geometry**: Highly visual and has consistent question formats every year.</li>
@@ -195,7 +195,7 @@ export default function JeePaper3ResourcesPage() {
               <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium mb-4">
                 This is the highest-scoring section of the exam. Do not skip it:
               </p>
-              <ul className="list-disc pl-5 space-y-2 text-slate-655 dark:text-slate-300 text-sm font-semibold">
+              <ul className="list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-300 text-sm font-semibold">
                 <li>Practice **3D object visualization** (identifying top, front, and side views of structures) using online puzzle sets and PK Mishra guides.</li>
                 <li>Memorize **famous monuments, major dams, national parks, and metropolitan plans in India**.</li>
                 <li>Create a cheatsheet of famous architects/urban planners (e.g., Le Corbusier for Chandigarh, Edwin Lutyens for Delhi, Charles Correa) and their landmark projects.</li>
@@ -207,7 +207,7 @@ export default function JeePaper3ResourcesPage() {
               <p className="text-slate-700 dark:text-slate-300 leading-relaxed font-medium mb-4">
                 Score 80+ in this section with targeted general awareness:
               </p>
-              <ul className="list-disc pl-5 space-y-2 text-slate-655 dark:text-slate-300 text-sm font-semibold">
+              <ul className="list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-300 text-sm font-semibold">
                 <li>Read summaries of MoHUA (Ministry of Housing and Urban Affairs) guidelines on **Smart Cities** and **AMRUT**.</li>
                 <li>Study basic concepts of **Green Architecture** (LEED, GRIHA rating parameters, solar passive design).</li>
                 <li>Understand maps: Learn how to read RF scales (e.g., converting 1:50,000 scale to ground distance) and standard map legend symbols.</li>
@@ -224,21 +224,21 @@ export default function JeePaper3ResourcesPage() {
             <div className="relative pl-6">
               <div className="absolute -left-2 top-1.5 w-4 h-4 bg-teal-500 rounded-full" />
               <h4 className="font-black text-slate-800 dark:text-slate-100">Weeks 1 - 4: Core Concepts & Aptitude</h4>
-              <p className="text-slate-650 dark:text-slate-300 text-sm leading-relaxed font-medium mt-1">
+              <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed font-medium mt-1">
                 Complete NCERT geography readings. Start practicing 10-15 3D-visualization questions daily. Review Class XII Math chapters like Matrices and Vectors.
               </p>
             </div>
             <div className="relative pl-6">
               <div className="absolute -left-2 top-1.5 w-4 h-4 bg-teal-500 rounded-full" />
               <h4 className="font-black text-slate-800 dark:text-slate-100">Weeks 5 - 8: Planning & Architecture GK</h4>
-              <p className="text-slate-650 dark:text-slate-300 text-sm leading-relaxed font-medium mt-1">
+              <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed font-medium mt-1">
                 Make notes on Indian development schemes and environmental science basics. Work on scale conversion questions. Solve math sectional tests.
               </p>
             </div>
             <div className="relative pl-6">
               <div className="absolute -left-2 top-1.5 w-4 h-4 bg-teal-500 rounded-full" />
               <h4 className="font-black text-slate-800 dark:text-slate-100">Weeks 9 - 12: Mock Tests & Time Management</h4>
-              <p className="text-slate-650 dark:text-slate-300 text-sm leading-relaxed font-medium mt-1">
+              <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed font-medium mt-1">
                 Solve full-length JEE Paper 3 papers under a 3-hour timer. Focus on speed in Math and precision in Planning MCQs to minimize negative marks.
               </p>
             </div>

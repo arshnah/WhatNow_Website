@@ -150,27 +150,27 @@ export default function JeePaper3IsItForYouPage() {
               <tbody>
                 <tr>
                   <td className="p-4 font-black text-slate-700 dark:text-slate-300 border-b border-slate-100 dark:border-slate-800">Primary Scale</td>
-                  <td className="p-4 text-teal-750 dark:text-teal-300 font-bold border-b border-slate-100 dark:border-slate-800">Macro (City, Region, Transit corridors)</td>
-                  <td className="p-4 text-slate-650 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-semibold">Micro (Individual buildings, sites)</td>
-                  <td className="p-4 text-slate-650 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-semibold">Structural (Materials, soil mechanics, load)</td>
+                  <td className="p-4 text-teal-700 dark:text-teal-300 font-bold border-b border-slate-100 dark:border-slate-800">Macro (City, Region, Transit corridors)</td>
+                  <td className="p-4 text-slate-600 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-semibold">Micro (Individual buildings, sites)</td>
+                  <td className="p-4 text-slate-600 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-semibold">Structural (Materials, soil mechanics, load)</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-black text-slate-700 dark:text-slate-300 border-b border-slate-100 dark:border-slate-800">Core Focus</td>
-                  <td className="p-4 text-teal-750 dark:text-teal-300 font-bold border-b border-slate-100 dark:border-slate-800">Policy, zoning laws, traffic patterns, sustainability</td>
-                  <td className="p-4 text-slate-650 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-semibold">Aesthetics, spatial design, material detailing</td>
-                  <td className="p-4 text-slate-650 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-semibold">Construction feasibility, structural safety</td>
+                  <td className="p-4 text-teal-700 dark:text-teal-300 font-bold border-b border-slate-100 dark:border-slate-800">Policy, zoning laws, traffic patterns, sustainability</td>
+                  <td className="p-4 text-slate-600 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-semibold">Aesthetics, spatial design, material detailing</td>
+                  <td className="p-4 text-slate-600 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-semibold">Construction feasibility, structural safety</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-black text-slate-700 dark:text-slate-300 border-b border-slate-100 dark:border-slate-800">Key Software Tools</td>
-                  <td className="p-4 text-teal-750 dark:text-teal-300 font-bold border-b border-slate-100 dark:border-slate-800">ArcGIS, QGIS, AutoCAD Map 3D, SPSS (statistics)</td>
-                  <td className="p-4 text-slate-650 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-semibold">Revit, Rhino, SketchUp, Photoshop</td>
-                  <td className="p-4 text-slate-650 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-semibold">STAAD.Pro, ETABS, MS Project, Primavera</td>
+                  <td className="p-4 text-teal-700 dark:text-teal-300 font-bold border-b border-slate-100 dark:border-slate-800">ArcGIS, QGIS, AutoCAD Map 3D, SPSS (statistics)</td>
+                  <td className="p-4 text-slate-600 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-semibold">Revit, Rhino, SketchUp, Photoshop</td>
+                  <td className="p-4 text-slate-600 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-semibold">STAAD.Pro, ETABS, MS Project, Primavera</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-black text-slate-700 dark:text-slate-300">Drawing Requirement</td>
-                  <td className="p-4 text-teal-750 dark:text-teal-300 font-bold">None. No drawing test is conducted for B.Plan admissions.</td>
-                  <td className="p-4 text-slate-650 dark:text-slate-400 font-semibold">High. Freehand sketching and scale drawing are core.</td>
-                  <td className="p-4 text-slate-650 dark:text-slate-400 font-semibold">None. Focused strictly on physics and mathematics.</td>
+                  <td className="p-4 text-teal-700 dark:text-teal-300 font-bold">None. No drawing test is conducted for B.Plan admissions.</td>
+                  <td className="p-4 text-slate-600 dark:text-slate-400 font-semibold">High. Freehand sketching and scale drawing are core.</td>
+                  <td className="p-4 text-slate-600 dark:text-slate-400 font-semibold">None. Focused strictly on physics and mathematics.</td>
                 </tr>
               </tbody>
             </table>
@@ -219,20 +219,20 @@ export default function JeePaper3IsItForYouPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
             <div className="border border-slate-200 dark:border-slate-700 rounded-2xl p-6 bg-white dark:bg-slate-800/50">
               <h4 className="font-black text-slate-800 dark:text-slate-100 text-lg mb-3">1. Typical Work Environment</h4>
-              <p className="text-slate-650 dark:text-slate-300 text-sm leading-relaxed font-semibold">
+              <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed font-semibold">
                 Planners work in offices analyzing geographic spatial layers (GIS) and writing development regulations, interspersed with field surveys to study traffic volumes, housing conditions, or pollution indices.
               </p>
             </div>
             <div className="border border-slate-200 dark:border-slate-700 rounded-2xl p-6 bg-white dark:bg-slate-800/50">
               <h4 className="font-black text-slate-800 dark:text-slate-100 text-lg mb-3">2. Career Evolution</h4>
-              <p className="text-slate-650 dark:text-slate-300 text-sm leading-relaxed font-semibold">
+              <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed font-semibold">
                 Starting as a GIS Analyst or Associate Planner, you progress to Lead Urban Planner or Infrastructure Policy Adviser. Many graduates pursue Master's (M.Plan) programs in Environmental Planning, Transport Planning, or Housing from SPAs or European institutes to lead multi-million dollar projects.
               </p>
             </div>
           </div>
           <InfoBox type="info">
             <h4 className="font-black text-teal-700 mb-2">Corporate placements vs. Government pathways:</h4>
-            <p className="text-slate-750 dark:text-slate-300 font-medium">
+            <p className="text-slate-700 dark:text-slate-300 font-medium">
               Private consultancies like **JLL, Cushman & Wakefield, Knight Frank, L&T Infrastructure, and PwC** actively recruit B.Plan graduates for real estate advisory and city transit proposals. Government options include state development authorities (e.g., DDA, CIDCO) and municipal corporations, which require clearing state-level Town Planner recruitment exams.
             </p>
           </InfoBox>

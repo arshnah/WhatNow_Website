@@ -95,7 +95,7 @@ const TestimonialsColumn = (props: {
                   className="p-10 rounded-[2rem] border border-slate-200/60 dark:border-slate-700/60 backdrop-blur-md bg-white/80 dark:bg-slate-800/50 hover:bg-white dark:hover:bg-slate-800 shadow-[0_8px_30px_rgb(0,0,0,0.015)] hover:shadow-xl hover:shadow-black/5 dark:hover:shadow-black/40 hover:-translate-y-1 transition-all duration-500 cursor-default select-none group focus:outline-none focus:ring-2 focus:ring-primary/30 max-w-xs w-full"
                 >
                   <blockquote className="m-0 p-0">
-                    <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-medium m-0 transition-colors duration-300">
+                    <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-medium m-0 transition-colors duration-300">
                       {text}
                     </p>
                     <footer className="flex items-center gap-3 mt-6">

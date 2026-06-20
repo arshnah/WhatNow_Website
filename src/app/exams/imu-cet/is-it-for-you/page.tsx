@@ -111,14 +111,14 @@ export default function ImuCetIsItForYouPage() {
             <div className="border border-slate-200 dark:border-slate-700 rounded-2xl p-6 bg-white dark:bg-slate-800/50 shadow-xs">
               <span className="text-xs font-black uppercase tracking-wider text-orange-600 block mb-2">Deck Cadet (DNS / B.Sc)</span>
               <h4 className="font-black text-lg text-neutral-dark mb-2">Eyesight & Vision</h4>
-              <p className="text-xs text-slate-550 dark:text-slate-400 font-semibold leading-relaxed">
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold leading-relaxed">
                 Must have **6/6 vision in each eye** without aid. Glasses are not allowed for deck officers. Candidates must have **no color blindness** whatsoever to ensure they can distinguish navigation lights at sea.
               </p>
             </div>
             <div className="border border-slate-200 dark:border-slate-700 rounded-2xl p-6 bg-white dark:bg-slate-800/50 shadow-xs">
               <span className="text-xs font-black uppercase tracking-wider text-orange-600 block mb-2">Engine Cadet (B.Tech)</span>
               <h4 className="font-black text-lg text-neutral-dark mb-2">Eyesight & Vision</h4>
-              <p className="text-xs text-slate-550 dark:text-slate-400 font-semibold leading-relaxed">
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold leading-relaxed">
                 Minor corrective glasses up to **6/12** are allowed in each eye. However, candidates must have **no color blindness** to work safely with colored electrical wiring and alarm systems.
               </p>
             </div>
@@ -129,7 +129,7 @@ export default function ImuCetIsItForYouPage() {
           <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-medium">
             Beyond physical fitness, assess your psychological readiness for seafaring:
           </p>
-          <ul className="list-disc list-inside text-slate-650 dark:text-slate-300 leading-relaxed font-semibold space-y-3">
+          <ul className="list-disc list-inside text-slate-600 dark:text-slate-300 leading-relaxed font-semibold space-y-3">
             <li>Are you okay spending **3 to 6 months continuously offshore** with minimal internet access (satellite limits) and no contact with family?</li>
             <li>Can you work under military-style authority, tight shifts, and intensive manual/engine-room labor?</li>
             <li>Are you comfortable in high-stress weather events (rough seas, storms) far from shore facilities?</li>

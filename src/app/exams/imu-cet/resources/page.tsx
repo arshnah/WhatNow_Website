@@ -138,7 +138,7 @@ export default function ImuCetResourcesPage() {
           </p>
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 space-y-4">
             <h4 className="font-black text-xl text-neutral-dark">Interview Key Areas:</h4>
-            <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
               Prepare for basic physics/machinery questions (e.g. how a 4-stroke engine works, buoyancy principles, gears, and pulley systems). The interviewer will evaluate your communication skills, physical discipline, and suitability for long isolation onboard cargo ships. Show confidence, clear speech, and solid posture.
             </p>
           </div>

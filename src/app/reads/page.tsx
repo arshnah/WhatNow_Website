@@ -218,11 +218,11 @@ export default function ReadsPage() {
               {/* Footer */}
               <div className="relative z-10 border-t border-slate-100 dark:border-slate-800 pt-6 mt-auto flex items-center justify-between text-xs font-semibold text-slate-400 dark:text-slate-400">
                 <div className="flex items-center gap-2">
-                  <Icon icon="solar:user-bold" className="w-4 h-4 text-slate-350" />
+                  <Icon icon="solar:user-bold" className="w-4 h-4 text-slate-300" />
                   <span>{t.by} {article.author}</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <Icon icon="solar:clock-circle-bold" className="w-4 h-4 text-slate-350" />
+                  <Icon icon="solar:clock-circle-bold" className="w-4 h-4 text-slate-300" />
                   <span>{article.readTime}</span>
                 </div>
               </div>

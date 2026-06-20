@@ -150,7 +150,7 @@ export default function UceedResourcesPage() {
           <div className="space-y-6">
             <div className="border-l-4 border-primary pl-6">
               <h4 className="font-black text-lg text-neutral-dark mb-2">Part A Preparation Strategy (Computer Based)</h4>
-              <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold mb-3">
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold mb-3">
                 Part A carries 200 marks and acts as the screening filter. Focus heavily on:
               </p>
               <ul className="list-disc list-inside text-sm text-slate-600 dark:text-slate-400 font-semibold space-y-1">
@@ -215,7 +215,7 @@ export default function UceedResourcesPage() {
             </div>
             <div className="border-l-4 border-orange-500 pl-6">
               <h4 className="font-black text-lg text-neutral-dark mb-2">Part B Preparation Strategy (Sketching)</h4>
-              <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold mb-3">
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold mb-3">
                 Part B carries 60 marks and is evaluated only if you clear the Part A cutoff. Focus on:
               </p>
               <ul className="list-disc list-inside text-sm text-slate-600 dark:text-slate-400 font-semibold space-y-1">
@@ -268,7 +268,7 @@ export default function UceedResourcesPage() {
         <Section number="03" title="Free Online Material">
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8">
             <h3 className="text-lg font-black text-neutral-dark mb-4">Official Question Papers & Tutorials</h3>
-            <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold mb-4">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold mb-4">
               The official IIT Bombay UCEED website offers past papers dating back to 2015. Download all of them. Use free YouTube channels (like *Stuff You Look At* or *Kaphal Studio*) to learn perspective basics and watch mock paper solutions.
             </p>
             <Link href="https://www.uceed.iitb.ac.in" className="inline-block bg-primary hover:bg-primary/95 text-white font-extrabold text-xs uppercase tracking-wider px-6 py-3 rounded-xl shadow-md transition-all">

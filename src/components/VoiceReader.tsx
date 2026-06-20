@@ -22,7 +22,7 @@ const VERTICAL_THEMES: Record<string, {
     accent: "bg-orange-500",
     accentText: "text-orange-600 dark:text-orange-400",
     badgeBg: "bg-orange-50 dark:bg-orange-950/20",
-    badgeText: "text-orange-600 dark:text-orange-350 border-orange-100/50 dark:border-orange-900/40",
+    badgeText: "text-orange-600 dark:text-orange-300 border-orange-100/50 dark:border-orange-900/40",
     bgGrad: "from-orange-500/10 via-transparent to-transparent",
     bullet: "bg-orange-500/10 text-orange-600 border-orange-200 dark:bg-orange-950/30 dark:text-orange-300 dark:border-orange-900/40"
   },
@@ -30,7 +30,7 @@ const VERTICAL_THEMES: Record<string, {
     accent: "bg-indigo-500",
     accentText: "text-indigo-600 dark:text-indigo-400",
     badgeBg: "bg-indigo-50 dark:bg-indigo-950/20",
-    badgeText: "text-indigo-600 dark:text-indigo-350 border-indigo-100/50 dark:border-indigo-900/40",
+    badgeText: "text-indigo-600 dark:text-indigo-300 border-indigo-100/50 dark:border-indigo-900/40",
     bgGrad: "from-indigo-500/10 via-transparent to-transparent",
     bullet: "bg-indigo-500/10 text-indigo-600 border-indigo-200 dark:bg-indigo-950/30 dark:text-indigo-300 dark:border-indigo-900/40"
   },
@@ -38,7 +38,7 @@ const VERTICAL_THEMES: Record<string, {
     accent: "bg-pink-500",
     accentText: "text-pink-600 dark:text-pink-400",
     badgeBg: "bg-pink-50 dark:bg-pink-950/20",
-    badgeText: "text-pink-600 dark:text-pink-350 border-pink-100/50 dark:border-pink-900/40",
+    badgeText: "text-pink-600 dark:text-pink-300 border-pink-100/50 dark:border-pink-900/40",
     bgGrad: "from-pink-500/10 via-transparent to-transparent",
     bullet: "bg-pink-500/10 text-pink-600 border-pink-200 dark:bg-pink-950/30 dark:text-pink-300 dark:border-pink-900/40"
   },
@@ -46,7 +46,7 @@ const VERTICAL_THEMES: Record<string, {
     accent: "bg-rose-500",
     accentText: "text-rose-600 dark:text-rose-400",
     badgeBg: "bg-rose-50 dark:bg-rose-950/20",
-    badgeText: "text-rose-600 dark:text-rose-350 border-rose-100/50 dark:border-rose-900/40",
+    badgeText: "text-rose-600 dark:text-rose-300 border-rose-100/50 dark:border-rose-900/40",
     bgGrad: "from-rose-500/10 via-transparent to-transparent",
     bullet: "bg-rose-500/10 text-rose-600 border-rose-200 dark:bg-rose-950/30 dark:text-rose-300 dark:border-rose-900/40"
   },
@@ -54,7 +54,7 @@ const VERTICAL_THEMES: Record<string, {
     accent: "bg-emerald-500",
     accentText: "text-emerald-600 dark:text-emerald-400",
     badgeBg: "bg-emerald-50 dark:bg-emerald-950/20",
-    badgeText: "text-emerald-600 dark:text-emerald-350 border-emerald-100/50 dark:border-emerald-900/40",
+    badgeText: "text-emerald-600 dark:text-emerald-300 border-emerald-100/50 dark:border-emerald-900/40",
     bgGrad: "from-emerald-500/10 via-transparent to-transparent",
     bullet: "bg-emerald-500/10 text-emerald-600 border-emerald-200 dark:bg-emerald-950/30 dark:text-emerald-300 dark:border-emerald-900/40"
   }
@@ -117,7 +117,7 @@ export default function VoiceReader({ voice }: VoiceReaderProps) {
       accent: "bg-primary",
       accentText: "text-primary",
       badgeBg: "bg-slate-50 dark:bg-slate-800/40",
-      badgeText: "text-slate-650 dark:text-slate-300 border-slate-200 dark:border-slate-700/50",
+      badgeText: "text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700/50",
       bgGrad: "from-primary/10 via-transparent to-transparent",
       bullet: "bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700"
     };
@@ -188,7 +188,7 @@ export default function VoiceReader({ voice }: VoiceReaderProps) {
           <svg className="absolute inset-0 w-full h-full opacity-[0.15] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="detail-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="1" className="text-slate-350 dark:text-slate-700" />
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="1" className="text-slate-300 dark:text-slate-700" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#detail-grid)" />
@@ -210,7 +210,7 @@ export default function VoiceReader({ voice }: VoiceReaderProps) {
           </div>
 
           <div className="max-w-4xl relative">
-            <Icon icon="fa-solid:quote-left" className="absolute -left-4 -top-8 w-12 h-12 text-slate-200 dark:text-slate-850/50 -z-10 opacity-60" />
+            <Icon icon="fa-solid:quote-left" className="absolute -left-4 -top-8 w-12 h-12 text-slate-200 dark:text-slate-800/50 -z-10 opacity-60" />
             
             <p className="text-xs font-black uppercase tracking-[0.25em] text-primary mb-3">
               {t.realVoices} Interview
@@ -328,7 +328,7 @@ export default function VoiceReader({ voice }: VoiceReaderProps) {
                     <h4 className="text-base font-black text-amber-800 dark:text-amber-300 mb-1.5">
                       {t.draftTitle}
                     </h4>
-                    <p className="text-sm text-amber-850 dark:text-amber-400 leading-relaxed font-semibold">
+                    <p className="text-sm text-amber-800 dark:text-amber-400 leading-relaxed font-semibold">
                       {t.draftDesc}
                     </p>
                   </div>
@@ -337,7 +337,7 @@ export default function VoiceReader({ voice }: VoiceReaderProps) {
             )}
 
             {/* Intro Paragraph */}
-            <p className="text-lg md:text-xl font-black text-slate-850 dark:text-slate-100 leading-relaxed tracking-tight border-b border-slate-100 dark:border-slate-850 pb-8 mb-12">
+            <p className="text-lg md:text-xl font-black text-slate-800 dark:text-slate-100 leading-relaxed tracking-tight border-b border-slate-100 dark:border-slate-800 pb-8 mb-12">
               {voice.intro}
             </p>
 
@@ -353,7 +353,7 @@ export default function VoiceReader({ voice }: VoiceReaderProps) {
                     className={`scroll-mt-28 group relative overflow-hidden bg-white/80 dark:bg-slate-800/40 backdrop-blur-sm border rounded-[2rem] p-6 md:p-8 transition-all duration-500 shadow-xs hover:shadow-lg ${
                       isActive
                         ? "border-primary/30 dark:border-primary/40 shadow-md ring-1 ring-primary/5"
-                        : "border-slate-200/60 dark:border-slate-700/50 hover:border-slate-350 dark:hover:border-slate-600"
+                        : "border-slate-200/60 dark:border-slate-700/50 hover:border-slate-300 dark:hover:border-slate-600"
                     }`}
                   >
                     {/* Glowing highlight indicator */}
@@ -369,7 +369,7 @@ export default function VoiceReader({ voice }: VoiceReaderProps) {
                       {item.q}
                     </h2>
 
-                    <div className="text-slate-650 dark:text-slate-300 text-base md:text-[1.05rem] leading-relaxed font-semibold whitespace-pre-wrap">
+                    <div className="text-slate-600 dark:text-slate-300 text-base md:text-[1.05rem] leading-relaxed font-semibold whitespace-pre-wrap">
                       {item.a}
                     </div>
 
@@ -380,7 +380,7 @@ export default function VoiceReader({ voice }: VoiceReaderProps) {
                           <Icon icon="solar:danger-bold" className="w-4 h-4 shrink-0" />
                           <span>{t.editorialNote}</span>
                         </div>
-                        <p className="text-amber-850 dark:text-amber-400 leading-relaxed pl-6">
+                        <p className="text-amber-800 dark:text-amber-400 leading-relaxed pl-6">
                           {item.note}
                         </p>
                       </div>
@@ -391,17 +391,17 @@ export default function VoiceReader({ voice }: VoiceReaderProps) {
             </div>
 
             {/* Back links & action buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-12 border-t border-slate-150 dark:border-slate-800 mt-16">
+            <div className="flex flex-col sm:flex-row gap-4 pt-12 border-t border-slate-100 dark:border-slate-800 mt-16">
               <Link
                 href="/voices"
-                className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl bg-slate-50 dark:bg-slate-850/50 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-sm font-black transition-all cursor-pointer"
+                className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-sm font-black transition-all cursor-pointer"
               >
                 <Icon icon="ph:arrow-left" className="w-4.5 h-4.5" />
                 <span>{t.backToVoices}</span>
               </Link>
               <Link
                 href={`/careers/${voice.vertical}`}
-                className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-850 text-primary border border-primary/20 text-sm font-black transition-all cursor-pointer"
+                className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-primary border border-primary/20 text-sm font-black transition-all cursor-pointer"
               >
                 <span>{backCareerText}</span>
                 <Icon icon="ph:arrow-right" className="w-4.5 h-4.5" />

@@ -247,7 +247,7 @@ export default function ArticleReader({ slug }: { slug: string }) {
             {article.title}
           </h1>
 
-          <div className="flex flex-wrap items-center gap-6 text-sm font-semibold text-slate-450 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800 pt-6">
+          <div className="flex flex-wrap items-center gap-6 text-sm font-semibold text-slate-400 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800 pt-6">
             <div className="flex items-center gap-2">
               <Icon icon="solar:user-bold" className="w-4 h-4 text-slate-400" />
               <span>By {article.author}</span>
@@ -269,7 +269,7 @@ export default function ArticleReader({ slug }: { slug: string }) {
         <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-[2rem] p-8 md:p-12 shadow-sm relative">
 
           {/* Introduction */}
-          <p className="text-lg md:text-xl text-slate-650 dark:text-slate-300 leading-relaxed font-semibold mb-10 border-b border-slate-100 dark:border-slate-800 pb-8">
+          <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed font-semibold mb-10 border-b border-slate-100 dark:border-slate-800 pb-8">
             {article.introduction}
           </p>
 

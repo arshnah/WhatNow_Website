@@ -148,7 +148,7 @@ export default function NoticeBoard() {
               </div>
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-1.5 text-slate-450 hover:text-neutral-dark hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
+                className="p-1.5 text-slate-400 hover:text-neutral-dark hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
               >
                 <Icon icon="solar:close-circle-bold" className="w-5.5 h-5.5" />
               </button>
@@ -182,7 +182,7 @@ export default function NoticeBoard() {
                       initial={{ opacity: 0, y: 12 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.05 }}
-                      className="p-4 bg-white dark:bg-slate-800/50 border border-slate-150 dark:border-slate-700 rounded-xl hover:shadow-md hover:border-primary/30 transition-all duration-200 group flex flex-col gap-3 relative overflow-hidden"
+                      className="p-4 bg-white dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 rounded-xl hover:shadow-md hover:border-primary/30 transition-all duration-200 group flex flex-col gap-3 relative overflow-hidden"
                     >
                       {/* Badge / Timestamp */}
                       <div className="flex items-center justify-between gap-2">

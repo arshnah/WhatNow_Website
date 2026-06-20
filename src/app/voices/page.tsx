@@ -29,34 +29,34 @@ const CATEGORY_TRANSLATIONS: Record<string, Record<string, string>> = {
 
 const VERTICAL_COLORS: Record<string, { badge: string; glow: string; text: string; border: string }> = {
   "merchant-navy": {
-    badge: "bg-orange-50 text-orange-600 border-orange-100/50 dark:bg-orange-950/20 dark:text-orange-350 dark:border-orange-900/40",
+    badge: "bg-orange-50 text-orange-600 border-orange-100/50 dark:bg-orange-950/20 dark:text-orange-300 dark:border-orange-900/40",
     glow: "bg-orange-500/5 group-hover:bg-orange-500/10",
     text: "text-orange-600 dark:text-orange-400",
-    border: "hover:border-orange-300 dark:hover:border-orange-850 hover:shadow-orange-500/5"
+    border: "hover:border-orange-300 dark:hover:border-orange-800 hover:shadow-orange-500/5"
   },
   "design": {
-    badge: "bg-indigo-50 text-indigo-600 border-indigo-100/50 dark:bg-indigo-950/20 dark:text-indigo-350 dark:border-indigo-900/40",
+    badge: "bg-indigo-50 text-indigo-600 border-indigo-100/50 dark:bg-indigo-950/20 dark:text-indigo-300 dark:border-indigo-900/40",
     glow: "bg-indigo-500/5 group-hover:bg-indigo-500/10",
     text: "text-indigo-600 dark:text-indigo-400",
-    border: "hover:border-indigo-300 dark:hover:border-indigo-850 hover:shadow-indigo-500/5"
+    border: "hover:border-indigo-300 dark:hover:border-indigo-800 hover:shadow-indigo-500/5"
   },
   "fashion-design": {
-    badge: "bg-pink-50 text-pink-600 border-pink-100/50 dark:bg-pink-950/20 dark:text-pink-350 dark:border-pink-900/40",
+    badge: "bg-pink-50 text-pink-600 border-pink-100/50 dark:bg-pink-950/20 dark:text-pink-300 dark:border-pink-900/40",
     glow: "bg-pink-500/5 group-hover:bg-pink-500/10",
     text: "text-pink-600 dark:text-pink-400",
-    border: "hover:border-pink-300 dark:hover:border-pink-850 hover:shadow-pink-500/5"
+    border: "hover:border-pink-300 dark:hover:border-pink-800 hover:shadow-pink-500/5"
   },
   "law": {
-    badge: "bg-rose-50 text-rose-600 border-rose-100/50 dark:bg-rose-950/20 dark:text-rose-350 dark:border-rose-900/40",
+    badge: "bg-rose-50 text-rose-600 border-rose-100/50 dark:bg-rose-950/20 dark:text-rose-300 dark:border-rose-900/40",
     glow: "bg-rose-500/5 group-hover:bg-rose-500/10",
     text: "text-rose-600 dark:text-rose-400",
-    border: "hover:border-rose-300 dark:hover:border-rose-850 hover:shadow-rose-500/5"
+    border: "hover:border-rose-300 dark:hover:border-rose-800 hover:shadow-rose-500/5"
   },
   "urban-planning": {
-    badge: "bg-emerald-50 text-emerald-600 border-emerald-100/50 dark:bg-emerald-950/20 dark:text-emerald-350 dark:border-emerald-900/40",
+    badge: "bg-emerald-50 text-emerald-600 border-emerald-100/50 dark:bg-emerald-950/20 dark:text-emerald-300 dark:border-emerald-900/40",
     glow: "bg-emerald-500/5 group-hover:bg-emerald-500/10",
     text: "text-emerald-600 dark:text-emerald-400",
-    border: "hover:border-emerald-300 dark:hover:border-emerald-850 hover:shadow-emerald-500/5"
+    border: "hover:border-emerald-300 dark:hover:border-emerald-800 hover:shadow-emerald-500/5"
   }
 };
 
@@ -139,7 +139,7 @@ export default function VoicesDirectoryPage() {
 
   const getVerticalStyles = (vertical: string) => {
     return VERTICAL_COLORS[vertical] || {
-      badge: "bg-slate-50 text-slate-600 border-slate-100 dark:bg-slate-800/40 dark:text-slate-350 dark:border-slate-700/50",
+      badge: "bg-slate-50 text-slate-600 border-slate-100 dark:bg-slate-800/40 dark:text-slate-300 dark:border-slate-700/50",
       glow: "bg-slate-500/5 group-hover:bg-slate-500/10",
       text: "text-slate-600 dark:text-slate-400",
       border: "hover:border-slate-300 dark:hover:border-slate-800 hover:shadow-slate-500/5"
@@ -178,7 +178,7 @@ export default function VoicesDirectoryPage() {
               {t.heroHeadline}<br />
               <span className="text-primary">{t.heroHeadlineSub}</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-550 dark:text-slate-400 leading-relaxed font-medium max-w-2xl">
+            <p className="text-lg md:text-xl text-slate-500 dark:text-slate-400 leading-relaxed font-medium max-w-2xl">
               {t.heroDesc}
             </p>
           </div>
@@ -245,8 +245,8 @@ export default function VoicesDirectoryPage() {
       <section className="py-16 md:py-24 container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl flex-grow">
         {filteredVoices.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-20 text-center">
-            <Icon icon="solar:shield-warning-broken" className="w-16 h-16 text-slate-350 dark:text-slate-600 mb-4 animate-pulse" />
-            <p className="text-lg font-bold text-slate-450 dark:text-slate-500">{t.noResults}</p>
+            <Icon icon="solar:shield-warning-broken" className="w-16 h-16 text-slate-300 dark:text-slate-600 mb-4 animate-pulse" />
+            <p className="text-lg font-bold text-slate-400 dark:text-slate-500">{t.noResults}</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -276,7 +276,7 @@ export default function VoicesDirectoryPage() {
                             {t.draft}
                           </span>
                         )}
-                        <span className="text-[10px] font-black uppercase tracking-widest text-indigo-650 dark:text-indigo-300 bg-indigo-50/50 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 px-3.5 py-1.5 rounded-full shadow-sm group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+                        <span className="text-[10px] font-black uppercase tracking-widest text-indigo-600 dark:text-indigo-300 bg-indigo-50/50 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40 px-3.5 py-1.5 rounded-full shadow-sm group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
                           {t.readInterview} →
                         </span>
                       </div>
@@ -299,7 +299,7 @@ export default function VoicesDirectoryPage() {
                       <span className="text-xs text-slate-400 dark:text-slate-500">{voice.rank}</span>
                     </div>
                     <div className="flex items-center gap-1.5 text-[10px] uppercase font-black tracking-wider text-slate-400 shrink-0">
-                      <Icon icon="solar:calendar-bold" className="w-4 h-4 text-slate-350" />
+                      <Icon icon="solar:calendar-bold" className="w-4 h-4 text-slate-300" />
                       <span>{voice.date}</span>
                     </div>
                   </div>

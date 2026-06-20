@@ -315,12 +315,12 @@ export default function VisualAnalytics({ type, data, colorTheme = 'indigo' }: V
           {/* Legend and Active Tooltip Info */}
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 justify-between items-center bg-slate-50 dark:bg-slate-800/40 p-4 rounded-2xl border border-slate-200/50 dark:border-slate-700">
             <div className="flex gap-4">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-slate-650 dark:text-slate-300">
+              <div className="flex items-center gap-1.5 text-xs font-bold text-slate-600 dark:text-slate-300">
                 <span className={`w-3 h-3 rounded-full ${theme.primary}`} />
                 <span>{t.applicants}</span>
               </div>
-              <div className="flex items-center gap-1.5 text-xs font-bold text-slate-650 dark:text-slate-300">
-                <span className="w-3 h-3 rounded-full bg-slate-450 border border-dashed border-slate-600" />
+              <div className="flex items-center gap-1.5 text-xs font-bold text-slate-600 dark:text-slate-300">
+                <span className="w-3 h-3 rounded-full bg-slate-400 border border-dashed border-slate-600" />
                 <span>{t.seats}</span>
               </div>
             </div>
@@ -337,7 +337,7 @@ export default function VisualAnalytics({ type, data, colorTheme = 'indigo' }: V
                   <span>
                     {t.applicants}: <span className={theme.text}>{examData.trends[hoveredIdx].applicants.toLocaleString()}</span>
                   </span>
-                  <span className="text-slate-350 dark:text-slate-600">|</span>
+                  <span className="text-slate-300 dark:text-slate-600">|</span>
                   <span>
                     {t.seats}: <span className="text-slate-600 dark:text-slate-400">{examData.trends[hoveredIdx].seats.toLocaleString()}</span>
                   </span>
@@ -557,7 +557,7 @@ export default function VisualAnalytics({ type, data, colorTheme = 'indigo' }: V
 
           {/* Active Tooltip and info */}
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 justify-between items-center bg-slate-50 dark:bg-slate-800/40 p-4 rounded-2xl border border-slate-200/50 dark:border-slate-700">
-            <span className="text-xs font-bold text-slate-650 dark:text-slate-300 flex items-center gap-1.5">
+            <span className="text-xs font-bold text-slate-600 dark:text-slate-300 flex items-center gap-1.5">
               <span className={`w-3.5 h-3.5 rounded-md ${theme.primary}`} />
               <span>{t.annualOpenings}</span>
             </span>
@@ -731,7 +731,7 @@ export default function VisualAnalytics({ type, data, colorTheme = 'indigo' }: V
 
           {/* Active Tooltip and info */}
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 justify-between items-center bg-slate-50 dark:bg-slate-800/40 p-4 rounded-2xl border border-slate-200/50 dark:border-slate-700">
-            <span className="text-xs font-bold text-slate-650 dark:text-slate-300 flex items-center gap-1.5">
+            <span className="text-xs font-bold text-slate-600 dark:text-slate-300 flex items-center gap-1.5">
               <span className={`w-3.5 h-3.5 rounded-full ${theme.primary}`} />
               <span>{t.salaryLabel}</span>
             </span>

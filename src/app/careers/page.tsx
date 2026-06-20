@@ -486,7 +486,7 @@ export default function CareersPage() {
 
                 {/* Inline Search Bar with Dropdown */}
                 <div ref={searchContainerRef} className="relative mb-6">
-                  <div className="flex items-center gap-3 bg-slate-50 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-700 rounded-2xl px-5 py-4 w-full text-slate-550 dark:text-slate-400 text-sm font-medium transition-all shadow-xs focus-within:border-primary focus-within:bg-white">
+                  <div className="flex items-center gap-3 bg-slate-50 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-700 rounded-2xl px-5 py-4 w-full text-slate-500 dark:text-slate-400 text-sm font-medium transition-all shadow-xs focus-within:border-primary focus-within:bg-white">
                     <Icon icon="solar:magnifer-linear" className="w-5 h-5 text-slate-400 shrink-0" />
                     <input
                       ref={searchInputRef}
@@ -512,7 +512,7 @@ export default function CareersPage() {
                         <Icon icon="solar:close-circle-bold" className="w-4 h-4" />
                       </button>
                     )}
-                    <kbd className="hidden sm:inline-block border border-slate-250 dark:border-slate-700 bg-white dark:bg-slate-800/50 rounded-md px-1.5 py-0.5 text-[10px] font-bold text-slate-400 dark:text-slate-400 shrink-0">
+                    <kbd className="hidden sm:inline-block border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 rounded-md px-1.5 py-0.5 text-[10px] font-bold text-slate-400 dark:text-slate-400 shrink-0">
                       Ctrl+K
                     </kbd>
                   </div>
@@ -573,7 +573,7 @@ export default function CareersPage() {
                                     </span>
                                   )}
                                 </div>
-                                <span className="text-[10px] text-slate-450 dark:text-slate-400 line-clamp-1 leading-tight">{item.description}</span>
+                                <span className="text-[10px] text-slate-400 dark:text-slate-400 line-clamp-1 leading-tight">{item.description}</span>
                               </div>
                             </div>
                           );
@@ -721,20 +721,20 @@ export default function CareersPage() {
                           <h3 className="text-2xl font-black text-neutral-dark mb-1 group-hover:text-primary transition-colors duration-300">
                             {career.title}
                           </h3>
-                          <p className="text-sm font-semibold text-slate-450 dark:text-slate-400 uppercase tracking-wider">
+                          <p className="text-sm font-semibold text-slate-400 dark:text-slate-400 uppercase tracking-wider">
                             {career.subtitle}
                           </p>
                         </div>
 
                         {/* Description */}
-                        <p className="text-slate-550 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-8">
+                        <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-8">
                           {career.description}
                         </p>
                       </div>
 
                       {/* Stats & Footer */}
                       <div className="relative z-10 border-t border-slate-200/60 dark:border-slate-700 pt-6 mt-auto w-full">
-                        <div className="grid grid-cols-2 gap-y-4 gap-x-2 text-xs font-semibold text-slate-550 dark:text-slate-400 mb-6 bg-slate-50 dark:bg-slate-800/40 border border-slate-200/30 dark:border-slate-700 rounded-2xl p-4">
+                        <div className="grid grid-cols-2 gap-y-4 gap-x-2 text-xs font-semibold text-slate-500 dark:text-slate-400 mb-6 bg-slate-50 dark:bg-slate-800/40 border border-slate-200/30 dark:border-slate-700 rounded-2xl p-4">
                           <div>
                             <span className="block text-[10px] font-black text-slate-400 dark:text-slate-400 uppercase tracking-wider mb-0.5">{t.duration}</span>
                             <span className="font-bold text-neutral-dark truncate block">{career.duration}</span>
@@ -796,20 +796,20 @@ export default function CareersPage() {
                         <h3 className="text-2xl font-black text-neutral-dark mb-1">
                           {career.title}
                         </h3>
-                        <p className="text-sm font-semibold text-slate-450 dark:text-slate-400 uppercase tracking-wider">
+                        <p className="text-sm font-semibold text-slate-400 dark:text-slate-400 uppercase tracking-wider">
                           {career.subtitle}
                         </p>
                       </div>
 
                       {/* Description */}
-                      <p className="text-slate-550 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-8">
+                      <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-8">
                         {career.description}
                       </p>
                     </div>
 
                     {/* Stats & Footer */}
                     <div className="relative z-10 border-t border-slate-200/60 dark:border-slate-700 pt-6 mt-auto">
-                      <div className="grid grid-cols-2 gap-y-4 gap-x-2 text-xs font-semibold text-slate-550 dark:text-slate-400 mb-6 bg-slate-100/50 dark:bg-slate-800/40 border border-slate-200/30 dark:border-slate-700 rounded-2xl p-4">
+                      <div className="grid grid-cols-2 gap-y-4 gap-x-2 text-xs font-semibold text-slate-500 dark:text-slate-400 mb-6 bg-slate-100/50 dark:bg-slate-800/40 border border-slate-200/30 dark:border-slate-700 rounded-2xl p-4">
                         <div>
                           <span className="block text-[10px] font-black text-slate-400 dark:text-slate-400 uppercase tracking-wider mb-0.5">{t.duration}</span>
                           <span className="font-bold text-neutral-dark truncate block">{career.duration}</span>

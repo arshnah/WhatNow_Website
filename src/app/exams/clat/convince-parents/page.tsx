@@ -132,7 +132,7 @@ export default function ClatConvinceParentsPage() {
           </p>
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 space-y-4 mb-6">
             <h4 className="font-black text-xl text-neutral-dark">The Counter-Argument:</h4>
-            <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
               Corporate firms function like multinational companies (MNCs). Hiring is purely meritocratic based on your NLU grades, internships, and moot performance. No family background or courtroom connections are needed to secure placements. Top firms recruit 70-80% of their associates directly from campus drives.
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function ClatConvinceParentsPage() {
             <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed mb-4">
               Explain that the top NLUs (like NLSIU Bangalore, NALSAR Hyderabad, and NUJS Kolkata) enjoy the same elite institutional status under Indian law as IITs and IIMs.
             </p>
-            <p className="text-lg text-slate-750 dark:text-slate-300 font-medium leading-relaxed">
+            <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
               Admission is extremely competitive (top 1% of ~70,000 aspirants). Clearing CLAT and entering a top-5 NLU is a highly respected achievement, guaranteeing immediate social standing, family pride, and strong financial outcomes.
             </p>
           </div>

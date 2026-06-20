@@ -132,7 +132,7 @@ export default function NiftConvinceParentsPage() {
           </p>
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 space-y-4 mb-6">
             <h4 className="font-black text-xl text-neutral-dark dark:text-slate-100">The Counter-Argument:</h4>
-            <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
               India is the world's second-largest textile exporter. NIFT is an institute set up under the Act of Parliament (Ministry of Textiles). Brand groups like Reliance Retail, Aditya Birla Fashion, Landmark, and Shahi Exports operate multi-billion dollar retail logistics chains that depend on NIFT graduates to manage merchandising, purchasing, and production.
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function NiftConvinceParentsPage() {
             <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed mb-4">
               Objection-handling tip: Frame your course selection (especially B.FTech or Fashion Management/Merchandising) as a **Retail Operations & Logistics** degree. Explain that you will be managing material flow, vendor negotiation, and purchase planning.
             </p>
-            <p className="text-lg text-slate-750 dark:text-slate-300 font-medium leading-relaxed">
+            <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
               If you study at a premier campus (NIFT Delhi, Mumbai, Bengaluru), campus placements are highly institutionalized, offering security and a clear corporate growth trajectory.
             </p>
           </div>

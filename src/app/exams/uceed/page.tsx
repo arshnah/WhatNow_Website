@@ -203,7 +203,7 @@ export default function UceedHubPage() {
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-primary transition-colors duration-300">Is It For You — Honest self-check</h3>
                 <div className="text-primary text-xs font-semibold font-mono mb-4">/exams/uceed/is-it-for-you</div>
-                <p className="text-slate-650 dark:text-slate-300 leading-relaxed mb-4 text-sm md:text-base">
+                <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-4 text-sm md:text-base">
                   This is the question most guides skip. Should you actually go for UCEED? What kind of person thrives in a BDes program versus regrets it? Questions you should ask yourself before committing a year — or two — to this. No cheerleading, no coaching centre pitch.
                 </p>
                 <span className="inline-block bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-900/40 shadow-sm">✓ Ready to read</span>
@@ -216,7 +216,7 @@ export default function UceedHubPage() {
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-primary transition-colors duration-300">Resources — What actually helps</h3>
                 <div className="text-primary text-xs font-semibold font-mono mb-4">/exams/uceed/resources</div>
-                <p className="text-slate-655 dark:text-slate-300 leading-relaxed mb-4 text-sm md:text-base">
+                <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-4 text-sm md:text-base">
                   Books worth buying, books worth skipping, coaching vs. self-study (honest assessment), where to find past papers for free, mock test platforms, and a week-by-week preparation roadmap. Written by someone who&apos;s seen what works and what wastes time.
                 </p>
                 <span className="inline-block bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-900/40 shadow-sm">✓ Ready to read</span>
@@ -250,7 +250,7 @@ export default function UceedHubPage() {
               <div className="flex-1 relative z-10">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1 group-hover:text-amber-600 transition-colors duration-300">Convince Your Parents — With actual data</h3>
                 <div className="text-amber-600 text-xs font-semibold font-mono mb-4">/exams/uceed/convince-parents</div>
-                <p className="text-slate-650 dark:text-slate-300 leading-relaxed mb-4 text-sm md:text-base">
+                <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-4 text-sm md:text-base">
                   Design at an IIT isn&apos;t a risk — but you&apos;ll need to explain that. This guide arms you with placement data, salary figures, career paths, and how to answer the hard questions: job security, prestige, &ldquo;is this a real IIT degree?&rdquo; Have the conversation with facts, not feeling.
                 </p>
                 <span className="inline-block bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-900/40 shadow-sm">✓ Ready to read</span>

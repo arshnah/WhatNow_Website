@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = pageMeta({
   title: "IMU CET — Preparation Strategy & Study Material | WhatNow",
@@ -85,6 +86,20 @@ const Section = ({
 export default function ImuCetPrepPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "IMU CET — Preparation Strategy & Study Material | WhatNow",
+          description:
+            "Subject-wise prep strategy, recommended study materials, previous papers, and shipping company sponsorship interview tips.",
+          path: "/exams/imu-cet/prep",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "IMU CET", path: "/exams/imu-cet" },
+            { name: "Preparation", path: "/exams/imu-cet/prep" },
+          ],
+        })}
+      />
       <PageHeader
         title="IMU CET — Preparation Strategy"
         breadcrumbs={

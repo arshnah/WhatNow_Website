@@ -391,7 +391,7 @@ export default function ConvinceParentsPage() {
                 </h4>
                 <ul className="space-y-3">
                   {obj.talkingPoints.map((point, index) => (
-                    <li key={index} className="flex gap-3 text-sm text-slate-650 dark:text-slate-300 font-semibold leading-relaxed">
+                    <li key={index} className="flex gap-3 text-sm text-slate-600 dark:text-slate-300 font-semibold leading-relaxed">
                       <span className="text-indigo-600 font-black">•</span>
                       <span>{point}</span>
                     </li>

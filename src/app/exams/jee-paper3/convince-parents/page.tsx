@@ -132,7 +132,7 @@ export default function JeePaper3ConvinceParentsPage() {
           </p>
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 space-y-4 mb-6">
             <h4 className="font-black text-xl text-neutral-dark">The Counter-Argument:</h4>
-            <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
               B.Planning is a highly professional, AICTE-approved 4-year degree. It is recognized by the **Institute of Town Planners, India (ITPI)**. With India building 100 Smart Cities and investing ₹10+ Lakh Crores in urban infrastructure (Metro systems, logistics parks, AMRUT sewage lines), the need for specialized planners who understand zoning laws, economic feasibility, and GIS mapping is at an all-time high. Traditional civil engineers do not study these policy frameworks.
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function JeePaper3ConvinceParentsPage() {
             <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed mb-4">
               If you secure admission in the **School of Planning and Architecture (SPA Delhi, Bhopal, or Vijayawada)**, tuition fees are heavily subsidized by the Central Government (~₹1.8L - ₹2.5L per year).
             </p>
-            <p className="text-lg text-slate-750 dark:text-slate-300 font-medium leading-relaxed">
+            <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
               This makes B.Planning at SPAs one of the most high-ROI degrees in the country compared to private engineering colleges that charge ₹15L - ₹20L with similar or lower starting salary packages. Merit-cum-means scholarships further reduce fees for eligible students.
             </p>
           </div>

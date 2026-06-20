@@ -259,7 +259,7 @@ export default function ClatScholarshipsPage() {
             <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed mb-4">
               If you secure a seat in a Tier-1 NLU (top 5-6 campuses), the return on investment is extremely strong. Top law firms (Cyril Amarchand Mangaldas, Shardul Amarchand Mangaldas, Khaitan & Co, Trilegal) recruit heavily from these campuses, with starting salaries for associates ranging from **₹12L to ₹18L per annum**.
             </p>
-            <p className="text-lg text-slate-750 dark:text-slate-300 font-medium leading-relaxed">
+            <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
               For lower-tier NLUs, salaries start around ₹5L - ₹8L, and placement rates are less certain. In such cases, qualifying for **State Scholarships** or **MCM waivers** is highly recommended to keep your student debt low and secure a favorable financial outcome.
             </p>
           </div>

@@ -123,7 +123,7 @@ export default function NiftIsItForYouPage() {
           </p>
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 space-y-4 mb-6">
             <h3 className="font-black text-xl text-neutral-dark dark:text-slate-100">The Back-End Grind</h3>
-            <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
               Daily tasks as a retail merchandiser or fashion technologist involve checking yarn count, auditing garment stitches, managing fabric shipments from mills, calculating material costs, and negotiating with export houses. If you think design is only drawing pretty garments, the day-to-day operations can be a rude awakening.
             </p>
           </div>
@@ -163,7 +163,7 @@ export default function NiftIsItForYouPage() {
             <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed mb-4">
               Starting salaries for NIFT graduates average **₹3.5L to ₹6.0L per annum** for design, and **₹4L to ₹7L** for apparel technology and management. Growth is highly portfolio-driven: as you build industry relations, transition to buying houses (e.g. Li & Fung) or major brands (Zara, Aditya Birla Fashion, Reliance Retail), salaries can cross ₹12L-₹15L in 5 years.
             </p>
-            <p className="text-lg text-slate-750 dark:text-slate-300 font-medium leading-relaxed">
+            <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
               If you have a strong entrepreneurial drive, NIFT equips you with the technical manufacturing skills needed to launch your own brand. Make sure you align with the operational realities before committing.
             </p>
           </div>

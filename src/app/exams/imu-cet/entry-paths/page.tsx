@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = pageMeta({
   title: "IMU CET — DNS vs B.Sc vs B.Tech: Which Path? | WhatNow",
@@ -119,6 +120,20 @@ const ScholarshipCard = ({
 export default function ImuCetEntryPathsPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "IMU CET — DNS vs B.Sc vs B.Tech: Which Path? | WhatNow",
+          description:
+            "Comparing duration, fees, sea-time, placements, sponsorships, and ROI for Diploma in Nautical Science (DNS) vs B.Sc Nautical Science vs B.Tech Marine Engineering.",
+          path: "/exams/imu-cet/entry-paths",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "IMU CET", path: "/exams/imu-cet" },
+            { name: "Entry Paths", path: "/exams/imu-cet/entry-paths" },
+          ],
+        })}
+      />
       <PageHeader
         title="IMU CET — Entry Paths Compared"
         breadcrumbs={

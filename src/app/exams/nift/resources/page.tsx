@@ -125,14 +125,14 @@ export default function NiftResourcesPage() {
             <div className="border border-slate-200 dark:border-slate-700 rounded-2xl p-6 bg-white dark:bg-slate-800/50 shadow-xs">
               <span className="text-xs font-black uppercase tracking-wider text-pink-600 block mb-2">CAT (Creative Ability Test)</span>
               <h4 className="font-black text-lg text-neutral-dark dark:text-slate-100 mb-2">Drawing & Visualisation</h4>
-              <p className="text-xs text-slate-550 dark:text-slate-400 font-semibold leading-relaxed">
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold leading-relaxed">
                 Tests design aptitude, color theory, product styling, and spatial illustration. Typical questions ask you to design a kitchen utility item, illustrate a festival scene from a bird's-eye view, or draw a poster representing environmental changes.
               </p>
             </div>
             <div className="border border-slate-200 dark:border-slate-700 rounded-2xl p-6 bg-white dark:bg-slate-800/50 shadow-xs">
               <span className="text-xs font-black uppercase tracking-wider text-pink-600 block mb-2">GAT (General Ability Test)</span>
               <h4 className="font-black text-lg text-neutral-dark dark:text-slate-100 mb-2">General Aptitude</h4>
-              <p className="text-xs text-slate-550 dark:text-slate-400 font-semibold leading-relaxed">
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold leading-relaxed">
                 Objective MCQs testing English Comprehension, Quantitative Ability (standard Class 10 math), Analytical Reasoning, and General Knowledge (with a heavy focus on fashion industry news, brand acquisitions, and textile history).
               </p>
             </div>
@@ -143,13 +143,13 @@ export default function NiftResourcesPage() {
           <div className="space-y-6">
             <div className="border-l-4 border-pink-500/80 pl-6">
               <h4 className="font-black text-lg text-neutral-dark dark:text-slate-100 mb-2">Primary Reference Books</h4>
-              <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
                 Use the **Arihant NIFT Entrance Exam Guide** or **Dharmendra Mittal's Prep Book** to study past question patterns and complete standard GAT verbal/non-verbal reasoning chapters.
               </p>
             </div>
             <div className="border-l-4 border-emerald-500/80 pl-6">
               <h4 className="font-black text-lg text-neutral-dark dark:text-slate-100 mb-2">Situation Test Material Kit (20% Weightage)</h4>
-              <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold mb-3">
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold mb-3">
                 If you qualify the written round, you sit for the Situation Test, which involves building 3D models using a limited set of materials. Practice at home by creating models of kiosks, trophies, and bags using:
               </p>
               <ul className="list-disc list-inside text-xs text-slate-600 dark:text-slate-400 font-semibold space-y-1">
@@ -164,7 +164,7 @@ export default function NiftResourcesPage() {
         <Section number="03" title="Self-Prep Roadmap">
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8">
             <h3 className="text-lg font-black text-neutral-dark dark:text-slate-100 mb-4">Timely Preparation Flow</h3>
-            <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold mb-4 text-sm">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold mb-4 text-sm">
               Start by building basic sketching skills (proportion, light & shade, human anatomy) 4-6 months before the exam. Solve past 10 years of NIFT CAT and GAT papers under strict exam timelines. Keep tracking current developments in national and international fashion houses.
             </p>
           </div>

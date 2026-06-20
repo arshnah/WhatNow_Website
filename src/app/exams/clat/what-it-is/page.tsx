@@ -201,14 +201,14 @@ export default function ClatWhatItIsPage() {
         <Section number="02" title="Marking Rules & Negative Penalties">
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 space-y-4">
             <h3 className="font-black text-xl text-neutral-dark">Negative Marking is the Real Filter</h3>
-            <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
               Each correct answer awards **+1 mark**, while an incorrect answer penalizes you by **-0.25 marks**. Unanswered questions receive 0 marks. Because the paper is highly timed (one minute per question, including reading lengthy passages), accuracy and selection of which passages to attempt vs skip determine whether you cross the score threshold.
             </p>
           </div>
         </Section>
 
         <Section number="03" title="Eligibility & Registration Requirements">
-          <p className="text-lg text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+          <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
             Candidates must have passed Class 12 or equivalent with a minimum of **45% marks** (40% for SC/ST candidates). Candidates appearing in their Class 12 board exams are also eligible to register. There is **no upper age limit** for appearing in CLAT.
           </p>
         </Section>

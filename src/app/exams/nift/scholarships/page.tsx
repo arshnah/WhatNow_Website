@@ -208,7 +208,7 @@ export default function NiftScholarshipsPage() {
                   <td className="p-4 text-slate-700 dark:text-slate-300 border-b border-slate-100 dark:border-slate-800 font-medium">
                     ~₹3.25 lakhs
                   </td>
-                  <td className="p-4 text-slate-450 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-medium">
+                  <td className="p-4 text-slate-400 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800 font-medium">
                     Varies by campus (Metro vs. Non-metro)
                   </td>
                 </tr>

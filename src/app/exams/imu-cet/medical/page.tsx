@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = pageMeta({
   title: "IMU CET — Medical Test & DG Shipping Norms | WhatNow",
@@ -85,6 +86,20 @@ const Section = ({
 export default function ImuCetMedicalPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "IMU CET — Medical Test & DG Shipping Norms | WhatNow",
+          description:
+            "Mandatory DG Shipping medical fitness rules, eyesight constraints, colour blindness limitations, and the truth about the LASIK myth — check your eyes before you commit.",
+          path: "/exams/imu-cet/medical",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "IMU CET", path: "/exams/imu-cet" },
+            { name: "Medical", path: "/exams/imu-cet/medical" },
+          ],
+        })}
+      />
       <PageHeader
         title="IMU CET — Medical Test & DG Shipping Norms"
         breadcrumbs={

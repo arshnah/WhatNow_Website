@@ -152,7 +152,7 @@ export default function ClatResourcesPage() {
           </p>
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 space-y-4">
             <h4 className="font-black text-xl text-neutral-dark">How to build speed:</h4>
-            <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
               Read the Editorial and Opinion pages of **The Hindu** or **The Indian Express** daily. Highlight the central argument, trace how the author supports it, and summarize the passage in two sentences. This directly mirrors the reading comprehension and logical reasoning questions.
             </p>
           </div>

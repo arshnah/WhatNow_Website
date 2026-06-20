@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = pageMeta({
   title: "IMU CET — Syllabus, Pattern & Reg Guidelines | WhatNow",
@@ -85,6 +86,20 @@ const Section = ({
 export default function ImuCetWhatItIsPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "IMU CET — Syllabus, Pattern & Reg Guidelines | WhatNow",
+          description:
+            "Complete guide to the Indian Maritime University Common Entrance Test: exam pattern, subject weightage, and registration details.",
+          path: "/exams/imu-cet/what-it-is",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "IMU CET", path: "/exams/imu-cet" },
+            { name: "What It Is", path: "/exams/imu-cet/what-it-is" },
+          ],
+        })}
+      />
       <PageHeader
         title="IMU CET — The Maritime Entrance"
         breadcrumbs={
@@ -198,7 +213,7 @@ export default function ImuCetWhatItIsPage() {
         <Section number="02" title="Marking Scheme & Counselling">
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 space-y-4">
             <h3 className="font-black text-xl text-neutral-dark">No Negative Marking</h3>
-            <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
               Each correct answer awards **+1 mark**. There is **no negative marking** for incorrect answers. This makes time management critical: you should attempt all 200 questions within the 3 hours. Online registration usually opens in April/May, and the exam is conducted in June. DGS counseling processes allocate seats across IMU campuses and affiliated private colleges.
             </p>
           </div>

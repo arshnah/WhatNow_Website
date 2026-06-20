@@ -375,7 +375,7 @@ export default function PrivacyPage() {
             <button
               onClick={() => setMode("summary")}
               className={`relative px-6 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-colors duration-300 cursor-pointer ${
-                mode === "summary" ? "text-white" : "text-slate-550 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white"
+                mode === "summary" ? "text-white" : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white"
               }`}
             >
               {mode === "summary" && (
@@ -393,7 +393,7 @@ export default function PrivacyPage() {
             <button
               onClick={() => setMode("legal")}
               className={`relative px-6 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-colors duration-300 cursor-pointer ${
-                mode === "legal" ? "text-white" : "text-slate-550 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white"
+                mode === "legal" ? "text-white" : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white"
               }`}
             >
               {mode === "legal" && (
@@ -444,10 +444,10 @@ export default function PrivacyPage() {
                     "solar:users-group-two-rounded-bold-duotone"
                   ];
                   const colors = [
-                    "text-indigo-650 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/40 border-indigo-100 dark:border-indigo-900/40",
+                    "text-indigo-600 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/40 border-indigo-100 dark:border-indigo-900/40",
                     "text-amber-600 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 border-amber-100 dark:border-amber-900/40",
-                    "text-rose-650 dark:text-rose-300 bg-rose-50 dark:bg-rose-950/40 border-rose-100 dark:border-rose-900/40",
-                    "text-emerald-650 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 border-emerald-100 dark:border-emerald-900/40"
+                    "text-rose-600 dark:text-rose-300 bg-rose-50 dark:bg-rose-950/40 border-rose-100 dark:border-rose-900/40",
+                    "text-emerald-600 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 border-emerald-100 dark:border-emerald-900/40"
                   ];
                   return (
                     <motion.div
@@ -492,7 +492,7 @@ export default function PrivacyPage() {
             >
               {/* Table of Contents Sidebar */}
               <aside className="lg:w-64 shrink-0">
-                <nav className="lg:sticky lg:top-28 bg-white dark:bg-slate-800/30 border border-slate-250/60 dark:border-slate-800 rounded-[2rem] p-6 shadow-xs">
+                <nav className="lg:sticky lg:top-28 bg-white dark:bg-slate-800/30 border border-slate-200/60 dark:border-slate-800 rounded-[2rem] p-6 shadow-xs">
                   <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500 mb-4 flex items-center gap-1.5">
                     <Icon icon="solar:list-down-minimalistic-bold-duotone" className="text-primary w-4 h-4" />
                     <span>{t.tocTitle}</span>
@@ -517,11 +517,11 @@ export default function PrivacyPage() {
                 
                 {/* 1. Overview */}
                 <section id="overview" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.overview.heading}
                   </h2>
                   {t.sections.overview.body.split("\n\n").map((para, i) => (
-                    <p key={i} className="text-slate-600 dark:text-slate-450 text-sm md:text-base leading-relaxed mb-4 font-semibold">
+                    <p key={i} className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-4 font-semibold">
                       {para}
                     </p>
                   ))}
@@ -529,17 +529,17 @@ export default function PrivacyPage() {
 
                 {/* 2. What We Collect */}
                 <section id="what-we-collect" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.whatWeCollect.heading}
                   </h2>
-                  <p className="text-slate-600 dark:text-slate-450 text-sm md:text-base leading-relaxed mb-6 font-semibold">
+                  <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-6 font-semibold">
                     {t.sections.whatWeCollect.intro}
                   </p>
                   <ul className="space-y-5 mb-8">
                     {t.sections.whatWeCollect.items.map((item, i) => (
                       <li key={i} className="flex gap-3 items-start text-left">
                         <span className="mt-1.5 h-2 w-2 rounded-full bg-primary shrink-0" />
-                        <span className="text-sm md:text-base text-slate-655 dark:text-slate-400 font-semibold leading-relaxed">
+                        <span className="text-sm md:text-base text-slate-600 dark:text-slate-400 font-semibold leading-relaxed">
                           <strong className="text-slate-900 dark:text-slate-100 font-black">{item.label}</strong>{" "}
                           — {item.detail}
                         </span>
@@ -554,27 +554,27 @@ export default function PrivacyPage() {
 
                 {/* 3. Why We Process */}
                 <section id="why-we-process" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.whyWeProcess.heading}
                   </h2>
-                  <p className="text-slate-655 dark:text-slate-450 text-sm md:text-base leading-relaxed font-semibold">
+                  <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed font-semibold">
                     {t.sections.whyWeProcess.body}
                   </p>
                 </section>
 
                 {/* 4. Children's Data */}
                 <section id="children" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.children.heading}
                   </h2>
-                  <p className="text-slate-655 dark:text-slate-450 text-sm md:text-base leading-relaxed mb-6 font-semibold">
+                  <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-6 font-semibold">
                     {t.sections.children.intro}
                   </p>
                   <ul className="space-y-4">
                     {t.sections.children.items.map((item, i) => (
                       <li key={i} className="flex gap-3 items-start text-left">
                         <span className="mt-1.5 h-2 w-2 rounded-full bg-secondary shrink-0" />
-                        <span className="text-sm md:text-base text-slate-655 dark:text-slate-400 font-semibold leading-relaxed">
+                        <span className="text-sm md:text-base text-slate-600 dark:text-slate-400 font-semibold leading-relaxed">
                           {item}
                         </span>
                       </li>
@@ -584,13 +584,13 @@ export default function PrivacyPage() {
 
                 {/* 5. Cookies & Local Storage */}
                 <section id="cookies" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.cookies.heading}
                   </h2>
                   {t.sections.cookies.body.split("\n\n").map((para, i) => (
                     <p
                       key={i}
-                      className="text-slate-655 dark:text-slate-450 text-sm md:text-base leading-relaxed mb-4 font-semibold whitespace-pre-line"
+                      className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-4 font-semibold whitespace-pre-line"
                     >
                       {para}
                     </p>
@@ -599,13 +599,13 @@ export default function PrivacyPage() {
 
                 {/* 6. Third Parties */}
                 <section id="third-parties" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.thirdParties.heading}
                   </h2>
                   {t.sections.thirdParties.body.split("\n\n").map((para, i) => (
                     <p
                       key={i}
-                      className="text-slate-655 dark:text-slate-450 text-sm md:text-base leading-relaxed mb-4 font-semibold whitespace-pre-line"
+                      className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-4 font-semibold whitespace-pre-line"
                     >
                       {para}
                     </p>
@@ -614,13 +614,13 @@ export default function PrivacyPage() {
 
                 {/* 7. Data Retention */}
                 <section id="retention" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.retention.heading}
                   </h2>
                   {t.sections.retention.body.split("\n\n").map((para, i) => (
                     <p
                       key={i}
-                      className="text-slate-655 dark:text-slate-450 text-sm md:text-base leading-relaxed mb-4 font-semibold whitespace-pre-line"
+                      className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-4 font-semibold whitespace-pre-line"
                     >
                       {para}
                     </p>
@@ -629,23 +629,23 @@ export default function PrivacyPage() {
 
                 {/* 8. Security */}
                 <section id="security" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.security.heading}
                   </h2>
-                  <p className="text-slate-655 dark:text-slate-450 text-sm md:text-base leading-relaxed font-semibold">
+                  <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed font-semibold">
                     {t.sections.security.body}
                   </p>
                 </section>
 
                 {/* 9. Your Rights */}
                 <section id="your-rights" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.yourRights.heading}
                   </h2>
                   {t.sections.yourRights.body.split("\n\n").map((para, i) => (
                     <p
                       key={i}
-                      className="text-slate-655 dark:text-slate-450 text-sm md:text-base leading-relaxed mb-4 font-semibold whitespace-pre-line"
+                      className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-4 font-semibold whitespace-pre-line"
                     >
                       {para}
                     </p>
@@ -654,7 +654,7 @@ export default function PrivacyPage() {
 
                 {/* 10. Grievance Redressal */}
                 <section id="grievance" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.grievance.heading}
                   </h2>
                   <div className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-6 text-left shadow-xs">
@@ -681,27 +681,27 @@ export default function PrivacyPage() {
 
                 {/* 11. International Transfers */}
                 <section id="transfers" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.transfers.heading}
                   </h2>
-                  <p className="text-slate-655 dark:text-slate-450 text-sm md:text-base leading-relaxed font-semibold">
+                  <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed font-semibold">
                     {t.sections.transfers.body}
                   </p>
                 </section>
 
                 {/* 12. Changes */}
                 <section id="changes" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.changes.heading}
                   </h2>
-                  <p className="text-slate-655 dark:text-slate-450 text-sm md:text-base leading-relaxed font-semibold">
+                  <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed font-semibold">
                     {t.sections.changes.body}
                   </p>
                 </section>
 
                 {/* 13. Contact */}
                 <section id="contact" className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-150 dark:border-slate-850">
+                  <h2 className="text-2xl font-black text-slate-900 dark:text-slate-100 mb-6 pb-2 border-b border-slate-100 dark:border-slate-800">
                     {t.sections.contact.heading}
                   </h2>
                   <div className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-6 text-left shadow-xs">

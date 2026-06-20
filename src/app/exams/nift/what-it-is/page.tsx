@@ -285,7 +285,7 @@ export default function NiftWhatItIsPage() {
 
           <InfoBox type="info">
             <h4 className="font-black mb-2">What is the Situation Test?</h4>
-            <p className="text-slate-750 dark:text-slate-300 font-medium">
+            <p className="text-slate-700 dark:text-slate-300 font-medium">
               Candidates are given a set of raw materials (clay, wire, board, paper, etc.) and must construct a 3D model addressing a specific prompt under a strict 2-hour limit. They also write a short explanation of the concept. This test evaluates practical material execution and design thinking under pressure.
             </p>
           </InfoBox>

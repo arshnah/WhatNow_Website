@@ -259,7 +259,7 @@ export default function JeePaper3ScholarshipsPage() {
             <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed mb-4">
               Urban planning is a specialized profession. SPA graduates are hired by real estate consulting firms (JLL, CBRE, Knight Frank), infrastructure giants (L&T, Tata Consulting Engineers), and consulting agencies (PwC, EY). Starting salaries average **₹5L to ₹8L per annum**.
             </p>
-            <p className="text-lg text-slate-750 dark:text-slate-300 font-medium leading-relaxed">
+            <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
               Because SPA tuition fees are heavily subsidized (~₹4.8L for 4 years), the debt burden is low, leading to a quick payback period. For students from lower-income backgrounds, utilizing the institutional **MCM waivers** or government schemes makes B.Planning one of the most cost-effective and financially secure creative-technical paths in the country.
             </p>
           </div>

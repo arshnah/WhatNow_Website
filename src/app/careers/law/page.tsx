@@ -237,7 +237,7 @@ export default function LawCareerHubPage() {
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">{t.card1Title}</h3>
                 <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-4 text-sm md:text-base">{t.card1Desc}</p>
-                <span className="inline-block bg-emerald-550/10 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-300 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-900/40">{t.badgeComingSoon}</span>
+                <span className="inline-block bg-emerald-500/10 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-300 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-900/40">{t.badgeComingSoon}</span>
               </div>
             </div>
 
@@ -247,7 +247,7 @@ export default function LawCareerHubPage() {
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">{t.card2Title}</h3>
                 <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-4 text-sm md:text-base">{t.card2Desc}</p>
-                <span className="inline-block bg-emerald-550/10 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-300 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-900/40">{t.badgeComingSoon}</span>
+                <span className="inline-block bg-emerald-500/10 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-300 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-900/40">{t.badgeComingSoon}</span>
               </div>
             </div>
 
@@ -257,7 +257,7 @@ export default function LawCareerHubPage() {
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">{t.card3Title}</h3>
                 <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-4 text-sm md:text-base">{t.card3Desc}</p>
-                <span className="inline-block bg-emerald-550/10 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-300 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-900/40">{t.badgeComingSoon}</span>
+                <span className="inline-block bg-emerald-500/10 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-300 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-900/40">{t.badgeComingSoon}</span>
               </div>
             </div>
 
@@ -267,7 +267,7 @@ export default function LawCareerHubPage() {
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-black text-neutral-dark mb-1">{t.card4Title}</h3>
                 <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-4 text-sm md:text-base">{t.card4Desc}</p>
-                <span className="inline-block bg-emerald-550/10 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-300 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-900/40">{t.badgeComingSoon}</span>
+                <span className="inline-block bg-emerald-500/10 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-300 text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-900/40">{t.badgeComingSoon}</span>
               </div>
             </div>
           </div>

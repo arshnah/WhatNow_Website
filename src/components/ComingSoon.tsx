@@ -110,7 +110,7 @@ export default function ComingSoon({ pageNameEn, pageNameHi }: ComingSoonProps) 
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-neutral-dark tracking-tight leading-tight mb-6">
           {t.title} <span className="text-primary block sm:inline">{pageTitleName}</span>
         </h1>
-        <p className="text-sm sm:text-base text-slate-550 dark:text-slate-400 leading-relaxed font-semibold mb-8 max-w-xl mx-auto">
+        <p className="text-sm sm:text-base text-slate-500 dark:text-slate-400 leading-relaxed font-semibold mb-8 max-w-xl mx-auto">
           {t.desc}
         </p>
 

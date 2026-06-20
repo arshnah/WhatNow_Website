@@ -141,7 +141,7 @@ export default function JeePaper3WhatItIsPage() {
             <div className="border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 rounded-2xl p-6 shadow-sm">
               <span className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-400">Part I</span>
               <h3 className="text-xl font-black text-teal-600 mt-1 mb-3">Mathematics</h3>
-              <p className="text-sm text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+              <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
                 30 Questions (20 MCQs + 10 Numerical Value questions, out of which 5 are to be attempted).
               </p>
               <div className="text-lg font-black text-slate-700 dark:text-slate-300 mt-4">100 Marks</div>
@@ -150,7 +150,7 @@ export default function JeePaper3WhatItIsPage() {
             <div className="border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 rounded-2xl p-6 shadow-sm">
               <span className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-400">Part II</span>
               <h3 className="text-xl font-black text-teal-600 mt-1 mb-3">Aptitude Test</h3>
-              <p className="text-sm text-slate-655 dark:text-slate-300 leading-relaxed font-semibold">
+              <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
                 50 Questions (MCQs only). Tests 2D/3D visualization, mental capability, spatial reasoning, and architectural/planning history.
               </p>
               <div className="text-lg font-black text-slate-700 dark:text-slate-300 mt-4">200 Marks</div>
@@ -159,7 +159,7 @@ export default function JeePaper3WhatItIsPage() {
             <div className="border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 rounded-2xl p-6 shadow-sm">
               <span className="text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-400">Part III</span>
               <h3 className="text-xl font-black text-teal-600 mt-1 mb-3">Planning Questions</h3>
-              <p className="text-sm text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+              <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
                 25 Questions (MCQs only). Specialized questions based on urban development, environmental science, and policy awareness.
               </p>
               <div className="text-lg font-black text-slate-700 dark:text-slate-300 mt-4">100 Marks</div>
@@ -168,8 +168,8 @@ export default function JeePaper3WhatItIsPage() {
 
           <InfoBox type="info">
             <h4 className="font-black text-teal-700 mb-2">Marking Scheme:</h4>
-            <p className="text-slate-750 dark:text-slate-300 font-medium">
-              Every correct answer yields <span className="font-bold text-teal-700">+4 marks</span>. Correct numerical value questions also get +4. Incorrect answers carry a penalty of <span className="font-bold text-red-650">-1 mark</span> (both for MCQs and Numerical Value questions). Unattempted questions receive 0.
+            <p className="text-slate-700 dark:text-slate-300 font-medium">
+              Every correct answer yields <span className="font-bold text-teal-700">+4 marks</span>. Correct numerical value questions also get +4. Incorrect answers carry a penalty of <span className="font-bold text-red-600">-1 mark</span> (both for MCQs and Numerical Value questions). Unattempted questions receive 0.
             </p>
           </InfoBox>
         </Section>
@@ -181,7 +181,7 @@ export default function JeePaper3WhatItIsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8">
             <div>
               <h4 className="font-black text-slate-800 dark:text-slate-100 mb-2">High Weightage Topics</h4>
-              <ul className="list-disc pl-5 space-y-2 text-slate-650 dark:text-slate-300 font-semibold text-sm">
+              <ul className="list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-300 font-semibold text-sm">
                 <li>Coordinate Geometry (Straight Lines, Circles, Conics)</li>
                 <li>Calculus (Limits, Continuity, Derivatives, Definite Integrals)</li>
                 <li>Vectors & Three-Dimensional Geometry</li>
@@ -190,7 +190,7 @@ export default function JeePaper3WhatItIsPage() {
             </div>
             <div>
               <h4 className="font-black text-slate-800 dark:text-slate-100 mb-2">Algebra & Trigonometry</h4>
-              <ul className="list-disc pl-5 space-y-2 text-slate-650 dark:text-slate-300 font-semibold text-sm">
+              <ul className="list-disc pl-5 space-y-2 text-slate-600 dark:text-slate-300 font-semibold text-sm">
                 <li>Matrices and Determinants</li>
                 <li>Complex Numbers & Quadratic Equations</li>
                 <li>Sequences and Series (AP, GP, HP)</li>
@@ -207,19 +207,19 @@ export default function JeePaper3WhatItIsPage() {
           <div className="space-y-6">
             <div className="border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-800/50 p-6 rounded-xl shadow-sm">
               <h4 className="font-black text-slate-800 dark:text-slate-100 text-lg mb-2">1. Visual & Spatial Aptitude</h4>
-              <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold text-sm">
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold text-sm">
                 Visualizing 3D views of objects from 2D orthographic projections. Counting surfaces, vertices, and edges of complex geometric models. Rotation, unfolding, and mirror-imaging of block designs.
               </p>
             </div>
             <div className="border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-800/50 p-6 rounded-xl shadow-sm">
               <h4 className="font-black text-slate-800 dark:text-slate-100 text-lg mb-2">2. Analytical Reasoning & Mental Ability</h4>
-              <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold text-sm">
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold text-sm">
                 Pattern recognition, series completions, logical deductions, blood relation puzzles, coding-decoding, and Venn diagrams.
               </p>
             </div>
             <div className="border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-800/50 p-6 rounded-xl shadow-sm">
               <h4 className="font-black text-slate-800 dark:text-slate-100 text-lg mb-2">3. Architecture, Cities & History GK</h4>
-              <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold text-sm">
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold text-sm">
                 Identifying famous national and international monuments, landmarks, and city shapes. Basic knowledge of architectural history, famous architects/planners, materials, and structural elements.
               </p>
             </div>

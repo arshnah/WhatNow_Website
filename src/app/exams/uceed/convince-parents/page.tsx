@@ -132,7 +132,7 @@ export default function UceedConvinceParentsPage() {
           </p>
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 space-y-4 mb-6">
             <h4 className="font-black text-xl text-neutral-dark">The Counter-Argument:</h4>
-            <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
               Every app, software, banking portal, and website requires digital designers to function. It is a core tech job. Frame it as "software engineering for the user interface." UI/UX design is one of the highest-paying and fastest-growing segments in the Indian IT sector.
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function UceedConvinceParentsPage() {
             <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed mb-4">
               Show your parents the official IIT placements portals. Highlight that B.Des students share the **same hostel rooms, same placement office, and same alumni network** as B.Tech computer science students.
             </p>
-            <p className="text-lg text-slate-750 dark:text-slate-300 font-medium leading-relaxed">
+            <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
               If they qualify for fee concessions based on family income, the same rules apply. Pursuing a B.Des at an IIT is a safe, high-paying, and prestigious career choice that offers immediate entry into top tech firms.
             </p>
           </div>

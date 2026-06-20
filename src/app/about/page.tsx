@@ -22,7 +22,7 @@ const STATS_DATA = {
       label: "Seniors Interviewed",
       description: "Methodologies and exit path insights directly from successful exam candidates.",
       icon: "solar:chat-line-chat-bold-duotone",
-      iconColor: "text-indigo-650",
+      iconColor: "text-indigo-600",
       iconBg: "bg-indigo-50 border-indigo-100 dark:bg-indigo-950/30 dark:border-indigo-900/40",
     },
     {
@@ -38,7 +38,7 @@ const STATS_DATA = {
       label: "Rupees Cost Forever",
       description: "No email gates, subscription locks, or premium paywalled resources.",
       icon: "solar:banknote-bold-duotone",
-      iconColor: "text-emerald-650",
+      iconColor: "text-emerald-600",
       iconBg: "bg-emerald-50 border-emerald-100 dark:bg-emerald-950/30 dark:border-indigo-900/40",
     },
     {
@@ -46,7 +46,7 @@ const STATS_DATA = {
       label: "Target Streams",
       description: "Expanding indexes for design, law, fashion, merchant navy, and defence.",
       icon: "solar:map-arrow-square-bold-duotone",
-      iconColor: "text-purple-650",
+      iconColor: "text-purple-600",
       iconBg: "bg-purple-50 border-purple-100 dark:bg-purple-950/30 dark:border-indigo-900/40",
     },
   ],
@@ -56,7 +56,7 @@ const STATS_DATA = {
       label: "सीनियर्स का साक्षात्कार",
       description: "सफल उम्मीदवारों से सीधे प्राप्त कार्यप्रणालियाँ और बाहर निकलने के रास्तों की जानकारी।",
       icon: "solar:chat-line-chat-bold-duotone",
-      iconColor: "text-indigo-650",
+      iconColor: "text-indigo-600",
       iconBg: "bg-indigo-50 border-indigo-100 dark:bg-indigo-950/30 dark:border-indigo-900/40",
     },
     {
@@ -72,7 +72,7 @@ const STATS_DATA = {
       label: "हमेशा के लिए मुफ़्त",
       description: "कोई ईमेल गेट नहीं, सब्सक्रिप्शन लॉक नहीं, या कोई प्रीमियम भुगतान संसाधन नहीं।",
       icon: "solar:banknote-bold-duotone",
-      iconColor: "text-emerald-650",
+      iconColor: "text-emerald-600",
       iconBg: "bg-emerald-50 border-emerald-100 dark:bg-emerald-950/30 dark:border-indigo-900/40",
     },
     {
@@ -80,7 +80,7 @@ const STATS_DATA = {
       label: "लक्षित स्ट्रीम्स",
       description: "डिज़ाइन, कानून, फैशन, मर्चेंट नेवी और रक्षा के लिए सूचकांकों का विस्तार।",
       icon: "solar:map-arrow-square-bold-duotone",
-      iconColor: "text-purple-650",
+      iconColor: "text-purple-600",
       iconBg: "bg-purple-50 border-purple-100 dark:bg-purple-950/30 dark:border-indigo-900/40",
     },
   ]
@@ -889,7 +889,7 @@ export default function AboutPage() {
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery("")}
-                  className="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-400 hover:text-slate-650 cursor-pointer"
+                  className="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-400 hover:text-slate-600 cursor-pointer"
                 >
                   <Icon icon="solar:close-circle-bold" className="w-5 h-5" />
                 </button>
@@ -1032,7 +1032,7 @@ export default function AboutPage() {
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10 w-full sm:w-auto">
-          <Link href="/careers" className="bg-primary hover:bg-indigo-650 text-white text-xs font-black uppercase tracking-wider px-8 py-4 rounded-xl shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5 cursor-pointer">
+          <Link href="/careers" className="bg-primary hover:bg-indigo-600 text-white text-xs font-black uppercase tracking-wider px-8 py-4 rounded-xl shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5 cursor-pointer">
             {t.exploreBtn}
           </Link>
           <Link href="/exams" className="bg-transparent border-2 border-white/20 hover:border-white/50 text-white text-xs font-black uppercase tracking-wider px-8 py-4 rounded-xl transition-all hover:-translate-y-0.5 cursor-pointer">

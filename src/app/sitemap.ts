@@ -24,7 +24,8 @@ const careers = [
 const exams = [
   "/exams",
   "/exams/clat", "/exams/clat/what-it-is", "/exams/clat/is-it-for-you", "/exams/clat/resources", "/exams/clat/scholarships", "/exams/clat/convince-parents",
-  "/exams/imu-cet", "/exams/imu-cet/what-it-is", "/exams/imu-cet/is-it-for-you", "/exams/imu-cet/entry-paths", "/exams/imu-cet/medical", "/exams/imu-cet/prep", "/exams/imu-cet/resources", "/exams/imu-cet/scholarships", "/exams/imu-cet/convince-parents",
+  // NOTE: imu-cet is-it-for-you/resources/scholarships 301-redirect (see next.config.ts) → list only canonical destinations
+  "/exams/imu-cet", "/exams/imu-cet/what-it-is", "/exams/imu-cet/entry-paths", "/exams/imu-cet/medical", "/exams/imu-cet/prep", "/exams/imu-cet/convince-parents",
   "/exams/jee-paper3", "/exams/jee-paper3/what-it-is", "/exams/jee-paper3/is-it-for-you", "/exams/jee-paper3/resources", "/exams/jee-paper3/scholarships", "/exams/jee-paper3/convince-parents",
   "/exams/nift", "/exams/nift/what-it-is", "/exams/nift/is-it-for-you", "/exams/nift/resources", "/exams/nift/scholarships", "/exams/nift/convince-parents",
   "/exams/uceed", "/exams/uceed/what-it-is", "/exams/uceed/is-it-for-you", "/exams/uceed/resources", "/exams/uceed/scholarships", "/exams/uceed/convince-parents",

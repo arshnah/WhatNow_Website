@@ -197,19 +197,19 @@ export default function FaqPage() {
       <div className="max-w-3xl mx-auto px-6 py-12 md:py-16">
         {/* Search Bar */}
         <div className="relative mb-10">
-          <div className="flex items-center gap-3 bg-slate-550/5 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800 rounded-2xl px-5 py-3.5 text-slate-600 dark:text-slate-400 text-sm font-medium transition-all focus-within:border-[#5563ED] focus-within:bg-white shadow-sm">
+          <div className="flex items-center gap-3 bg-slate-500/5 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800 rounded-2xl px-5 py-3.5 text-slate-600 dark:text-slate-400 text-sm font-medium transition-all focus-within:border-[#5563ED] focus-within:bg-white shadow-sm">
             <Icon icon="solar:magnifer-linear" className="w-5 h-5 text-slate-400 shrink-0" />
             <input
               type="text"
               placeholder={t.searchPlaceholder}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full text-neutral-dark placeholder-slate-450 bg-transparent focus:outline-none font-semibold text-sm"
+              className="w-full text-neutral-dark placeholder-slate-400 bg-transparent focus:outline-none font-semibold text-sm"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery("")}
-                className="p-1 rounded-full text-slate-400 hover:text-neutral-dark hover:bg-slate-250/50 transition-colors cursor-pointer shrink-0"
+                className="p-1 rounded-full text-slate-400 hover:text-neutral-dark hover:bg-slate-200/50 transition-colors cursor-pointer shrink-0"
               >
                 <Icon icon="solar:close-circle-bold" className="w-4 h-4" />
               </button>
@@ -270,7 +270,7 @@ export default function FaqPage() {
                           className={`px-3 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-wider border flex items-center gap-1.5 transition-colors cursor-pointer ${
                             rating === "yes"
                               ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-600"
-                              : "bg-slate-50 dark:bg-slate-800/30 border-slate-200 dark:border-slate-800 text-slate-550 hover:border-slate-350"
+                              : "bg-slate-50 dark:bg-slate-800/30 border-slate-200 dark:border-slate-800 text-slate-500 hover:border-slate-300"
                           }`}
                         >
                           <Icon icon="ri:thumb-up-fill" className="w-3.5 h-3.5" />
@@ -283,7 +283,7 @@ export default function FaqPage() {
                           className={`px-3 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-wider border flex items-center gap-1.5 transition-colors cursor-pointer ${
                             rating === "no"
                               ? "bg-rose-500/10 border-rose-500/30 text-rose-600"
-                              : "bg-slate-50 dark:bg-slate-800/30 border-slate-200 dark:border-slate-800 text-slate-550 hover:border-slate-350"
+                              : "bg-slate-50 dark:bg-slate-800/30 border-slate-200 dark:border-slate-800 text-slate-500 hover:border-slate-300"
                           }`}
                         >
                           <Icon icon="ri:thumb-down-fill" className="w-3.5 h-3.5" />
@@ -308,19 +308,19 @@ export default function FaqPage() {
         </div>
 
         {/* Still stuck contact card */}
-        <div className="mt-12 rounded-3xl border border-slate-250/60 dark:border-slate-800 bg-slate-50/50 dark:bg-[#0B111C] p-6 sm:p-8 relative overflow-hidden">
+        <div className="mt-12 rounded-3xl border border-slate-200/60 dark:border-slate-800 bg-slate-50/50 dark:bg-[#0B111C] p-6 sm:p-8 relative overflow-hidden">
           <div className="absolute top-0 right-0 -mt-6 -mr-6 w-32 h-32 rounded-full bg-indigo-500/5 blur-2xl pointer-events-none" />
           
           <h2 className="text-xl font-black text-slate-900 dark:text-slate-100 mb-2">
             {t.stillStuck}
           </h2>
-          <p className="text-sm text-slate-655 dark:text-slate-400 font-semibold mb-6">
+          <p className="text-sm text-slate-600 dark:text-slate-400 font-semibold mb-6">
             {t.stillStuckBody}
           </p>
           <div className="flex gap-4 flex-wrap items-center">
             <Link
               href="/contact"
-              className="inline-flex items-center rounded-full bg-[#5563ED] px-6 py-3 text-xs font-black text-white hover:bg-indigo-650 transition-colors uppercase tracking-widest shadow-sm shadow-indigo-500/10"
+              className="inline-flex items-center rounded-full bg-[#5563ED] px-6 py-3 text-xs font-black text-white hover:bg-indigo-600 transition-colors uppercase tracking-widest shadow-sm shadow-indigo-500/10"
             >
               {t.contactCta}
             </Link>

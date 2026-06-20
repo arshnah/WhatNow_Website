@@ -246,7 +246,7 @@ export default function ImuCetScholarshipsPage() {
             <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed mb-4">
               While training is intensive and costly, the Merchant Navy offers an exceptionally quick recovery of education costs. As a deck cadet during your 12-18 months of sea-time, you earn a monthly stipend of **$300 - $600 USD (₹25,000 - ₹50,000)** with free food and accommodation on board.
             </p>
-            <p className="text-lg text-slate-750 dark:text-slate-300 font-medium leading-relaxed">
+            <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
               Once you pass the MMD Second Mate/Class IV written and oral examinations and receive your License (CoC), you join as a Third Officer or Fourth Engineer. Your starting salary jumps to **$2,000 - $3,500 USD per month (₹1.6L - ₹3L/mo) tax-free**. Most cadets recover their full educational loans within their first 12-18 months of sailing as a licensed officer.
             </p>
           </div>

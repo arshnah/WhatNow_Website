@@ -262,7 +262,7 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-650 shrink-0">
+            <div className="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-600 shrink-0">
               
               {/* Careers Dropdown */}
               <div 
@@ -592,7 +592,7 @@ export default function Navbar() {
                             className={`flex items-center justify-between px-2.5 py-2 rounded-xl text-left text-xs font-bold transition-all cursor-pointer ${
                               activeTheme === theme.id
                                 ? "bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white"
-                                : "text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800"
+                                : "text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800"
                             }`}
                           >
                             <div className="flex items-center gap-2.5">
@@ -600,7 +600,7 @@ export default function Navbar() {
                               <span>{language === "hi" ? theme.nameHi : theme.nameEn}</span>
                             </div>
                             {activeTheme === theme.id && (
-                              <Icon icon="ph:check-bold" className="w-3.5 h-3.5 text-slate-850" />
+                              <Icon icon="ph:check-bold" className="w-3.5 h-3.5 text-slate-800" />
                             )}
                           </button>
                         ))}
@@ -692,7 +692,7 @@ export default function Navbar() {
                   </Link>
                   <button 
                     onClick={() => setIsOpen(false)}
-                    className="p-2 text-slate-450 hover:text-neutral-dark hover:bg-slate-100 rounded-xl transition-colors cursor-pointer"
+                    className="p-2 text-slate-400 hover:text-neutral-dark hover:bg-slate-100 rounded-xl transition-colors cursor-pointer"
                   >
                     <Icon icon="solar:close-circle-bold" className="w-6 h-6" />
                   </button>
@@ -704,7 +704,7 @@ export default function Navbar() {
                     setIsOpen(false);
                     window.dispatchEvent(new CustomEvent("open-search"));
                   }}
-                  className="w-full flex items-center gap-2.5 px-4 py-3 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 text-slate-400 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 hover:border-slate-350 transition-all text-sm font-semibold mb-6 text-left cursor-pointer"
+                  className="w-full flex items-center gap-2.5 px-4 py-3 rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 text-slate-400 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 hover:border-slate-300 transition-all text-sm font-semibold mb-6 text-left cursor-pointer"
                 >
                   <Icon icon="solar:magnifer-linear" className="w-5 h-5 text-slate-400" />
                   <span>{t.searchMobile}...</span>
@@ -720,7 +720,7 @@ export default function Navbar() {
                       className="w-full flex items-center justify-between px-4 py-3.5 bg-slate-50/50 dark:bg-slate-800/50 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 text-sm font-extrabold cursor-pointer"
                     >
                       <div className="flex items-center gap-2">
-                        <Icon icon="solar:compass-bold-duotone" className="w-4.5 h-4.5 text-slate-550" />
+                        <Icon icon="solar:compass-bold-duotone" className="w-4.5 h-4.5 text-slate-500" />
                         <span>{t.careers}</span>
                       </div>
                       <Icon 
@@ -780,7 +780,7 @@ export default function Navbar() {
                       className="w-full flex items-center justify-between px-4 py-3.5 bg-slate-50/50 dark:bg-slate-800/50 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 text-sm font-extrabold cursor-pointer"
                     >
                       <div className="flex items-center gap-2">
-                        <Icon icon="solar:document-bold-duotone" className="w-4.5 h-4.5 text-slate-550" />
+                        <Icon icon="solar:document-bold-duotone" className="w-4.5 h-4.5 text-slate-500" />
                         <span>{t.exams}</span>
                       </div>
                       <Icon 
@@ -842,7 +842,7 @@ export default function Navbar() {
                       className="w-full flex items-center justify-between px-4 py-3.5 bg-slate-50/50 dark:bg-slate-800/50 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 text-sm font-extrabold cursor-pointer"
                     >
                       <div className="flex items-center gap-2">
-                        <Icon icon="solar:notes-bold-duotone" className="w-4.5 h-4.5 text-slate-550" />
+                        <Icon icon="solar:notes-bold-duotone" className="w-4.5 h-4.5 text-slate-500" />
                         <span>{t.reads}</span>
                       </div>
                       <Icon 
@@ -890,7 +890,7 @@ export default function Navbar() {
                     onClick={() => setIsOpen(false)}
                     className="flex items-center gap-2 px-4 py-3.5 border border-slate-100 dark:border-slate-800 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 text-sm font-extrabold"
                   >
-                    <Icon icon="solar:info-circle-bold-duotone" className="w-4.5 h-4.5 text-slate-550" />
+                    <Icon icon="solar:info-circle-bold-duotone" className="w-4.5 h-4.5 text-slate-500" />
                     <span>{t.about}</span>
                   </Link>
 
@@ -976,15 +976,3 @@ export default function Navbar() {
                           )}
                         </button>
                       ))}
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
-    </>
-  );
-}

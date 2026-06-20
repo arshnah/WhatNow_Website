@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = pageMeta({
   title: "IMU CET — Convince Parents | WhatNow",
@@ -85,6 +86,20 @@ const Section = ({
 export default function ImuCetConvinceParentsPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "IMU CET — Convince Parents | WhatNow",
+          description:
+            "Equipping students with cadet stipend records, tax-free salary figures, and logical arguments to convince parents about merchant navy careers.",
+          path: "/exams/imu-cet/convince-parents",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "IMU CET", path: "/exams/imu-cet" },
+            { name: "Convince Parents", path: "/exams/imu-cet/convince-parents" },
+          ],
+        })}
+      />
       <PageHeader
         title="IMU CET — Talking to Your Parents"
         breadcrumbs={
@@ -109,7 +124,7 @@ export default function ImuCetConvinceParentsPage() {
           </p>
           <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8 space-y-4 mb-6">
             <h4 className="font-black text-xl text-neutral-dark">The Counter-Argument:</h4>
-            <p className="text-slate-650 dark:text-slate-300 leading-relaxed font-semibold">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-semibold">
               Modern cargo fleets operate under strict international safety regulations (SOLAS, MARPOL) set by the United Nations' IMO. Ships have advanced communication networks, medical training for officers, and dedicated onboard telemedicine services. Furthermore, physical screening rules prevent candidates with chronic medical issues from enrolling, ensuring a highly resilient and safe crew.
             </p>
           </div>
@@ -181,7 +196,7 @@ export default function ImuCetConvinceParentsPage() {
             <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed mb-4">
               Unlike normal college placement drives, if you secure a **shipping company sponsorship** before joining a Diploma in Nautical Science (DNS) or B.Sc course, your employment is legally secured by that shipping line.
             </p>
-            <p className="text-lg text-slate-750 dark:text-slate-300 font-medium leading-relaxed">
+            <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
               They pay for/subsidize your training and place you directly on their ships. This removes any job hunt stress, offering absolute peace of mind for middle-class parents concerned about placements.
             </p>
           </div>

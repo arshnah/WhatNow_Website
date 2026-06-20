@@ -80,7 +80,7 @@ function GuideCard({ category, title, description, badgeClass, status, href }: G
       >
         <Link
           href={href || "#"}
-          className="relative rounded-3xl p-8 sm:p-10 flex flex-col h-full border border-slate-200/80 dark:border-slate-700/70 hover:border-slate-350 dark:hover:border-slate-600 bg-white/80 dark:bg-slate-800/50 backdrop-blur-md cursor-pointer shadow-sm hover:shadow-xl hover:shadow-black/5 dark:hover:shadow-black/40 transition-colors duration-300 text-left select-none group"
+          className="relative rounded-3xl p-8 sm:p-10 flex flex-col h-full border border-slate-200/80 dark:border-slate-700/70 hover:border-slate-300 dark:hover:border-slate-600 bg-white/80 dark:bg-slate-800/50 backdrop-blur-md cursor-pointer shadow-sm hover:shadow-xl hover:shadow-black/5 dark:hover:shadow-black/40 transition-colors duration-300 text-left select-none group"
         >
           {/* Ambient background glow */}
           <div className={`absolute -right-10 -bottom-10 w-44 h-44 rounded-full blur-3xl transition-all duration-500 pointer-events-none ${getGlowColor(category)}`} />
@@ -95,7 +95,7 @@ function GuideCard({ category, title, description, badgeClass, status, href }: G
             {title}
           </h3>
 
-          <p className="text-slate-550 dark:text-slate-400 leading-relaxed mb-10 flex-grow font-medium text-sm sm:text-base relative z-10">
+          <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-10 flex-grow font-medium text-sm sm:text-base relative z-10">
             {description}
           </p>
 
@@ -130,7 +130,7 @@ function GuideCard({ category, title, description, badgeClass, status, href }: G
         {title}
       </h3>
 
-      <p className="text-slate-550 leading-relaxed mb-10 flex-grow font-medium text-sm sm:text-base relative z-10">
+      <p className="text-slate-500 leading-relaxed mb-10 flex-grow font-medium text-sm sm:text-base relative z-10">
         {description}
       </p>
 
@@ -264,7 +264,7 @@ export default function FeaturedGuides() {
             <button
               onClick={() => scroll("left")}
               disabled={!showLeft}
-              className="pointer-events-auto p-2 ml-2 lg:ml-6 text-slate-350 hover:text-neutral-800 transition-colors cursor-pointer disabled:cursor-default"
+              className="pointer-events-auto p-2 ml-2 lg:ml-6 text-slate-300 hover:text-neutral-800 transition-colors cursor-pointer disabled:cursor-default"
               aria-label="Scroll left"
             >
               <Icon icon="weui:arrow-filled" className="w-14 h-14 lg:w-[4.5rem] lg:h-[4.5rem] rotate-180" />
@@ -276,7 +276,7 @@ export default function FeaturedGuides() {
             <button
               onClick={() => scroll("right")}
               disabled={!showRight}
-              className="pointer-events-auto p-2 mr-2 lg:mr-6 text-slate-350 hover:text-neutral-800 transition-colors cursor-pointer disabled:cursor-default"
+              className="pointer-events-auto p-2 mr-2 lg:mr-6 text-slate-300 hover:text-neutral-800 transition-colors cursor-pointer disabled:cursor-default"
               aria-label="Scroll right"
             >
               <Icon icon="weui:arrow-filled" className="w-14 h-14 lg:w-[4.5rem] lg:h-[4.5rem]" />
@@ -307,6 +307,4 @@ export default function FeaturedGuides() {
           </div>
         </div>
       </div>
-    </section>
-  );
-}
+    </s
