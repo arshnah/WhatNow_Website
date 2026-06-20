@@ -35,6 +35,27 @@
 
 html { color-scheme: light; }
 
+/*
+  Page entrance transition (fade + slight rise).
+  Driven by CSS, NOT framer-motion: a JS-driven `initial:{opacity:0}` in
+  app/template.tsx could get stuck at opacity 0 (tab-switch rAF throttling,
+  hydration race, interrupted navigation) → whole page/cards vanished.
+  A CSS animation always reaches its end state (`forwards`), so content can
+  never be trapped invisible.
+*/
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.page-enter {
+  animation: page-enter 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter { animation: none; }
+}
+
 body {
   background: var(--color-background);
   color: var(--color-foreground);
