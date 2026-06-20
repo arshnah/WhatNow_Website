@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "UCEED — What It Is | WhatNow",
@@ -134,6 +135,19 @@ const BentoCard = ({
 export default function UceedWhatItIsPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "UCEED — What It Is | WhatNow",
+          description: "UCEED — the Undergraduate Common Entrance Exam for Design conducted by IIT Bombay — is the only standardised entrance exam for Bachelor of Design (B.Des) programs at the IITs.",
+          path: "/exams/uceed/what-it-is",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "UCEED", path: "/exams/uceed" },
+            { name: "What It Is", path: "/exams/uceed/what-it-is" },
+          ],
+        })}
+      />
       <PageHeader
         title="UCEED — What It Is"
         breadcrumbs={

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "NIFT Entrance — Fees, Scholarships & ROI | WhatNow",
@@ -126,6 +127,19 @@ const ScholarshipCard = ({
 export default function NiftScholarshipsPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "NIFT Entrance — Fees, Scholarships & ROI | WhatNow",
+          description: "Detailed analysis of NIFT course fees, available Sarthak financial assistance schemes, and honest career return-on-investment.",
+          path: "/exams/nift/scholarships",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "NIFT", path: "/exams/nift" },
+            { name: "Scholarships", path: "/exams/nift/scholarships" },
+          ],
+        })}
+      />
       <PageHeader
         title="NIFT — Fees, Scholarships & ROI"
         breadcrumbs={

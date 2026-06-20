@@ -2,7 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import VisualAnalytics from '@/components/ui/VisualAnalytics';
 import { Icon } from '@iconify/react';
-import { pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
 
 const jeePaper3AnalyticsData = {
   trends: [
@@ -27,6 +28,18 @@ export const metadata = pageMeta({
 export default function JeePaper3HubPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C]">
+      <JsonLd
+        data={guideJsonLd({
+          title: 'JEE Main Paper 3 — B.Planning Entrance Exam | WhatNow',
+          description: 'Gateway to Bachelor of Planning (B.Plan) programs at School of Planning and Architecture (SPA Delhi, Bhopal, Vijayawada) and top NITs.',
+          path: "/exams/jee-paper3",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "JEE Paper 3", path: "/exams/jee-paper3" },
+          ],
+        })}
+      />
       {/* ─── PAGE HEADER ─── */}
       <section className="relative overflow-hidden bg-white dark:bg-[#0E111E] border-b border-slate-200/60 dark:border-slate-700 pt-24 pb-16 md:pt-32 md:pb-20">
         {/* SVG Hero Background */}

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "JEE Main Paper 3 — SPA Fees, Seat Matrix & ROI | WhatNow",
@@ -119,6 +120,19 @@ const ScholarshipCard = ({
 export default function JeePaper3ScholarshipsPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "JEE Main Paper 3 — SPA Fees, Seat Matrix & ROI | WhatNow",
+          description: "Seat distribution across SPA Delhi, Bhopal, Vijayawada, fee guidelines, and financial support schemes.",
+          path: "/exams/jee-paper3/scholarships",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "JEE Paper 3", path: "/exams/jee-paper3" },
+            { name: "Scholarships", path: "/exams/jee-paper3/scholarships" },
+          ],
+        })}
+      />
       <PageHeader
         title="JEE Paper 3 — SPA Fees & Seats"
         breadcrumbs={

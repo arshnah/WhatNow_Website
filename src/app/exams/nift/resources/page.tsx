@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "NIFT Entrance — Preparation Guides & Study Material | WhatNow",
@@ -85,6 +86,19 @@ const Section = ({
 export default function NiftResourcesPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "NIFT Entrance — Preparation Guides & Study Material | WhatNow",
+          description: "Detailed syllabus breakdowns for CAT & GAT, Situation Test prep kits, recommended prep books, and mock strategies.",
+          path: "/exams/nift/resources",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "NIFT", path: "/exams/nift" },
+            { name: "Resources", path: "/exams/nift/resources" },
+          ],
+        })}
+      />
       <PageHeader
         title="NIFT — Prep Roadmap & Resources"
         breadcrumbs={

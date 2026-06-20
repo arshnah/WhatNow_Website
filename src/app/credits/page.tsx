@@ -435,8 +435,8 @@ export default function CreditsPage() {
                         transition={{ duration: 0.4 }}
                         className={`w-[280px] shrink-0 mx-5 rounded-3xl border p-6 flex flex-col justify-between min-h-[380px] bg-white/60 dark:bg-slate-900/40 backdrop-blur-md transition-all duration-300 relative overflow-hidden cursor-pointer select-none ${
                           isActive 
-                            ? "shadow-2xl z-20" 
-                            : "shadow-md z-10 hover:border-slate-350 dark:hover:border-slate-750"
+                            ? "shadow-2xl z-20"
+                            : "shadow-md z-10 hover:border-slate-300 dark:hover:border-slate-700"
                         }`}
                         style={{ 
                           perspective: 1000,
@@ -467,7 +467,7 @@ export default function CreditsPage() {
                             </h3>
                             
                             {/* Role Badge with Icon */}
-                            <span className="mt-2.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-slate-805 text-slate-650 dark:text-slate-300 border border-slate-200/40 dark:border-slate-700/50 flex items-center gap-1.5">
+                            <span className="mt-2.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200/40 dark:border-slate-700/50 flex items-center gap-1.5">
                               <Icon icon={details.tagIcon} className="w-3.5 h-3.5" style={{ color: details.fromColor }} />
                               {language === "hi" ? m.roleHi : m.roleEn}
                             </span>
@@ -482,7 +482,7 @@ export default function CreditsPage() {
                           <div className="mt-8 pt-4 border-t border-slate-100 dark:border-slate-800/85 flex items-center justify-between">
                             <div className="flex flex-col text-left">
                               <span className="text-[9px] uppercase tracking-wider font-extrabold text-slate-400 dark:text-slate-500">Contact</span>
-                              <span className="text-[11px] text-slate-550 dark:text-slate-400 font-semibold">India / Remote</span>
+                              <span className="text-[11px] text-slate-500 dark:text-slate-400 font-semibold">India / Remote</span>
                             </div>
 
                             <div className="flex gap-2">
@@ -499,7 +499,7 @@ export default function CreditsPage() {
                               ) : (
                                 <a
                                   href={`mailto:${EMAIL}`}
-                                  className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800/80 flex items-center justify-center text-slate-600 dark:text-slate-350 hover:bg-[#5563ED] hover:text-white transition-colors duration-200"
+                                  className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800/80 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-[#5563ED] hover:text-white transition-colors duration-200"
                                   onClick={(e) => e.stopPropagation()}
                                 >
                                   <Icon icon="ri:mail-fill" className="w-4 h-4" />
@@ -508,7 +508,7 @@ export default function CreditsPage() {
                               
                               <a
                                 href="/discord"
-                                className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800/80 flex items-center justify-center text-slate-600 dark:text-slate-350 hover:bg-[#5563ED] hover:text-white transition-colors duration-200"
+                                className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800/80 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-[#5563ED] hover:text-white transition-colors duration-200"
                                 onClick={(e) => e.stopPropagation()}
                               >
                                 <Icon icon="ri:discord-fill" className="w-4 h-4" />
@@ -541,7 +541,7 @@ export default function CreditsPage() {
                       key={m.id}
                       onClick={() => handleSelect(idx)}
                       className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        activeIdx === idx ? "bg-[#5563ED] w-5" : "bg-slate-250 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700"
+                        activeIdx === idx ? "bg-[#5563ED] w-5" : "bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700"
                       }`}
                       aria-label={`Go to slide ${idx + 1}`}
                     />
@@ -552,7 +552,7 @@ export default function CreditsPage() {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   onClick={handleNext}
-                  className="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 flex items-center justify-center text-slate-650 dark:text-slate-300 shadow-md hover:border-[#5563ED]/40 transition-colors"
+                  className="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 flex items-center justify-center text-slate-600 dark:text-slate-300 shadow-md hover:border-[#5563ED]/40 transition-colors"
                   aria-label="Next Team Member"
                 >
                   <Icon icon="lucide:chevron-right" className="w-5 h-5" />
@@ -617,7 +617,7 @@ export default function CreditsPage() {
                   className="group flex gap-4 p-5 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white/40 dark:bg-slate-900/30 backdrop-blur-md hover:border-[#5563ED]/30 dark:hover:border-[#5563ED]/30 shadow-sm hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800/80 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Icon icon={item.icon} className="w-6 h-6 text-slate-650 dark:text-slate-350 group-hover:text-[#5563ED] transition-colors duration-300" />
+                    <Icon icon={item.icon} className="w-6 h-6 text-slate-600 dark:text-slate-300 group-hover:text-[#5563ED] transition-colors duration-300" />
                   </div>
                   <div>
                     <h3 className="text-base font-extrabold text-slate-900 dark:text-slate-100 group-hover:text-[#5563ED] transition-colors duration-200">
@@ -743,7 +743,7 @@ export default function CreditsPage() {
                   <h3 className="text-xl font-extrabold text-slate-900 dark:text-slate-100 mb-2">
                     {language === "hi" ? "विशेष आभार" : "Special Thanks"}
                   </h3>
-                  <p className="text-slate-655 dark:text-slate-350 text-sm md:text-base leading-relaxed font-medium italic">
+                  <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed font-medium italic">
                     "{t.thanksParagraph}"
                   </p>
                 </div>

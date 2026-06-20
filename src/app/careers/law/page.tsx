@@ -21,6 +21,8 @@ const lawAnalyticsData = {
 };
 import { Icon } from '@iconify/react';
 import { useLanguage } from '@/context/LanguageContext';
+import JsonLd from "@/components/JsonLd";
+import { guideJsonLd } from "@/lib/seo";
 
 const translations = {
   en: {
@@ -105,6 +107,18 @@ export default function LawCareerHubPage() {
 
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C]">
+      <JsonLd
+        data={guideJsonLd({
+          title: "Law — Advocacy, Corporate & Litigation",
+          description: "High-paying corporate desks vs litigation grinding, National Law School ROI, and integrated LLB routes.",
+          path: "/careers/law",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Careers", path: "/careers" },
+            { name: "Law", path: "/careers/law" },
+          ],
+        })}
+      />
       {/* PAGE HEADER */}
       <section className="relative overflow-hidden bg-white dark:bg-[#0E111E] border-b border-slate-200/60 dark:border-slate-700 pt-24 pb-16 md:pt-32 md:pb-20">
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden select-none">

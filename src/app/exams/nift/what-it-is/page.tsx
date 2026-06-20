@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "NIFT Entrance — What It Is | WhatNow",
@@ -134,6 +135,19 @@ const BentoCard = ({
 export default function NiftWhatItIsPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "NIFT Entrance — What It Is | WhatNow",
+          description: "Learn about the NIFT Entrance Exam structure, CAT and GAT papers, eligibility, campuses, and selection process.",
+          path: "/exams/nift/what-it-is",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "NIFT", path: "/exams/nift" },
+            { name: "What It Is", path: "/exams/nift/what-it-is" },
+          ],
+        })}
+      />
       <PageHeader
         title="NIFT Entrance — What It Is"
         breadcrumbs={

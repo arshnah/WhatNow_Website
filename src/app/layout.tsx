@@ -73,10 +73,28 @@ export const metadata: Metadata = {
 const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": `${SITE_URL}/#organization`,
   name: "WhatNow",
+  alternateName: "WhatNow India",
   url: SITE_URL,
   description: SITE_DESCRIPTION,
   email: "indiawhatnow@gmail.com",
+  founder: {
+    "@type": "Person",
+    name: "Vasu",
+    jobTitle: "Founder & owner",
+    sameAs: "https://github.com/VasuCoded",
+  },
+  member: [
+    { "@type": "Person", name: "Vasu", jobTitle: "Founder & owner", sameAs: "https://github.com/VasuCoded" },
+    { "@type": "Person", name: "Yawwsh", jobTitle: "Lead developer — tech & product", sameAs: "https://github.com/Yashvardhan4646" },
+    { "@type": "Person", name: "Arsh", jobTitle: "Developer & lead maintainer", sameAs: "https://github.com/arshnah" },
+    { "@type": "Person", name: "Antinity", jobTitle: "Advisory developer", sameAs: "https://github.com/antinity" },
+    { "@type": "Person", name: "Infernum", jobTitle: "Design & short-form content" },
+    { "@type": "Person", name: "Saammm", jobTitle: "Outreach & partnerships" },
+    { "@type": "Person", name: "Doraemon", jobTitle: "Outreach & partnerships" },
+    { "@type": "Person", name: "Yukt", jobTitle: "Interview host" },
+  ],
   sameAs: [
     "https://instagram.com/whatnow.in",
     "https://www.youtube.com/@indiawhatnow",

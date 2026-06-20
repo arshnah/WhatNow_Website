@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "UCEED — Is It For You? | WhatNow",
@@ -85,6 +86,19 @@ const Section = ({
 export default function UceedIsItForYouPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "UCEED — Is It For You? | WhatNow",
+          description: "An honest suitability assessment and check to see if pursuing a B.Des degree at an IIT aligns with your interest, skills, and daily work preferences.",
+          path: "/exams/uceed/is-it-for-you",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "UCEED", path: "/exams/uceed" },
+            { name: "Is It For You", path: "/exams/uceed/is-it-for-you" },
+          ],
+        })}
+      />
       <PageHeader
         title="UCEED — Is Design at an IIT For You?"
         breadcrumbs={

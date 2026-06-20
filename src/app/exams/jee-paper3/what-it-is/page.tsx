@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "JEE Main Paper 3 — Exam Pattern & Syllabus Breakdown | WhatNow",
@@ -100,6 +101,19 @@ const InfoBox = ({
 export default function JeePaper3WhatItIsPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "JEE Main Paper 3 — Exam Pattern & Syllabus Breakdown | WhatNow",
+          description: "Detailed breakdown of the B.Planning entrance exam syllabus: Mathematics, general aptitude, and planning-specific topics.",
+          path: "/exams/jee-paper3/what-it-is",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "JEE Paper 3", path: "/exams/jee-paper3" },
+            { name: "What It Is", path: "/exams/jee-paper3/what-it-is" },
+          ],
+        })}
+      />
       <PageHeader
         title="JEE Paper 3 — Exam Structure & Syllabus"
         breadcrumbs={

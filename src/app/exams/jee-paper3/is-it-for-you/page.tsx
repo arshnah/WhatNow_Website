@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, guideJsonLd } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "JEE Main Paper 3 — Is It For You? (Suitability Check) | WhatNow",
@@ -100,6 +101,19 @@ const InfoBox = ({
 export default function JeePaper3IsItForYouPage() {
   return (
     <main className="flex-grow flex flex-col bg-slate-50 dark:bg-[#0B111C] min-h-screen">
+      <JsonLd
+        data={guideJsonLd({
+          title: "JEE Main Paper 3 — Is It For You? (Suitability Check) | WhatNow",
+          description: "Evaluate your planning aptitude, interest in city development and policy, and decide if B.Plan is the right fit.",
+          path: "/exams/jee-paper3/is-it-for-you",
+          breadcrumbs: [
+            { name: "Home", path: "/" },
+            { name: "Exams", path: "/exams" },
+            { name: "JEE Paper 3", path: "/exams/jee-paper3" },
+            { name: "Is It For You", path: "/exams/jee-paper3/is-it-for-you" },
+          ],
+        })}
+      />
       <PageHeader
         title="JEE Paper 3 — Is It For You?"
         breadcrumbs={

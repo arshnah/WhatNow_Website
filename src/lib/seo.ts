@@ -86,6 +86,25 @@ export function guideJsonLd({
   };
 }
 
+/**
+ * FAQPage JSON-LD for a page that visibly renders question/answer pairs (for
+ * SEO rich results + GEO). Pass the REAL on-page Q&A text verbatim — schema
+ * must mirror what the reader sees. Render the result through <JsonLd>.
+ *
+ *   <JsonLd data={faqJsonLd({ faqs: [{ q: "...", a: "..." }] })} />
+ */
+export function faqJsonLd({ faqs }: { faqs: { q: string; a: string }[] }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+}
+
 export function buildMetadata(href: string): Metadata {
   const entry = SEARCH_INDEX.find((i) => i.href === href);
   if (!entry) return {};
