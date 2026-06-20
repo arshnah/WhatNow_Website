@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "IMU CET — Preparation Strategy & Study Material | WhatNow",
   description: "Subject-wise prep strategy, recommended study materials, previous papers, and shipping company sponsorship interview tips.",
-};
+  path: "/exams/imu-cet/prep",
+});
 
 const PageHeader = ({
   title,

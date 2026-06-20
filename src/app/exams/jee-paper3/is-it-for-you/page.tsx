@@ -1,11 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "JEE Main Paper 3 — Is It For You? (Suitability Check) | WhatNow",
   description: "Evaluate your planning aptitude, interest in city development and policy, and decide if B.Plan is the right fit.",
-};
+  path: "/exams/jee-paper3/is-it-for-you",
+});
 
 const PageHeader = ({
   title,

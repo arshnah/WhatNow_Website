@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "UCEED — Is It For You? | WhatNow",
   description: "An honest suitability assessment and check to see if pursuing a B.Des degree at an IIT aligns with your interest, skills, and daily work preferences.",
-};
+  path: "/exams/uceed/is-it-for-you",
+});
 
 const PageHeader = ({
   title,

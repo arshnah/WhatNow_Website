@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "NIFT Entrance — What It Is | WhatNow",
   description: "Learn about the NIFT Entrance Exam structure, CAT and GAT papers, eligibility, campuses, and selection process.",
-};
+  path: "/exams/nift/what-it-is",
+});
 
 // --- Components ---
 

@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "Merchant Navy Salary, Ranks & Progression | WhatNow",
   description: "Rank-by-rank pay in USD and INR, the certification ladder that gates every promotion, a realistic timeline to 4th Engineer, and the macro nobody mentions — flat wages, rising competition, a real shortage at the top.",
-};
+  path: "/careers/merchant-navy/salary-ranks",
+});
 
 const PageHeader = ({
   title,

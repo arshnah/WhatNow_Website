@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import VisualAnalytics from '@/components/ui/VisualAnalytics';
 import { Icon } from '@iconify/react';
+import { pageMeta } from "@/lib/seo";
 
 const clatAnalyticsData = {
   trends: [
@@ -17,10 +18,11 @@ const clatAnalyticsData = {
   }
 };
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'CLAT — Law Entrance Exam | WhatNow',
   description: 'Common Law Admission Test for admission to 5-year integrated BA LLB and BBA LLB programs across 24 premium National Law Universities (NLUs) in India.',
-};
+  path: "/exams/clat",
+});
 
 export default function ClatHubPage() {
   return (

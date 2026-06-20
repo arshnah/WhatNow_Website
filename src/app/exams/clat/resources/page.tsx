@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "CLAT — Preparation Strategy & Recommended Books | WhatNow",
   description: "Curated self-study roadmap, legal reasoning guides, mock analysis plans, and recommended books for CLAT aspirants.",
-};
+  path: "/exams/clat/resources",
+});
 
 const PageHeader = ({
   title,

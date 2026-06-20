@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "UCEED — Resources & Prep Plan | WhatNow",
   description: "Curated self-study guides, recommended design books, previous year papers, and Part A & Part B prep strategies without expensive coaching.",
-};
+  path: "/exams/uceed/resources",
+});
 
 const PageHeader = ({
   title,

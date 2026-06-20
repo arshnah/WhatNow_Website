@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "CLAT — NLU Seat Matrix, Fees & Scholarships | WhatNow",
   description: "Complete guide to fee structures across top NLUs, available Central Sector schemes, Aditya Birla scholarships, and NLU financial waivers.",
-};
+  path: "/exams/clat/scholarships",
+});
 
 const PageHeader = ({
   title,

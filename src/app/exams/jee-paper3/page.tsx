@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import VisualAnalytics from '@/components/ui/VisualAnalytics';
 import { Icon } from '@iconify/react';
+import { pageMeta } from "@/lib/seo";
 
 const jeePaper3AnalyticsData = {
   trends: [
@@ -17,10 +18,11 @@ const jeePaper3AnalyticsData = {
   }
 };
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'JEE Main Paper 3 — B.Planning Entrance Exam | WhatNow',
   description: 'Gateway to Bachelor of Planning (B.Plan) programs at School of Planning and Architecture (SPA Delhi, Bhopal, Vijayawada) and top NITs.',
-};
+  path: "/exams/jee-paper3",
+});
 
 export default function JeePaper3HubPage() {
   return (

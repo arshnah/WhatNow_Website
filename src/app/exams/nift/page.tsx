@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import VisualAnalytics from '@/components/ui/VisualAnalytics';
 import { Icon } from '@iconify/react';
+import { pageMeta } from "@/lib/seo";
 
 const niftAnalyticsData = {
   trends: [
@@ -17,10 +18,11 @@ const niftAnalyticsData = {
   }
 };
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'NIFT Entrance — Fashion Design at India\'s Premier Institutes | WhatNow',
   description: 'The entrance exam for Bachelor of Design (B.Des) and Bachelor of Fashion Technology (B.FTech) programs at all 16 NIFT campuses across India.',
-};
+  path: "/exams/nift",
+});
 
 export default function NiftHubPage() {
   return (

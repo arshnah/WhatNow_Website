@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "CLAT — Exam Pattern, Syllabus & Weightage | WhatNow",
   description: "Complete guide to the CLAT exam pattern: 120 questions, section-wise weightage, marking scheme, and eligibility guidelines.",
-};
+  path: "/exams/clat/what-it-is",
+});
 
 const PageHeader = ({
   title,

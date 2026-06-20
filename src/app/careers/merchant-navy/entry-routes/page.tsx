@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "Merchant Navy Entry Routes — DNS vs B.Sc vs B.Tech vs GME | WhatNow",
   description: "Deck or engine? The four ways into the Merchant Navy compared on time, degree and risk — plus the smartest hedge nobody mentions: a regular Mechanical degree + GME.",
-};
+  path: "/careers/merchant-navy/entry-routes",
+});
 
 const PageHeader = ({
   title,

@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "Merchant Navy Colleges & DG Shipping Approval | WhatNow",
   description: "The only rule that matters is DG Shipping approval. An honest tier map of Indian maritime institutes, how to verify a college in two minutes, and why a seat isn't a job.",
-};
+  path: "/careers/merchant-navy/colleges",
+});
 
 const PageHeader = ({
   title,

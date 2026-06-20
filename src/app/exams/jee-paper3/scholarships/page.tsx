@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "JEE Main Paper 3 — SPA Fees, Seat Matrix & ROI | WhatNow",
   description: "Seat distribution across SPA Delhi, Bhopal, Vijayawada, fee guidelines, and financial support schemes.",
-};
+  path: "/exams/jee-paper3/scholarships",
+});
 
 const PageHeader = ({
   title,

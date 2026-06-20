@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "NIFT — Convince Parents | WhatNow",
   description: "Equipping students with retail industry placements statistics, career stability metrics, and logical talking points to align parents on fashion careers.",
-};
+  path: "/exams/nift/convince-parents",
+});
 
 const PageHeader = ({
   title,

@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "NIFT Entrance — Fees, Scholarships & ROI | WhatNow",
   description: "Detailed analysis of NIFT course fees, available Sarthak financial assistance schemes, and honest career return-on-investment.",
-};
+  path: "/exams/nift/scholarships",
+});
 
 // --- Components ---
 

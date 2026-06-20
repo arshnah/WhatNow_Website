@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "JEE Main Paper 3 — Convince Parents | WhatNow",
   description: "Equipping students with real-world urban planning placement statistics, career stability metrics, and logical talking points to align parents on B.Plan decisions.",
-};
+  path: "/exams/jee-paper3/convince-parents",
+});
 
 const PageHeader = ({
   title,

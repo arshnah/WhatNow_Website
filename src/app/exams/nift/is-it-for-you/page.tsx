@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "NIFT — Is It For You? | WhatNow",
   description: "An honest check to see if pursuing a career in fashion design, apparel production, or merchandising at NIFT fits your interests and work style.",
-};
+  path: "/exams/nift/is-it-for-you",
+});
 
 const PageHeader = ({
   title,

@@ -1,11 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "JEE Main Paper 3 — Exam Pattern & Syllabus Breakdown | WhatNow",
   description: "Detailed breakdown of the B.Planning entrance exam syllabus: Mathematics, general aptitude, and planning-specific topics.",
-};
+  path: "/exams/jee-paper3/what-it-is",
+});
 
 const PageHeader = ({
   title,

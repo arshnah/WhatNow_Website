@@ -2,11 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 import VisualAnalytics from '@/components/ui/VisualAnalytics';
 import { Icon } from '@iconify/react';
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'UCEED — Design at an IIT | WhatNow',
   description: 'The one exam that gets you into the Bachelor of Design (B.Des) programs at IIT Bombay, IIT Delhi, IIT Guwahati, and four other IITs.',
-};
+  path: "/exams/uceed",
+});
 
 const uceedAnalyticsData = {
   trends: [

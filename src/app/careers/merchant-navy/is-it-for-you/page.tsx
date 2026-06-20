@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "Merchant Navy — Is It For You? | WhatNow",
   description: "Isolation, the family cost, the medical gate, and a blunt self-check. The honest test of whether a life at sea actually fits you — before you commit a year to it.",
-};
+  path: "/careers/merchant-navy/is-it-for-you",
+});
 
 const PageHeader = ({
   title,

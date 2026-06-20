@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "IMU CET — Convince Parents | WhatNow",
   description: "Equipping students with cadet stipend records, tax-free salary figures, and logical arguments to convince parents about merchant navy careers.",
-};
+  path: "/exams/imu-cet/convince-parents",
+});
 
 const PageHeader = ({
   title,

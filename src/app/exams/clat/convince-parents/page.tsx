@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "CLAT — Convince Parents | WhatNow",
   description: "Equipping students with NLU placement statistics, corporate recruiter list, and logical arguments to align parents on corporate law careers.",
-};
+  path: "/exams/clat/convince-parents",
+});
 
 const PageHeader = ({
   title,

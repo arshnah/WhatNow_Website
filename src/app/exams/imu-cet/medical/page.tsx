@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "IMU CET — Medical Test & DG Shipping Norms | WhatNow",
   description: "Mandatory DG Shipping medical fitness rules, eyesight constraints, colour blindness limitations, and the truth about the LASIK myth — check your eyes before you commit.",
-};
+  path: "/exams/imu-cet/medical",
+});
 
 const PageHeader = ({
   title,

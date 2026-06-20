@@ -1,9 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "UCEED — What It Is | WhatNow",
-};
+  description: "UCEED — the Undergraduate Common Entrance Exam for Design conducted by IIT Bombay — is the only standardised entrance exam for Bachelor of Design (B.Des) programs at the IITs.",
+  path: "/exams/uceed/what-it-is",
+});
 
 // --- Components ---
 

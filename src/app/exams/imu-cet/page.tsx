@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import VisualAnalytics from '@/components/ui/VisualAnalytics';
 import { Icon } from '@iconify/react';
+import { pageMeta } from "@/lib/seo";
 
 const imucetAnalyticsData = {
   trends: [
@@ -17,10 +18,11 @@ const imucetAnalyticsData = {
   }
 };
 
-export const metadata = {
+export const metadata = pageMeta({
   title: 'IMU CET — Merchant Navy Entrance Exam | WhatNow',
   description: 'Indian Maritime University Common Entrance Test for B.Sc Nautical Science, B.Tech Marine Engineering, and Diploma in Nautical Science programs across IMU campuses and affiliated academies.',
-};
+  path: "/exams/imu-cet",
+});
 
 export default function ImuCetHubPage() {
   return (

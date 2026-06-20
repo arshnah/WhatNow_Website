@@ -1,11 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "JEE Main Paper 3 — Study Material & Prep Guides | WhatNow",
   description: "Free preparation strategies for B.Planning entrance, syllabus guides, general geography maps, and previous mock tests.",
-};
+  path: "/exams/jee-paper3/resources",
+});
 
 const PageHeader = ({
   title,

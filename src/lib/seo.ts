@@ -10,6 +10,38 @@ export const SITE_URL = "https://whatnowindia.vercel.app";
  *
  *   export const metadata = buildMetadata("/careers/law");
  */
+/**
+ * Full per-page metadata for a route that knows its own title/description
+ * (server-component pages with an inline `export const metadata`). Sets the
+ * OpenGraph + Twitter fields too, so social embeds use THIS page's title and
+ * description instead of inheriting a parent layout's generic card.
+ *
+ *   export const metadata = pageMeta({
+ *     title: "IMU CET — Syllabus, Pattern & Reg Guidelines | WhatNow",
+ *     description: "...",
+ *     path: "/exams/imu-cet/what-it-is",
+ *   });
+ */
+export function pageMeta({
+  title,
+  description,
+  path,
+  type = "article",
+}: {
+  title: string;
+  description: string;
+  path: string;
+  type?: "article" | "website";
+}): Metadata {
+  return {
+    title: { absolute: title },
+    description,
+    alternates: { canonical: path },
+    openGraph: { title, description, url: `${SITE_URL}${path}`, type },
+    twitter: { card: "summary_large_image", title, description },
+  };
+}
+
 export function buildMetadata(href: string): Metadata {
   const entry = SEARCH_INDEX.find((i) => i.href === href);
   if (!entry) return {};

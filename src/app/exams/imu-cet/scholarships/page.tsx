@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "IMU CET — DNS vs B.Sc vs B.Tech Maritime Paths | WhatNow",
   description: "Comparing duration, fees, sea-time, placements, sponsorships, and ROI for Diploma in Nautical Science (DNS) vs B.Sc Nautical Science vs B.Tech Marine Engineering.",
-};
+  path: "/exams/imu-cet/scholarships",
+});
 
 const PageHeader = ({
   title,

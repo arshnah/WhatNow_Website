@@ -1,9 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "UCEED — Scholarships | WhatNow",
-};
+  description: "What a B.Des degree at an IIT actually costs, which fees are waiveable, and the scholarships and fee-waiver options that make studying design at an IIT affordable.",
+  path: "/exams/uceed/scholarships",
+});
 
 // --- Components ---
 

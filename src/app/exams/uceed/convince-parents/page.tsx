@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "UCEED — Convince Parents | WhatNow",
   description: "Equipping students with real IIT placement statistics, average starting packages, and logical arguments to convince parents about design careers.",
-};
+  path: "/exams/uceed/convince-parents",
+});
 
 const PageHeader = ({
   title,
