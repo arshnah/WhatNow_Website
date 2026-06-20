@@ -3,8 +3,8 @@ import Link from "next/link";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "IMU CET — Preparation Strategy & Study Material | WhatNow",
-  description: "Subject-wise prep strategy, recommended study materials, previous papers, and shipping company sponsorship interview tips.",
+  title: "IMU CET — Resources & Prep Materials | WhatNow",
+  description: "The study materials worth your time for IMU CET: recommended books, previous-year papers, mock tests and free online resources, plus what to skip.",
   path: "/exams/imu-cet/resources",
 });
 

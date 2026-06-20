@@ -3,8 +3,8 @@ import Link from "next/link";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "IMU CET — Medical Standards & Suitability Check | WhatNow",
-  description: "Mandatory DG Shipping medical fitness rules, eyesight constraints, color blindness limitations, and psychological checks for maritime careers.",
+  title: "IMU CET — Is It For You? Suitability & Medical Rules | WhatNow",
+  description: "Who a seafaring career actually suits, plus the DG Shipping medical gate that can end it before you start: eyesight, colour-vision and fitness rules to check first.",
   path: "/exams/imu-cet/is-it-for-you",
 });
 

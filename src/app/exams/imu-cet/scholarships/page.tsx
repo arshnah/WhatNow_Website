@@ -3,8 +3,8 @@ import Link from "next/link";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "IMU CET — DNS vs B.Sc vs B.Tech Maritime Paths | WhatNow",
-  description: "Comparing duration, fees, sea-time, placements, sponsorships, and ROI for Diploma in Nautical Science (DNS) vs B.Sc Nautical Science vs B.Tech Marine Engineering.",
+  title: "IMU CET — Path Costs & Placements | WhatNow",
+  description: "What DNS, B.Sc Nautical Science and B.Tech Marine Engineering actually cost, and how their fees, sponsorship and placement outcomes compare.",
   path: "/exams/imu-cet/scholarships",
 });
 
